@@ -1,0 +1,15 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+loaded weights (missing 0, unexpected 1)
+max_det_per_image = 1000, soft_nms = False
+Evaluating efficientdet_d3.pt on 1610 test-dev images...
+
+class        AP@0.5   Recall
+car           0.545    0.793
+van           0.180    0.756
+truck         0.248    0.712
+bus           0.393    0.721
+motor         0.076    0.477
+
+4-class mean AP@0.5 (car,van,truck,bus): 0.341
+4-class mean Recall: 0.745

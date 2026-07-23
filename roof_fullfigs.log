@@ -1,0 +1,11 @@
+[fig] sh_roof_square: 1360 imgs | FULL 1360 -> _full.jpg q92
+[fig] done -> patch_examples_sh_roof_square/annotated/
+[fig] sh_roof_circle: 1360 imgs | FULL 1360 -> _full.jpg q92
+[fig] done -> patch_examples_sh_roof_circle/annotated/
+[fig] sh_roof_ellipse: 1360 imgs | FULL 1360 -> _full.jpg q92
+[fig] done -> patch_examples_sh_roof_ellipse/annotated/
+[fig] sh_roof_triangle: 1360 imgs | FULL 1360 -> _full.jpg q92
+[fig] done -> patch_examples_sh_roof_triangle/annotated/
+[fig] sh_roof_opacity: 1360 imgs | FULL 1360 -> _full.jpg q92
+[fig] done -> patch_examples_sh_roof_opacity/annotated/
+ALLFULLDONE

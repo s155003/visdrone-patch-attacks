@@ -1,0 +1,47 @@
+# ============================================================
+# visdrone-patch-attacks
+# Keeps: *.py  *.log  *.md  *.yaml  results.json  *.boxes.json  universal_patch.png
+# Drops: datasets, rendered figures, archives, model/patch weights
+# ============================================================
+
+# datasets (54G, re-downloadable)
+datasets/
+
+# rendered figure sets (regenerable from boxes.json + patch)
+annotated/
+
+# archives
+*.zip
+
+# raster figures (universal_patch.png is intentionally NOT excluded)
+*.jpg
+*.jpeg
+
+# torch weights: exclude by default (retinanet/effdet checkpoints are large)...
+*.pt
+# ...but KEEP the two irreplaceable kinds -- they cannot be regenerated off-machine.
+# NOTE: no trailing comments on these lines -- gitignore treats them as part of the pattern.
+# 127 trained patches, 228M total, largest 43M:
+!universal_patch.pt
+# fine-tuned detector, 48.9M, under GitHub's 100M cap:
+!yolo11l_visdrone_pretrained.pt
+# other trained checkpoints, all under the 100M cap:
+!best.pt
+!efficientdet_d3.pt
+!yolo11l_combined_scratch.pt
+!yolov5s_visdrone_10class.pt
+# NOTE: retinanet_{custom,standard,v2_custom}.pt stay excluded -- 121/123/121 MB,
+# over GitHub's 100 MB hard limit; they would break the push.
+
+# local archives -- must never enter the repo
+*.tar.gz
+*.tgz
+*.tar
+
+# derived copies made in-session; their boxes.json duplicate patch_examples_*
+table_runs/
+
+# local noise
+__pycache__/
+*.pyc
+.DS_Store

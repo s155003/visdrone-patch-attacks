@@ -1,0 +1,64 @@
+
+######################################################################
+#  RUN27: 49 tiles, SHARED, grid -> patch_examples_run27_49shared
+######################################################################
+DIGITAL PATCH car->van: training ONE universal patch on 100 images
+Params: PATCH_FRAC=0.45, EPOCHS=40, LR=0.03, TV=0.05, MARGIN=5.0
+
+/home/aarav/attack-test/patch_attack_scatter_multi.py:301: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:838.)
+  tot += float(loss)
+  epoch 1/40  avg loss 4079.333
+  epoch 2/40  avg loss 3928.974
+  epoch 3/40  avg loss 3865.386
+  epoch 4/40  avg loss 3849.545
+  epoch 5/40  avg loss 3827.874
+  epoch 6/40  avg loss 3790.841
+  epoch 7/40  avg loss 3776.074
+  epoch 8/40  avg loss 3770.472
+  epoch 9/40  avg loss 3763.736
+  epoch 10/40  avg loss 3776.122
+  epoch 11/40  avg loss 3763.257
+  epoch 12/40  avg loss 3755.446
+  epoch 13/40  avg loss 3771.258
+  epoch 14/40  avg loss 3761.671
+  epoch 15/40  avg loss 3768.396
+  epoch 16/40  avg loss 3744.675
+  epoch 17/40  avg loss 3752.225
+  epoch 18/40  avg loss 3734.976
+  epoch 19/40  avg loss 3742.424
+  epoch 20/40  avg loss 3751.810
+  epoch 21/40  avg loss 3760.718
+  epoch 22/40  avg loss 3744.471
+  epoch 23/40  avg loss 3739.175
+  epoch 24/40  avg loss 3756.712
+  epoch 25/40  avg loss 3744.508
+  epoch 26/40  avg loss 3767.296
+  epoch 27/40  avg loss 3755.524
+  epoch 28/40  avg loss 3739.618
+  epoch 29/40  avg loss 3733.787
+  epoch 30/40  avg loss 3742.099
+  epoch 31/40  avg loss 3737.136
+  epoch 32/40  avg loss 3759.844
+  epoch 33/40  avg loss 3747.373
+  epoch 34/40  avg loss 3750.417
+  epoch 35/40  avg loss 3721.260
+  epoch 36/40  avg loss 3760.986
+  epoch 37/40  avg loss 3749.361
+  epoch 38/40  avg loss 3705.438
+  epoch 39/40  avg loss 3608.607
+  epoch 40/40  avg loss 3612.477
+
+Evaluating trained patch (clean vs patched)...
+
+==== DIGITAL PATCH car->van RESULTS ====
+Images: 100   car GT boxes: 1686
+(a) already-van under CLEAN (native): 153
+    eligible cars: 1533
+aggregate detected as van: CLEAN=153  PATCHED=60
+
+TRUE-NEW car->van flips (patch only): 42
+TRUE-RATE (true-new / eligible): 0.027   <- HEADLINE
+
+Saved universal patch + per-image examples + annotated PNGs to patch_examples_run27_49shared/
+    Annotated CLEAN|PATCHED images in patch_examples_run27_49shared/annotated/ (FLIP_ prefix = has a flip)

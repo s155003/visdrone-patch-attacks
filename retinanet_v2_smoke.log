@@ -1,0 +1,9 @@
+RetinaNet ResNet50-v2 (timm) FPN=custom, 640px, 30 epochs
+  ep1/30 it0/809 loss 2.201 lr 0.00000
+  ep1/30 it50/809 loss 1.869 lr 0.00010
+  ep1/30 it100/809 loss 1.824 lr 0.00020
+  ep1/30 it150/809 loss 1.659 lr 0.00030
+  ep1/30 it200/809 loss 1.440 lr 0.00040
+  ep1/30 it250/809 loss 1.287 lr 0.00050
+  ep1/30 it300/809 loss 1.277 lr 0.00060
+  ep1/30 it350/809 loss 1.256 lr 0.00070

@@ -1,0 +1,28 @@
+{
+  "run": "sh_s1_square",
+  "shape": "square",
+  "opacity": 1.0,
+  "area_frac": 0.1,
+  "no_overflow": 1,
+  "rot_deg": 20.0,
+  "lr": 0.03,
+  "mode": "adversarial",
+  "epochs": 80,
+  "eval_images": 1360,
+  "cars_kept": 11446,
+  "cars_dropped": 16628,
+  "eligible": 9415,
+  "ambiguous": 457,
+  "denominator": 8958,
+  "flipped": 1450,
+  "lost": 1998,
+  "still_car": 5510,
+  "strict_asr": 0.1618664880553695,
+  "lost_rate": 0.22304085733422638,
+  "still_rate": 0.6150926546104041,
+  "overflow": {
+    "capped_pct": 0.026210029704700332,
+    "mean_realized_frac": 0.09999854703656576,
+    "n": 11446
+  }
+}

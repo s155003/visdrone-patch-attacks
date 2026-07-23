@@ -1,0 +1,18 @@
+Targeted truck->car attack on 20 truck-containing images (DEVICE=cpu)...
+
+  processed 5/20 images...
+  processed 10/20 images...
+  processed 15/20 images...
+  processed 20/20 images...
+
+==== TARGETED truck->car RESULTS ====
+Total ground-truth trucks tested: 36
+
+Setting    truck->car  flip rate
+CLEAN               4      0.111
+FGSM                5      0.139
+PGD                 6      0.167
+C&W                 3      0.083
+
+'flip rate' = fraction of real trucks the model now labels as car.
+Higher = more successful targeted attack. CLEAN shows the baseline (should be ~0).

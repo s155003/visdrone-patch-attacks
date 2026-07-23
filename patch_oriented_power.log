@@ -1,0 +1,60 @@
+DIGITAL PATCH car->van: training ONE universal patch on 30 images
+Params: PATCH_FRAC=0.45, EPOCHS=40, LR=0.03, TV=0.05, MARGIN=5.0
+
+/home/aarav/attack-test/patch_attack_oriented_power.py:257: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:838.)
+  tot += float(loss)
+  epoch 1/40  avg loss 7106.119
+  epoch 2/40  avg loss 6942.556
+  epoch 3/40  avg loss 6840.639
+  epoch 4/40  avg loss 6759.521
+  epoch 5/40  avg loss 6759.988
+  epoch 6/40  avg loss 6747.131
+  epoch 7/40  avg loss 6733.403
+  epoch 8/40  avg loss 6712.963
+  epoch 9/40  avg loss 6700.886
+  epoch 10/40  avg loss 6700.325
+  epoch 11/40  avg loss 6702.535
+  epoch 12/40  avg loss 6686.027
+  epoch 13/40  avg loss 6678.085
+  epoch 14/40  avg loss 6637.350
+  epoch 15/40  avg loss 6649.899
+  epoch 16/40  avg loss 6668.903
+  epoch 17/40  avg loss 6660.289
+  epoch 18/40  avg loss 6671.178
+  epoch 19/40  avg loss 6675.400
+  epoch 20/40  avg loss 6678.608
+  epoch 21/40  avg loss 6670.125
+  epoch 22/40  avg loss 6646.574
+  epoch 23/40  avg loss 6624.998
+  epoch 24/40  avg loss 6645.501
+  epoch 25/40  avg loss 6665.750
+  epoch 26/40  avg loss 6653.521
+  epoch 27/40  avg loss 6629.747
+  epoch 28/40  avg loss 6651.078
+  epoch 29/40  avg loss 6641.427
+  epoch 30/40  avg loss 6642.395
+  epoch 31/40  avg loss 6658.014
+  epoch 32/40  avg loss 6661.736
+  epoch 33/40  avg loss 6608.735
+  epoch 34/40  avg loss 6619.750
+  epoch 35/40  avg loss 6607.459
+  epoch 36/40  avg loss 6613.180
+  epoch 37/40  avg loss 6612.624
+  epoch 38/40  avg loss 6613.475
+  epoch 39/40  avg loss 6633.945
+  epoch 40/40  avg loss 6619.086
+
+Evaluating trained patch (clean vs patched)...
+
+==== DIGITAL PATCH car->van RESULTS ====
+Images: 30   car GT boxes: 437
+(a) already-van under CLEAN (native): 16
+    eligible cars: 421
+aggregate detected as van: CLEAN=16  PATCHED=54
+
+TRUE-NEW car->van flips (patch only): 46
+TRUE-RATE (true-new / eligible): 0.109   <- HEADLINE
+
+Saved universal patch + per-image examples + annotated PNGs to patch_examples_oriented_power/
+    Annotated CLEAN|PATCHED images in patch_examples_oriented_power/annotated/ (FLIP_ prefix = has a flip)

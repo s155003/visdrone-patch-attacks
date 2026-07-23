@@ -1,0 +1,23 @@
+EfficientDet-D3 training | 640px | batch 8 | 30 epochs
+  ep1/30 it0/809 loss 1.734 lr 0.00000
+  ep1/30 it50/809 loss 1.563 lr 0.00010
+  ep1/30 it100/809 loss 1.731 lr 0.00020
+  ep1/30 it150/809 loss 1.731 lr 0.00030
+  ep1/30 it200/809 loss 1.261 lr 0.00040
+  ep1/30 it250/809 loss 1.174 lr 0.00050
+  ep1/30 it300/809 loss 1.091 lr 0.00060
+  ep1/30 it350/809 loss 0.881 lr 0.00070
+  ep1/30 it400/809 loss 1.190 lr 0.00080
+  ep1/30 it450/809 loss 0.955 lr 0.00090
+  ep1/30 it500/809 loss 0.711 lr 0.00100
+  ep1/30 it550/809 loss 0.868 lr 0.00100
+  ep1/30 it600/809 loss 0.723 lr 0.00100
+  ep1/30 it650/809 loss 0.906 lr 0.00100
+  ep1/30 it700/809 loss 0.697 lr 0.00100
+  ep1/30 it750/809 loss 0.676 lr 0.00100
+  ep1/30 it800/809 loss 0.749 lr 0.00100
+Epoch 1 done, avg loss 1.053
+  ep2/30 it0/809 loss 0.758 lr 0.00100
+  ep2/30 it50/809 loss 0.589 lr 0.00100
+  ep2/30 it100/809 loss 0.627 lr 0.00100
+  ep2/30 it150/809 loss 0.639 lr 0.00100

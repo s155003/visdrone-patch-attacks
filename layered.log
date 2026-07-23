@@ -1,0 +1,578 @@
+
+######################################################################
+#  RUN62_ADDITIVE3: {'LAYER_MODE': 'additive', 'N_LAYERS': 3}
+######################################################################
+DIGITAL PATCH car->van: training ONE universal patch on 100 images
+Params: PATCH_FRAC=0.45, EPOCHS=80, LR=0.03, TV=0.05, MARGIN=5.0
+
+/home/aarav/attack-test/patch_attack_layered.py:572: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:838.)
+  tot += float(loss)
+  epoch 1/80  avg loss 4502.220
+  epoch 2/80  avg loss 4416.965
+  epoch 3/80  avg loss 4388.637
+  epoch 4/80  avg loss 4383.906
+  epoch 5/80  avg loss 4381.023
+  epoch 6/80  avg loss 4383.469
+  epoch 7/80  avg loss 4380.175
+  epoch 8/80  avg loss 4379.515
+  epoch 9/80  avg loss 4383.429
+  epoch 10/80  avg loss 4384.043
+  epoch 11/80  avg loss 4383.722
+  epoch 12/80  avg loss 4386.240
+  epoch 13/80  avg loss 4387.757
+  epoch 14/80  avg loss 4390.596
+  epoch 15/80  avg loss 4391.528
+  epoch 16/80  avg loss 4396.043
+  epoch 17/80  avg loss 4394.167
+  epoch 18/80  avg loss 4394.887
+  epoch 19/80  avg loss 4396.725
+  epoch 20/80  avg loss 4397.142
+  epoch 21/80  avg loss 4399.532
+  epoch 22/80  avg loss 4399.750
+  epoch 23/80  avg loss 4400.797
+  epoch 24/80  avg loss 4399.524
+  epoch 25/80  avg loss 4399.119
+  epoch 26/80  avg loss 4400.885
+  epoch 27/80  avg loss 4403.345
+  epoch 28/80  avg loss 4403.468
+  epoch 29/80  avg loss 4404.526
+  epoch 30/80  avg loss 4403.350
+  epoch 31/80  avg loss 4404.273
+  epoch 32/80  avg loss 4405.750
+  epoch 33/80  avg loss 4405.837
+  epoch 34/80  avg loss 4403.727
+  epoch 35/80  avg loss 4405.066
+  epoch 36/80  avg loss 4406.532
+  epoch 37/80  avg loss 4405.638
+  epoch 38/80  avg loss 4405.962
+  epoch 39/80  avg loss 4405.213
+  epoch 40/80  avg loss 4404.875
+  epoch 41/80  avg loss 4404.913
+  epoch 42/80  avg loss 4404.149
+  epoch 43/80  avg loss 4405.690
+  epoch 44/80  avg loss 4405.363
+  epoch 45/80  avg loss 4405.058
+  epoch 46/80  avg loss 4404.733
+  epoch 47/80  avg loss 4406.296
+  epoch 48/80  avg loss 4405.603
+  epoch 49/80  avg loss 4407.196
+  epoch 50/80  avg loss 4406.752
+  epoch 51/80  avg loss 4406.773
+  epoch 52/80  avg loss 4407.899
+  epoch 53/80  avg loss 4407.691
+  epoch 54/80  avg loss 4407.869
+  epoch 55/80  avg loss 4409.190
+  epoch 56/80  avg loss 4407.635
+  epoch 57/80  avg loss 4409.319
+  epoch 58/80  avg loss 4408.304
+  epoch 59/80  avg loss 4410.109
+  epoch 60/80  avg loss 4413.504
+  epoch 61/80  avg loss 4412.430
+  epoch 62/80  avg loss 4413.390
+  epoch 63/80  avg loss 4411.957
+  epoch 64/80  avg loss 4412.085
+  epoch 65/80  avg loss 4412.325
+  epoch 66/80  avg loss 4412.263
+  epoch 67/80  avg loss 4412.271
+  epoch 68/80  avg loss 4412.722
+  epoch 69/80  avg loss 4413.046
+  epoch 70/80  avg loss 4414.196
+  epoch 71/80  avg loss 4412.429
+  epoch 72/80  avg loss 4412.434
+  epoch 73/80  avg loss 4412.308
+  epoch 74/80  avg loss 4412.510
+  epoch 75/80  avg loss 4413.890
+  epoch 76/80  avg loss 4413.979
+  epoch 77/80  avg loss 4413.072
+  epoch 78/80  avg loss 4412.450
+  epoch 79/80  avg loss 4413.176
+  epoch 80/80  avg loss 4412.927
+
+Evaluating trained patch (clean vs patched)...
+
+==== DIGITAL PATCH car->van RESULTS ====
+Images: 100   car GT boxes: 1686
+(a) already-van under CLEAN (native): 153
+    eligible cars: 1533
+aggregate detected as van: CLEAN=153  PATCHED=135
+
+TRUE-NEW car->van flips (patch only): 73
+TRUE-RATE (true-new / eligible): 0.048   <- HEADLINE
+
+Saved universal patch + per-image examples + annotated PNGs to patch_examples_run62_additive3/
+    Annotated CLEAN|PATCHED images in patch_examples_run62_additive3/annotated/ (FLIP_ prefix = has a flip)
+
+######################################################################
+#  RUN63_MULTISCALE3: {'LAYER_MODE': 'multiscale', 'N_LAYERS': 3}
+######################################################################
+DIGITAL PATCH car->van: training ONE universal patch on 100 images
+Params: PATCH_FRAC=0.45, EPOCHS=80, LR=0.03, TV=0.05, MARGIN=5.0
+
+  epoch 1/80  avg loss 4381.545
+  epoch 2/80  avg loss 4191.915
+  epoch 3/80  avg loss 4090.194
+  epoch 4/80  avg loss 4031.437
+  epoch 5/80  avg loss 3995.132
+  epoch 6/80  avg loss 3976.257
+  epoch 7/80  avg loss 3954.732
+  epoch 8/80  avg loss 3934.495
+  epoch 9/80  avg loss 3919.879
+  epoch 10/80  avg loss 3910.878
+  epoch 11/80  avg loss 3908.869
+  epoch 12/80  avg loss 3903.262
+  epoch 13/80  avg loss 3898.083
+  epoch 14/80  avg loss 3892.538
+  epoch 15/80  avg loss 3893.010
+  epoch 16/80  avg loss 3883.106
+  epoch 17/80  avg loss 3874.190
+  epoch 18/80  avg loss 3861.814
+  epoch 19/80  avg loss 3855.376
+  epoch 20/80  avg loss 3865.027
+  epoch 21/80  avg loss 3862.139
+  epoch 22/80  avg loss 3861.118
+  epoch 23/80  avg loss 3859.126
+  epoch 24/80  avg loss 3873.347
+  epoch 25/80  avg loss 3863.560
+  epoch 26/80  avg loss 3858.403
+  epoch 27/80  avg loss 3852.382
+  epoch 28/80  avg loss 3854.715
+  epoch 29/80  avg loss 3844.060
+  epoch 30/80  avg loss 3842.002
+  epoch 31/80  avg loss 3837.907
+  epoch 32/80  avg loss 3842.153
+  epoch 33/80  avg loss 3843.752
+  epoch 34/80  avg loss 3829.214
+  epoch 35/80  avg loss 3818.809
+  epoch 36/80  avg loss 3815.585
+  epoch 37/80  avg loss 3818.789
+  epoch 38/80  avg loss 3815.471
+  epoch 39/80  avg loss 3819.687
+  epoch 40/80  avg loss 3819.932
+  epoch 41/80  avg loss 3832.760
+  epoch 42/80  avg loss 3833.684
+  epoch 43/80  avg loss 3827.363
+  epoch 44/80  avg loss 3823.565
+  epoch 45/80  avg loss 3816.987
+  epoch 46/80  avg loss 3812.447
+  epoch 47/80  avg loss 3812.714
+  epoch 48/80  avg loss 3809.457
+  epoch 49/80  avg loss 3827.199
+  epoch 50/80  avg loss 3815.770
+  epoch 51/80  avg loss 3828.076
+  epoch 52/80  avg loss 3817.978
+  epoch 53/80  avg loss 3809.550
+  epoch 54/80  avg loss 3816.268
+  epoch 55/80  avg loss 3813.951
+  epoch 56/80  avg loss 3805.976
+  epoch 57/80  avg loss 3789.740
+  epoch 58/80  avg loss 3788.867
+  epoch 59/80  avg loss 3790.811
+  epoch 60/80  avg loss 3791.146
+  epoch 61/80  avg loss 3787.215
+  epoch 62/80  avg loss 3791.390
+  epoch 63/80  avg loss 3781.030
+  epoch 64/80  avg loss 3776.887
+  epoch 65/80  avg loss 3776.177
+  epoch 66/80  avg loss 3782.809
+  epoch 67/80  avg loss 3778.707
+  epoch 68/80  avg loss 3773.763
+  epoch 69/80  avg loss 3784.081
+  epoch 70/80  avg loss 3788.636
+  epoch 71/80  avg loss 3770.202
+  epoch 72/80  avg loss 3762.298
+  epoch 73/80  avg loss 3756.701
+  epoch 74/80  avg loss 3753.421
+  epoch 75/80  avg loss 3759.070
+  epoch 76/80  avg loss 3766.169
+  epoch 77/80  avg loss 3763.605
+  epoch 78/80  avg loss 3764.413
+  epoch 79/80  avg loss 3760.688
+  epoch 80/80  avg loss 3756.025
+
+Evaluating trained patch (clean vs patched)...
+
+==== DIGITAL PATCH car->van RESULTS ====
+Images: 100   car GT boxes: 1686
+(a) already-van under CLEAN (native): 153
+    eligible cars: 1533
+aggregate detected as van: CLEAN=153  PATCHED=528
+
+TRUE-NEW car->van flips (patch only): 422
+TRUE-RATE (true-new / eligible): 0.275   <- HEADLINE
+
+Saved universal patch + per-image examples + annotated PNGs to patch_examples_run63_multiscale3/
+    Annotated CLEAN|PATCHED images in patch_examples_run63_multiscale3/annotated/ (FLIP_ prefix = has a flip)
+
+######################################################################
+#  RUN64_BLEND3: {'LAYER_MODE': 'blend', 'N_LAYERS': 3}
+######################################################################
+DIGITAL PATCH car->van: training ONE universal patch on 100 images
+Params: PATCH_FRAC=0.45, EPOCHS=80, LR=0.03, TV=0.05, MARGIN=5.0
+
+  epoch 1/80  avg loss 4439.233
+  epoch 2/80  avg loss 4218.254
+  epoch 3/80  avg loss 4097.422
+  epoch 4/80  avg loss 4048.354
+  epoch 5/80  avg loss 4000.138
+  epoch 6/80  avg loss 3974.144
+  epoch 7/80  avg loss 3944.477
+  epoch 8/80  avg loss 3931.533
+  epoch 9/80  avg loss 3918.349
+  epoch 10/80  avg loss 3910.172
+  epoch 11/80  avg loss 3896.592
+  epoch 12/80  avg loss 3899.874
+  epoch 13/80  avg loss 3881.493
+  epoch 14/80  avg loss 3889.910
+  epoch 15/80  avg loss 3881.650
+  epoch 16/80  avg loss 3888.646
+  epoch 17/80  avg loss 3873.900
+  epoch 18/80  avg loss 3867.731
+  epoch 19/80  avg loss 3848.281
+  epoch 20/80  avg loss 3842.086
+  epoch 21/80  avg loss 3845.242
+  epoch 22/80  avg loss 3849.509
+  epoch 23/80  avg loss 3869.954
+  epoch 24/80  avg loss 3890.178
+  epoch 25/80  avg loss 3885.085
+  epoch 26/80  avg loss 3854.991
+  epoch 27/80  avg loss 3825.193
+  epoch 28/80  avg loss 3823.364
+  epoch 29/80  avg loss 3810.858
+  epoch 30/80  avg loss 3825.655
+  epoch 31/80  avg loss 3818.577
+  epoch 32/80  avg loss 3821.378
+  epoch 33/80  avg loss 3818.456
+  epoch 34/80  avg loss 3835.531
+  epoch 35/80  avg loss 3844.350
+  epoch 36/80  avg loss 3829.684
+  epoch 37/80  avg loss 3824.478
+  epoch 38/80  avg loss 3830.471
+  epoch 39/80  avg loss 3825.477
+  epoch 40/80  avg loss 3804.159
+  epoch 41/80  avg loss 3803.013
+  epoch 42/80  avg loss 3808.485
+  epoch 43/80  avg loss 3818.910
+  epoch 44/80  avg loss 3809.501
+  epoch 45/80  avg loss 3809.129
+  epoch 46/80  avg loss 3789.727
+  epoch 47/80  avg loss 3797.574
+  epoch 48/80  avg loss 3790.740
+  epoch 49/80  avg loss 3798.002
+  epoch 50/80  avg loss 3818.327
+  epoch 51/80  avg loss 3834.872
+  epoch 52/80  avg loss 3818.674
+  epoch 53/80  avg loss 3801.066
+  epoch 54/80  avg loss 3792.341
+  epoch 55/80  avg loss 3803.997
+  epoch 56/80  avg loss 3800.176
+  epoch 57/80  avg loss 3807.542
+  epoch 58/80  avg loss 3832.726
+  epoch 59/80  avg loss 3825.628
+  epoch 60/80  avg loss 3795.386
+  epoch 61/80  avg loss 3781.785
+  epoch 62/80  avg loss 3773.054
+  epoch 63/80  avg loss 3770.181
+  epoch 64/80  avg loss 3806.149
+  epoch 65/80  avg loss 3812.159
+  epoch 66/80  avg loss 3798.265
+  epoch 67/80  avg loss 3790.926
+  epoch 68/80  avg loss 3772.852
+  epoch 69/80  avg loss 3781.820
+  epoch 70/80  avg loss 3790.029
+  epoch 71/80  avg loss 3792.631
+  epoch 72/80  avg loss 3795.464
+  epoch 73/80  avg loss 3792.605
+  epoch 74/80  avg loss 3789.468
+  epoch 75/80  avg loss 3775.090
+  epoch 76/80  avg loss 3778.052
+  epoch 77/80  avg loss 3779.809
+  epoch 78/80  avg loss 3780.320
+  epoch 79/80  avg loss 3769.723
+  epoch 80/80  avg loss 3772.696
+
+Evaluating trained patch (clean vs patched)...
+
+==== DIGITAL PATCH car->van RESULTS ====
+Images: 100   car GT boxes: 1686
+(a) already-van under CLEAN (native): 153
+    eligible cars: 1533
+aggregate detected as van: CLEAN=153  PATCHED=266
+
+TRUE-NEW car->van flips (patch only): 186
+TRUE-RATE (true-new / eligible): 0.121   <- HEADLINE
+
+Saved universal patch + per-image examples + annotated PNGs to patch_examples_run64_blend3/
+    Annotated CLEAN|PATCHED images in patch_examples_run64_blend3/annotated/ (FLIP_ prefix = has a flip)
+
+######################################################################
+#  RUN65_ADDITIVE5: {'LAYER_MODE': 'additive', 'N_LAYERS': 5}
+######################################################################
+DIGITAL PATCH car->van: training ONE universal patch on 100 images
+Params: PATCH_FRAC=0.45, EPOCHS=80, LR=0.03, TV=0.05, MARGIN=5.0
+
+  epoch 1/80  avg loss 4538.949
+  epoch 2/80  avg loss 4529.362
+  epoch 3/80  avg loss 4527.900
+  epoch 4/80  avg loss 4527.656
+  epoch 5/80  avg loss 4528.416
+  epoch 6/80  avg loss 4528.617
+  epoch 7/80  avg loss 4528.110
+  epoch 8/80  avg loss 4527.344
+  epoch 9/80  avg loss 4528.631
+  epoch 10/80  avg loss 4528.305
+  epoch 11/80  avg loss 4528.655
+  epoch 12/80  avg loss 4527.785
+  epoch 13/80  avg loss 4528.994
+  epoch 14/80  avg loss 4528.051
+  epoch 15/80  avg loss 4528.571
+  epoch 16/80  avg loss 4526.894
+  epoch 17/80  avg loss 4528.416
+  epoch 18/80  avg loss 4527.450
+  epoch 19/80  avg loss 4527.271
+  epoch 20/80  avg loss 4528.403
+  epoch 21/80  avg loss 4529.682
+  epoch 22/80  avg loss 4529.240
+  epoch 23/80  avg loss 4528.115
+  epoch 24/80  avg loss 4527.590
+  epoch 25/80  avg loss 4527.207
+  epoch 26/80  avg loss 4528.060
+  epoch 27/80  avg loss 4528.035
+  epoch 28/80  avg loss 4528.460
+  epoch 29/80  avg loss 4528.136
+  epoch 30/80  avg loss 4528.166
+  epoch 31/80  avg loss 4528.474
+  epoch 32/80  avg loss 4528.993
+  epoch 33/80  avg loss 4528.639
+  epoch 34/80  avg loss 4528.940
+  epoch 35/80  avg loss 4528.374
+  epoch 36/80  avg loss 4528.254
+  epoch 37/80  avg loss 4528.286
+  epoch 38/80  avg loss 4528.130
+  epoch 39/80  avg loss 4527.906
+  epoch 40/80  avg loss 4528.826
+  epoch 41/80  avg loss 4528.573
+  epoch 42/80  avg loss 4528.978
+  epoch 43/80  avg loss 4529.070
+  epoch 44/80  avg loss 4528.968
+  epoch 45/80  avg loss 4527.987
+  epoch 46/80  avg loss 4528.142
+  epoch 47/80  avg loss 4528.189
+  epoch 48/80  avg loss 4527.890
+  epoch 49/80  avg loss 4528.830
+  epoch 50/80  avg loss 4528.425
+  epoch 51/80  avg loss 4528.241
+  epoch 52/80  avg loss 4528.322
+  epoch 53/80  avg loss 4527.280
+  epoch 54/80  avg loss 4528.603
+  epoch 55/80  avg loss 4529.093
+  epoch 56/80  avg loss 4528.263
+  epoch 57/80  avg loss 4529.276
+  epoch 58/80  avg loss 4528.274
+  epoch 59/80  avg loss 4528.751
+  epoch 60/80  avg loss 4528.157
+  epoch 61/80  avg loss 4527.751
+  epoch 62/80  avg loss 4529.089
+  epoch 63/80  avg loss 4527.788
+  epoch 64/80  avg loss 4528.818
+  epoch 65/80  avg loss 4528.800
+  epoch 66/80  avg loss 4528.373
+  epoch 67/80  avg loss 4529.071
+  epoch 68/80  avg loss 4528.061
+  epoch 69/80  avg loss 4528.323
+  epoch 70/80  avg loss 4529.163
+  epoch 71/80  avg loss 4527.926
+  epoch 72/80  avg loss 4529.612
+  epoch 73/80  avg loss 4527.789
+  epoch 74/80  avg loss 4528.060
+  epoch 75/80  avg loss 4528.137
+  epoch 76/80  avg loss 4528.101
+  epoch 77/80  avg loss 4529.080
+  epoch 78/80  avg loss 4528.374
+  epoch 79/80  avg loss 4528.187
+  epoch 80/80  avg loss 4528.018
+
+Evaluating trained patch (clean vs patched)...
+
+==== DIGITAL PATCH car->van RESULTS ====
+Images: 100   car GT boxes: 1686
+(a) already-van under CLEAN (native): 153
+    eligible cars: 1533
+aggregate detected as van: CLEAN=153  PATCHED=138
+
+TRUE-NEW car->van flips (patch only): 72
+TRUE-RATE (true-new / eligible): 0.047   <- HEADLINE
+
+Saved universal patch + per-image examples + annotated PNGs to patch_examples_run65_additive5/
+    Annotated CLEAN|PATCHED images in patch_examples_run65_additive5/annotated/ (FLIP_ prefix = has a flip)
+
+######################################################################
+#  RUN66_ADDITIVE3_STRONG: {'LAYER_MODE': 'additive', 'N_LAYERS': 3, 'EPOCHS': 150, 'MARGIN': 8.0}
+######################################################################
+DIGITAL PATCH car->van: training ONE universal patch on 100 images
+Params: PATCH_FRAC=0.45, EPOCHS=150, LR=0.03, TV=0.05, MARGIN=8.0
+
+  epoch 1/150  avg loss 6580.001
+  epoch 2/150  avg loss 6494.856
+  epoch 3/150  avg loss 6469.474
+  epoch 4/150  avg loss 6458.506
+  epoch 5/150  avg loss 6457.446
+  epoch 6/150  avg loss 6455.389
+  epoch 7/150  avg loss 6461.913
+  epoch 8/150  avg loss 6462.525
+  epoch 9/150  avg loss 6462.537
+  epoch 10/150  avg loss 6462.484
+  epoch 11/150  avg loss 6464.400
+  epoch 12/150  avg loss 6466.124
+  epoch 13/150  avg loss 6467.479
+  epoch 14/150  avg loss 6470.487
+  epoch 15/150  avg loss 6472.218
+  epoch 16/150  avg loss 6472.220
+  epoch 17/150  avg loss 6473.301
+  epoch 18/150  avg loss 6475.309
+  epoch 19/150  avg loss 6477.508
+  epoch 20/150  avg loss 6478.138
+  epoch 21/150  avg loss 6478.044
+  epoch 22/150  avg loss 6477.447
+  epoch 23/150  avg loss 6477.294
+  epoch 24/150  avg loss 6477.690
+  epoch 25/150  avg loss 6477.309
+  epoch 26/150  avg loss 6479.659
+  epoch 27/150  avg loss 6480.654
+  epoch 28/150  avg loss 6478.800
+  epoch 29/150  avg loss 6478.880
+  epoch 30/150  avg loss 6480.696
+  epoch 31/150  avg loss 6480.585
+  epoch 32/150  avg loss 6478.842
+  epoch 33/150  avg loss 6481.926
+  epoch 34/150  avg loss 6480.813
+  epoch 35/150  avg loss 6483.470
+  epoch 36/150  avg loss 6482.134
+  epoch 37/150  avg loss 6481.548
+  epoch 38/150  avg loss 6482.829
+  epoch 39/150  avg loss 6483.019
+  epoch 40/150  avg loss 6482.565
+  epoch 41/150  avg loss 6483.339
+  epoch 42/150  avg loss 6482.292
+  epoch 43/150  avg loss 6482.777
+  epoch 44/150  avg loss 6482.613
+  epoch 45/150  avg loss 6483.759
+  epoch 46/150  avg loss 6481.529
+  epoch 47/150  avg loss 6483.369
+  epoch 48/150  avg loss 6484.273
+  epoch 49/150  avg loss 6483.080
+  epoch 50/150  avg loss 6483.304
+  epoch 51/150  avg loss 6483.044
+  epoch 52/150  avg loss 6483.145
+  epoch 53/150  avg loss 6483.840
+  epoch 54/150  avg loss 6483.390
+  epoch 55/150  avg loss 6484.385
+  epoch 56/150  avg loss 6482.804
+  epoch 57/150  avg loss 6485.031
+  epoch 58/150  avg loss 6485.585
+  epoch 59/150  avg loss 6484.381
+  epoch 60/150  avg loss 6483.093
+  epoch 61/150  avg loss 6486.497
+  epoch 62/150  avg loss 6485.838
+  epoch 63/150  avg loss 6484.384
+  epoch 64/150  avg loss 6485.737
+  epoch 65/150  avg loss 6484.134
+  epoch 66/150  avg loss 6485.215
+  epoch 67/150  avg loss 6485.656
+  epoch 68/150  avg loss 6485.033
+  epoch 69/150  avg loss 6485.760
+  epoch 70/150  avg loss 6485.142
+  epoch 71/150  avg loss 6486.092
+  epoch 72/150  avg loss 6485.873
+  epoch 73/150  avg loss 6485.747
+  epoch 74/150  avg loss 6485.489
+  epoch 75/150  avg loss 6486.415
+  epoch 76/150  avg loss 6487.067
+  epoch 77/150  avg loss 6487.003
+  epoch 78/150  avg loss 6487.789
+  epoch 79/150  avg loss 6487.126
+  epoch 80/150  avg loss 6486.464
+  epoch 81/150  avg loss 6489.350
+  epoch 82/150  avg loss 6487.096
+  epoch 83/150  avg loss 6486.476
+  epoch 84/150  avg loss 6486.701
+  epoch 85/150  avg loss 6486.817
+  epoch 86/150  avg loss 6488.666
+  epoch 87/150  avg loss 6487.662
+  epoch 88/150  avg loss 6487.110
+  epoch 89/150  avg loss 6487.098
+  epoch 90/150  avg loss 6486.572
+  epoch 91/150  avg loss 6488.311
+  epoch 92/150  avg loss 6489.338
+  epoch 93/150  avg loss 6488.367
+  epoch 94/150  avg loss 6489.012
+  epoch 95/150  avg loss 6488.757
+  epoch 96/150  avg loss 6488.961
+  epoch 97/150  avg loss 6489.508
+  epoch 98/150  avg loss 6489.970
+  epoch 99/150  avg loss 6490.291
+  epoch 100/150  avg loss 6489.926
+  epoch 101/150  avg loss 6489.476
+  epoch 102/150  avg loss 6489.475
+  epoch 103/150  avg loss 6488.127
+  epoch 104/150  avg loss 6488.002
+  epoch 105/150  avg loss 6489.725
+  epoch 106/150  avg loss 6489.240
+  epoch 107/150  avg loss 6490.628
+  epoch 108/150  avg loss 6488.414
+  epoch 109/150  avg loss 6488.573
+  epoch 110/150  avg loss 6488.500
+  epoch 111/150  avg loss 6490.551
+  epoch 112/150  avg loss 6487.133
+  epoch 113/150  avg loss 6489.167
+  epoch 114/150  avg loss 6490.076
+  epoch 115/150  avg loss 6491.868
+  epoch 116/150  avg loss 6491.324
+  epoch 117/150  avg loss 6490.841
+  epoch 118/150  avg loss 6490.499
+  epoch 119/150  avg loss 6490.709
+  epoch 120/150  avg loss 6489.890
+  epoch 121/150  avg loss 6489.433
+  epoch 122/150  avg loss 6488.748
+  epoch 123/150  avg loss 6489.832
+  epoch 124/150  avg loss 6490.314
+  epoch 125/150  avg loss 6490.134
+  epoch 126/150  avg loss 6490.198
+  epoch 127/150  avg loss 6488.683
+  epoch 128/150  avg loss 6488.701
+  epoch 129/150  avg loss 6491.817
+  epoch 130/150  avg loss 6489.960
+  epoch 131/150  avg loss 6490.164
+  epoch 132/150  avg loss 6490.171
+  epoch 133/150  avg loss 6489.571
+  epoch 134/150  avg loss 6490.441
+  epoch 135/150  avg loss 6489.693
+  epoch 136/150  avg loss 6490.913
+  epoch 137/150  avg loss 6490.930
+  epoch 138/150  avg loss 6488.588
+  epoch 139/150  avg loss 6489.613
+  epoch 140/150  avg loss 6488.521
+  epoch 141/150  avg loss 6488.702
+  epoch 142/150  avg loss 6488.428
+  epoch 143/150  avg loss 6489.857
+  epoch 144/150  avg loss 6488.959
+  epoch 145/150  avg loss 6490.142
+  epoch 146/150  avg loss 6489.345
+  epoch 147/150  avg loss 6490.265
+  epoch 148/150  avg loss 6490.752
+  epoch 149/150  avg loss 6489.573
+  epoch 150/150  avg loss 6490.396
+
+Evaluating trained patch (clean vs patched)...
+
+==== DIGITAL PATCH car->van RESULTS ====
+Images: 100   car GT boxes: 1686
+(a) already-van under CLEAN (native): 153
+    eligible cars: 1533
+aggregate detected as van: CLEAN=153  PATCHED=136
+
+TRUE-NEW car->van flips (patch only): 76
+TRUE-RATE (true-new / eligible): 0.050   <- HEADLINE
+
+Saved universal patch + per-image examples + annotated PNGs to patch_examples_run66_additive3_strong/
+    Annotated CLEAN|PATCHED images in patch_examples_run66_additive3_strong/annotated/ (FLIP_ prefix = has a flip)

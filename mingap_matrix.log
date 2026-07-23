@@ -1,0 +1,308 @@
+
+######################################################################
+#  RUN33_25MINGAP: 25 tiles, 2px hairline gap, independent -> patch_examples_run33_25mingap
+######################################################################
+DIGITAL PATCH car->van: training ONE universal patch on 100 images
+Params: PATCH_FRAC=0.45, EPOCHS=40, LR=0.03, TV=0.05, MARGIN=5.0
+
+/home/aarav/attack-test/patch_attack_mingap.py:340: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:838.)
+  tot += float(loss)
+  epoch 1/40  avg loss 4294.926
+  epoch 2/40  avg loss 3932.706
+  epoch 3/40  avg loss 3769.204
+  epoch 4/40  avg loss 3709.251
+  epoch 5/40  avg loss 3667.937
+  epoch 6/40  avg loss 3634.661
+  epoch 7/40  avg loss 3617.417
+  epoch 8/40  avg loss 3572.935
+  epoch 9/40  avg loss 3554.341
+  epoch 10/40  avg loss 3539.318
+  epoch 11/40  avg loss 3536.158
+  epoch 12/40  avg loss 3533.639
+  epoch 13/40  avg loss 3509.970
+  epoch 14/40  avg loss 3488.731
+  epoch 15/40  avg loss 3502.512
+  epoch 16/40  avg loss 3492.158
+  epoch 17/40  avg loss 3485.492
+  epoch 18/40  avg loss 3452.257
+  epoch 19/40  avg loss 3465.240
+  epoch 20/40  avg loss 3454.490
+  epoch 21/40  avg loss 3450.477
+  epoch 22/40  avg loss 3429.342
+  epoch 23/40  avg loss 3397.701
+  epoch 24/40  avg loss 3395.394
+  epoch 25/40  avg loss 3393.967
+  epoch 26/40  avg loss 3375.828
+  epoch 27/40  avg loss 3358.833
+  epoch 28/40  avg loss 3353.738
+  epoch 29/40  avg loss 3333.579
+  epoch 30/40  avg loss 3348.103
+  epoch 31/40  avg loss 3346.976
+  epoch 32/40  avg loss 3339.910
+  epoch 33/40  avg loss 3345.249
+  epoch 34/40  avg loss 3334.752
+  epoch 35/40  avg loss 3313.763
+  epoch 36/40  avg loss 3289.226
+  epoch 37/40  avg loss 3316.864
+  epoch 38/40  avg loss 3297.692
+  epoch 39/40  avg loss 3279.324
+  epoch 40/40  avg loss 3270.458
+
+Evaluating trained patch (clean vs patched)...
+
+==== DIGITAL PATCH car->van RESULTS ====
+Images: 100   car GT boxes: 1686
+(a) already-van under CLEAN (native): 153
+    eligible cars: 1533
+aggregate detected as van: CLEAN=153  PATCHED=259
+
+TRUE-NEW car->van flips (patch only): 208
+TRUE-RATE (true-new / eligible): 0.136   <- HEADLINE
+
+Saved universal patch + per-image examples + annotated PNGs to patch_examples_run33_25mingap/
+    Annotated CLEAN|PATCHED images in patch_examples_run33_25mingap/annotated/ (FLIP_ prefix = has a flip)
+
+######################################################################
+#  RUN34_36MINGAP: 36 tiles, 2px hairline gap, independent -> patch_examples_run34_36mingap
+######################################################################
+DIGITAL PATCH car->van: training ONE universal patch on 100 images
+Params: PATCH_FRAC=0.45, EPOCHS=40, LR=0.03, TV=0.05, MARGIN=5.0
+
+  epoch 1/40  avg loss 4296.152
+  epoch 2/40  avg loss 3946.144
+  epoch 3/40  avg loss 3787.628
+  epoch 4/40  avg loss 3715.875
+  epoch 5/40  avg loss 3664.466
+  epoch 6/40  avg loss 3619.857
+  epoch 7/40  avg loss 3622.197
+  epoch 8/40  avg loss 3604.495
+  epoch 9/40  avg loss 3561.472
+  epoch 10/40  avg loss 3543.723
+  epoch 11/40  avg loss 3533.790
+  epoch 12/40  avg loss 3519.759
+  epoch 13/40  avg loss 3517.797
+  epoch 14/40  avg loss 3522.130
+  epoch 15/40  avg loss 3492.055
+  epoch 16/40  avg loss 3480.465
+  epoch 17/40  avg loss 3485.974
+  epoch 18/40  avg loss 3501.896
+  epoch 19/40  avg loss 3495.637
+  epoch 20/40  avg loss 3437.958
+  epoch 21/40  avg loss 3440.317
+  epoch 22/40  avg loss 3423.478
+  epoch 23/40  avg loss 3425.493
+  epoch 24/40  avg loss 3404.741
+  epoch 25/40  avg loss 3411.322
+  epoch 26/40  avg loss 3428.182
+  epoch 27/40  avg loss 3403.612
+  epoch 28/40  avg loss 3380.529
+  epoch 29/40  avg loss 3377.082
+  epoch 30/40  avg loss 3387.632
+  epoch 31/40  avg loss 3394.825
+  epoch 32/40  avg loss 3395.605
+  epoch 33/40  avg loss 3378.018
+  epoch 34/40  avg loss 3344.034
+  epoch 35/40  avg loss 3318.227
+  epoch 36/40  avg loss 3338.965
+  epoch 37/40  avg loss 3335.675
+  epoch 38/40  avg loss 3325.332
+  epoch 39/40  avg loss 3333.664
+  epoch 40/40  avg loss 3368.464
+
+Evaluating trained patch (clean vs patched)...
+
+==== DIGITAL PATCH car->van RESULTS ====
+Images: 100   car GT boxes: 1686
+(a) already-van under CLEAN (native): 153
+    eligible cars: 1533
+aggregate detected as van: CLEAN=153  PATCHED=295
+
+TRUE-NEW car->van flips (patch only): 237
+TRUE-RATE (true-new / eligible): 0.155   <- HEADLINE
+
+Saved universal patch + per-image examples + annotated PNGs to patch_examples_run34_36mingap/
+    Annotated CLEAN|PATCHED images in patch_examples_run34_36mingap/annotated/ (FLIP_ prefix = has a flip)
+
+######################################################################
+#  RUN35_49MINGAP: 49 tiles, 2px hairline gap, independent -> patch_examples_run35_49mingap
+######################################################################
+DIGITAL PATCH car->van: training ONE universal patch on 100 images
+Params: PATCH_FRAC=0.45, EPOCHS=40, LR=0.03, TV=0.05, MARGIN=5.0
+
+  epoch 1/40  avg loss 4317.799
+  epoch 2/40  avg loss 3955.216
+  epoch 3/40  avg loss 3791.169
+  epoch 4/40  avg loss 3731.418
+  epoch 5/40  avg loss 3684.977
+  epoch 6/40  avg loss 3660.578
+  epoch 7/40  avg loss 3639.263
+  epoch 8/40  avg loss 3606.969
+  epoch 9/40  avg loss 3579.668
+  epoch 10/40  avg loss 3570.657
+  epoch 11/40  avg loss 3591.240
+  epoch 12/40  avg loss 3575.411
+  epoch 13/40  avg loss 3563.535
+  epoch 14/40  avg loss 3531.592
+  epoch 15/40  avg loss 3552.322
+  epoch 16/40  avg loss 3549.605
+  epoch 17/40  avg loss 3535.105
+  epoch 18/40  avg loss 3497.282
+  epoch 19/40  avg loss 3502.997
+  epoch 20/40  avg loss 3503.434
+  epoch 21/40  avg loss 3487.054
+  epoch 22/40  avg loss 3464.630
+  epoch 23/40  avg loss 3469.745
+  epoch 24/40  avg loss 3486.456
+  epoch 25/40  avg loss 3464.291
+  epoch 26/40  avg loss 3449.855
+  epoch 27/40  avg loss 3456.669
+  epoch 28/40  avg loss 3445.833
+  epoch 29/40  avg loss 3454.980
+  epoch 30/40  avg loss 3454.477
+  epoch 31/40  avg loss 3411.512
+  epoch 32/40  avg loss 3430.416
+  epoch 33/40  avg loss 3421.820
+  epoch 34/40  avg loss 3427.219
+  epoch 35/40  avg loss 3403.217
+  epoch 36/40  avg loss 3381.605
+  epoch 37/40  avg loss 3395.299
+  epoch 38/40  avg loss 3395.530
+  epoch 39/40  avg loss 3352.566
+  epoch 40/40  avg loss 3368.329
+
+Evaluating trained patch (clean vs patched)...
+
+==== DIGITAL PATCH car->van RESULTS ====
+Images: 100   car GT boxes: 1686
+(a) already-van under CLEAN (native): 153
+    eligible cars: 1533
+aggregate detected as van: CLEAN=153  PATCHED=426
+
+TRUE-NEW car->van flips (patch only): 358
+TRUE-RATE (true-new / eligible): 0.234   <- HEADLINE
+
+Saved universal patch + per-image examples + annotated PNGs to patch_examples_run35_49mingap/
+    Annotated CLEAN|PATCHED images in patch_examples_run35_49mingap/annotated/ (FLIP_ prefix = has a flip)
+
+######################################################################
+#  RUN36_64MINGAP: 64 tiles, 2px hairline gap, independent -> patch_examples_run36_64mingap
+######################################################################
+DIGITAL PATCH car->van: training ONE universal patch on 100 images
+Params: PATCH_FRAC=0.45, EPOCHS=40, LR=0.03, TV=0.05, MARGIN=5.0
+
+  epoch 1/40  avg loss 4302.231
+  epoch 2/40  avg loss 3959.644
+  epoch 3/40  avg loss 3797.990
+  epoch 4/40  avg loss 3719.941
+  epoch 5/40  avg loss 3697.349
+  epoch 6/40  avg loss 3661.676
+  epoch 7/40  avg loss 3642.029
+  epoch 8/40  avg loss 3633.611
+  epoch 9/40  avg loss 3631.435
+  epoch 10/40  avg loss 3608.156
+  epoch 11/40  avg loss 3594.697
+  epoch 12/40  avg loss 3597.809
+  epoch 13/40  avg loss 3578.173
+  epoch 14/40  avg loss 3582.558
+  epoch 15/40  avg loss 3586.794
+  epoch 16/40  avg loss 3566.897
+  epoch 17/40  avg loss 3569.969
+  epoch 18/40  avg loss 3575.869
+  epoch 19/40  avg loss 3556.403
+  epoch 20/40  avg loss 3533.757
+  epoch 21/40  avg loss 3517.774
+  epoch 22/40  avg loss 3510.183
+  epoch 23/40  avg loss 3524.187
+  epoch 24/40  avg loss 3508.296
+  epoch 25/40  avg loss 3504.728
+  epoch 26/40  avg loss 3499.322
+  epoch 27/40  avg loss 3482.949
+  epoch 28/40  avg loss 3475.978
+  epoch 29/40  avg loss 3480.534
+  epoch 30/40  avg loss 3475.096
+  epoch 31/40  avg loss 3456.031
+  epoch 32/40  avg loss 3440.695
+  epoch 33/40  avg loss 3463.733
+  epoch 34/40  avg loss 3464.782
+  epoch 35/40  avg loss 3463.827
+  epoch 36/40  avg loss 3463.420
+  epoch 37/40  avg loss 3498.016
+  epoch 38/40  avg loss 3463.973
+  epoch 39/40  avg loss 3432.427
+  epoch 40/40  avg loss 3409.675
+
+Evaluating trained patch (clean vs patched)...
+
+==== DIGITAL PATCH car->van RESULTS ====
+Images: 100   car GT boxes: 1686
+(a) already-van under CLEAN (native): 153
+    eligible cars: 1533
+aggregate detected as van: CLEAN=153  PATCHED=368
+
+TRUE-NEW car->van flips (patch only): 302
+TRUE-RATE (true-new / eligible): 0.197   <- HEADLINE
+
+Saved universal patch + per-image examples + annotated PNGs to patch_examples_run36_64mingap/
+    Annotated CLEAN|PATCHED images in patch_examples_run36_64mingap/annotated/ (FLIP_ prefix = has a flip)
+
+######################################################################
+#  RUN37_81MINGAP: 81 tiles, 2px hairline gap, independent -> patch_examples_run37_81mingap
+######################################################################
+DIGITAL PATCH car->van: training ONE universal patch on 100 images
+Params: PATCH_FRAC=0.45, EPOCHS=40, LR=0.03, TV=0.05, MARGIN=5.0
+
+  epoch 1/40  avg loss 4299.834
+  epoch 2/40  avg loss 4001.194
+  epoch 3/40  avg loss 3845.407
+  epoch 4/40  avg loss 3788.318
+  epoch 5/40  avg loss 3735.552
+  epoch 6/40  avg loss 3705.195
+  epoch 7/40  avg loss 3662.617
+  epoch 8/40  avg loss 3650.693
+  epoch 9/40  avg loss 3647.472
+  epoch 10/40  avg loss 3632.590
+  epoch 11/40  avg loss 3602.691
+  epoch 12/40  avg loss 3583.662
+  epoch 13/40  avg loss 3592.695
+  epoch 14/40  avg loss 3570.077
+  epoch 15/40  avg loss 3590.597
+  epoch 16/40  avg loss 3572.662
+  epoch 17/40  avg loss 3554.567
+  epoch 18/40  avg loss 3521.585
+  epoch 19/40  avg loss 3522.628
+  epoch 20/40  avg loss 3534.761
+  epoch 21/40  avg loss 3534.484
+  epoch 22/40  avg loss 3523.292
+  epoch 23/40  avg loss 3503.651
+  epoch 24/40  avg loss 3498.367
+  epoch 25/40  avg loss 3504.746
+  epoch 26/40  avg loss 3493.384
+  epoch 27/40  avg loss 3477.044
+  epoch 28/40  avg loss 3478.645
+  epoch 29/40  avg loss 3478.104
+  epoch 30/40  avg loss 3461.434
+  epoch 31/40  avg loss 3425.720
+  epoch 32/40  avg loss 3428.579
+  epoch 33/40  avg loss 3449.977
+  epoch 34/40  avg loss 3443.719
+  epoch 35/40  avg loss 3421.062
+  epoch 36/40  avg loss 3426.722
+  epoch 37/40  avg loss 3487.592
+  epoch 38/40  avg loss 3446.044
+  epoch 39/40  avg loss 3441.366
+  epoch 40/40  avg loss 3424.740
+
+Evaluating trained patch (clean vs patched)...
+
+==== DIGITAL PATCH car->van RESULTS ====
+Images: 100   car GT boxes: 1686
+(a) already-van under CLEAN (native): 153
+    eligible cars: 1533
+aggregate detected as van: CLEAN=153  PATCHED=366
+
+TRUE-NEW car->van flips (patch only): 303
+TRUE-RATE (true-new / eligible): 0.198   <- HEADLINE
+
+Saved universal patch + per-image examples + annotated PNGs to patch_examples_run37_81mingap/
+    Annotated CLEAN|PATCHED images in patch_examples_run37_81mingap/annotated/ (FLIP_ prefix = has a flip)

@@ -1,0 +1,1398 @@
+[
+  {
+    "image": "0000001_02999_d_0000005",
+    "trucks": [
+      {
+        "truck_idx": 0,
+        "gt_box": [
+          233.7,
+          203.9,
+          267.3,
+          240.6
+        ],
+        "category": "b",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.747
+          },
+          "FGSM": {
+            "flipped": true,
+            "car_conf": 0.258,
+            "car_iou": 0.918,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.49
+          },
+          "C&W": {
+            "flipped": true,
+            "car_conf": 0.611,
+            "car_iou": 0.823,
+            "truck_conf": 0.0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "image": "0000026_04978_d_0000034",
+    "trucks": [
+      {
+        "truck_idx": 0,
+        "gt_box": [
+          270.1,
+          89.5,
+          286.6,
+          138.0
+        ],
+        "category": "a",
+        "settings": {
+          "clean": {
+            "flipped": true,
+            "car_conf": 0.562,
+            "car_iou": 0.871,
+            "truck_conf": 0.356
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": true,
+            "car_conf": 0.262,
+            "car_iou": 0.786,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "image": "0000055_00714_d_0000110",
+    "trucks": [
+      {
+        "truck_idx": 0,
+        "gt_box": [
+          538.7,
+          7.1,
+          609.3,
+          74.7
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "image": "0000076_02142_d_0000009",
+    "trucks": [
+      {
+        "truck_idx": 0,
+        "gt_box": [
+          254.1,
+          261.9,
+          312.0,
+          349.7
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.83
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      },
+      {
+        "truck_idx": 1,
+        "gt_box": [
+          184.0,
+          138.9,
+          304.9,
+          240.9
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.851
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.417
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      },
+      {
+        "truck_idx": 2,
+        "gt_box": [
+          399.5,
+          139.7,
+          457.9,
+          198.3
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.802
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      },
+      {
+        "truck_idx": 3,
+        "gt_box": [
+          472.0,
+          123.0,
+          493.6,
+          172.3
+        ],
+        "category": "b",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.74
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": true,
+            "car_conf": 0.6,
+            "car_iou": 0.563,
+            "truck_conf": 0.0
+          }
+        }
+      },
+      {
+        "truck_idx": 4,
+        "gt_box": [
+          454.1,
+          95.4,
+          503.1,
+          136.4
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.838
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      },
+      {
+        "truck_idx": 5,
+        "gt_box": [
+          490.8,
+          200.8,
+          536.5,
+          301.2
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "image": "0000103_02964_d_0000030",
+    "trucks": [
+      {
+        "truck_idx": 0,
+        "gt_box": [
+          185.9,
+          0.0,
+          432.5,
+          136.4
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.384
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "image": "0000103_03349_d_0000031",
+    "trucks": [
+      {
+        "truck_idx": 0,
+        "gt_box": [
+          -0.0,
+          182.4,
+          272.9,
+          640.0
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "image": "0000103_03738_d_0000032",
+    "trucks": [
+      {
+        "truck_idx": 0,
+        "gt_box": [
+          443.8,
+          41.8,
+          640.0,
+          312.1
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "image": "0000115_00796_d_0000081",
+    "trucks": [
+      {
+        "truck_idx": 0,
+        "gt_box": [
+          209.3,
+          419.6,
+          240.7,
+          471.7
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "image": "0000116_00819_d_0000084",
+    "trucks": [
+      {
+        "truck_idx": 0,
+        "gt_box": [
+          291.3,
+          278.5,
+          309.3,
+          340.1
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "image": "0000116_01338_d_0000086",
+    "trucks": [
+      {
+        "truck_idx": 0,
+        "gt_box": [
+          209.3,
+          399.4,
+          272.7,
+          462.2
+        ],
+        "category": "b",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.795
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": true,
+            "car_conf": 0.261,
+            "car_iou": 0.848,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": true,
+            "car_conf": 0.426,
+            "car_iou": 0.745,
+            "truck_conf": 0.0
+          }
+        }
+      },
+      {
+        "truck_idx": 1,
+        "gt_box": [
+          99.3,
+          418.4,
+          174.0,
+          552.3
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "image": "0000117_02708_d_0000090",
+    "trucks": [
+      {
+        "truck_idx": 0,
+        "gt_box": [
+          284.7,
+          231.7,
+          328.0,
+          292.0
+        ],
+        "category": "b",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.845
+          },
+          "FGSM": {
+            "flipped": true,
+            "car_conf": 0.327,
+            "car_iou": 0.641,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": true,
+            "car_conf": 0.522,
+            "car_iou": 0.548,
+            "truck_conf": 0.0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "image": "0000117_03096_d_0000091",
+    "trucks": [
+      {
+        "truck_idx": 0,
+        "gt_box": [
+          138.4,
+          184.1,
+          207.1,
+          290.3
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.799
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      },
+      {
+        "truck_idx": 1,
+        "gt_box": [
+          190.1,
+          164.0,
+          220.2,
+          209.2
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.726
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.33
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "image": "0000129_02411_d_0000138",
+    "trucks": [
+      {
+        "truck_idx": 0,
+        "gt_box": [
+          238.3,
+          362.1,
+          267.7,
+          385.8
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.606
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      },
+      {
+        "truck_idx": 1,
+        "gt_box": [
+          587.0,
+          432.6,
+          610.7,
+          485.9
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      },
+      {
+        "truck_idx": 2,
+        "gt_box": [
+          626.7,
+          315.9,
+          640.0,
+          365.0
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.428
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      },
+      {
+        "truck_idx": 3,
+        "gt_box": [
+          590.3,
+          322.4,
+          609.7,
+          368.0
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.392
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      },
+      {
+        "truck_idx": 4,
+        "gt_box": [
+          475.7,
+          340.7,
+          488.0,
+          391.1
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.314
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      },
+      {
+        "truck_idx": 5,
+        "gt_box": [
+          451.0,
+          334.8,
+          463.3,
+          384.6
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.434
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      },
+      {
+        "truck_idx": 6,
+        "gt_box": [
+          439.7,
+          339.0,
+          448.3,
+          369.2
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "image": "0000153_00001_d_0000001",
+    "trucks": [
+      {
+        "truck_idx": 0,
+        "gt_box": [
+          525.3,
+          417.2,
+          592.0,
+          496.6
+        ],
+        "category": "a",
+        "settings": {
+          "clean": {
+            "flipped": true,
+            "car_conf": 0.742,
+            "car_iou": 0.76,
+            "truck_conf": 0.0
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": true,
+            "car_conf": 0.438,
+            "car_iou": 0.585,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      },
+      {
+        "truck_idx": 1,
+        "gt_box": [
+          386.7,
+          241.8,
+          430.0,
+          265.5
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "image": "0000153_00401_d_0000001",
+    "trucks": [
+      {
+        "truck_idx": 0,
+        "gt_box": [
+          464.7,
+          291.6,
+          536.7,
+          339.0
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "image": "0000153_01601_d_0000001",
+    "trucks": [
+      {
+        "truck_idx": 0,
+        "gt_box": [
+          82.7,
+          387.6,
+          146.7,
+          456.3
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "image": "0000154_00001_d_0000001",
+    "trucks": [
+      {
+        "truck_idx": 0,
+        "gt_box": [
+          0.0,
+          275.0,
+          40.7,
+          301.0
+        ],
+        "category": "b",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.479
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": true,
+            "car_conf": 0.424,
+            "car_iou": 0.531,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": true,
+            "car_conf": 0.374,
+            "car_iou": 0.538,
+            "truck_conf": 0.0
+          }
+        }
+      },
+      {
+        "truck_idx": 1,
+        "gt_box": [
+          326.7,
+          207.4,
+          334.7,
+          221.6
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "image": "0000154_00401_d_0000001",
+    "trucks": [
+      {
+        "truck_idx": 0,
+        "gt_box": [
+          481.3,
+          407.7,
+          520.7,
+          459.9
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      },
+      {
+        "truck_idx": 1,
+        "gt_box": [
+          596.7,
+          590.2,
+          639.3,
+          640.0
+        ],
+        "category": "a",
+        "settings": {
+          "clean": {
+            "flipped": true,
+            "car_conf": 0.309,
+            "car_iou": 0.939,
+            "truck_conf": 0.0
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "image": "0000154_00801_d_0000001",
+    "trucks": [
+      {
+        "truck_idx": 0,
+        "gt_box": [
+          235.3,
+          316.4,
+          250.0,
+          337.8
+        ],
+        "category": "a",
+        "settings": {
+          "clean": {
+            "flipped": true,
+            "car_conf": 0.602,
+            "car_iou": 0.813,
+            "truck_conf": 0.0
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": true,
+            "car_conf": 0.635,
+            "car_iou": 0.751,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "image": "0000154_01601_d_0000001",
+    "trucks": [
+      {
+        "truck_idx": 0,
+        "gt_box": [
+          507.3,
+          325.9,
+          542.7,
+          355.6
+        ],
+        "category": "c",
+        "settings": {
+          "clean": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "FGSM": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "PGD": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          },
+          "C&W": {
+            "flipped": false,
+            "car_conf": 0.0,
+            "car_iou": 0.0,
+            "truck_conf": 0.0
+          }
+        }
+      }
+    ]
+  }
+]

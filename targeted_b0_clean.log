@@ -1,0 +1,14 @@
+=== b0_clean | car->van | MODE=none | AREA_FRAC=0.2 | IMG_SIZE=640 | ROT_DEG=20.0 | MIN_AREA_FRAC=0.001 ===
+[eval ] datasets/VisDrone/images/test: 1360 images | 11446 cars | 16628 dropped below 0.10% area
+[save] patch_examples_b0_clean/universal_patch.png
+
+Evaluating on 1360 images...
+
+==== CAR->VAN — b0_clean (patch = 20% of bbox) ====
+eval images        : 1360
+eligible (car clean): 9415
+flipped to van      : 457
+lost entirely       : 0  (hiding side-effect, NOT a flip)
+
+targeted ASR: 0.049   <- HEADLINE
+lost rate   : 0.000

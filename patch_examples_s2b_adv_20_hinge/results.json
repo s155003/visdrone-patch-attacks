@@ -1,0 +1,16 @@
+{
+  "run": "s2b_adv_20_hinge",
+  "mode": "adversarial",
+  "area_frac": 0.2,
+  "img_size": 640,
+  "min_area_frac": 0.001,
+  "epochs": 80,
+  "eval_images": 1360,
+  "cars_kept": 11446,
+  "cars_dropped": 16628,
+  "eligible": 9415,
+  "flipped": 2042,
+  "lost": 4565,
+  "targeted_asr": 0.21688794476898565,
+  "lost_rate": 0.48486457780138076
+}

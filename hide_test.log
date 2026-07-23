@@ -1,0 +1,101 @@
+
+======================================================================
+=== h1_adv_640_nps_test
+======================================================================
+=== h1_adv_640_nps_test | MODE=adversarial | IMG_SIZE=640 | NPS=0.01 | TV=2.5 | EPOCHS=80 ===
+[data] TRAIN split: datasets/VisDrone/images/val | 100 imgs (NUM_IMAGES=100) | kept 1264 dropped 682
+[data] EVAL  split: datasets/VisDrone/images/test | 1519 imgs (EVAL_IMAGES=0) | kept 17990 dropped 21454 below 0.1% area
+[data] eval objects per class: car=11446  van=2583  truck=1783  bus=2178   <-- class-mean ASR is only as stable as the smallest of these
+[nps] 30 printable colours from 30values.txt
+  epoch 1/80  total -23.418  det -24.677  nps 0.0009  tv 1.259  (5s)
+  epoch 2/80  total -28.806  det -30.045  nps 0.0009  tv 1.238  (8s)
+  epoch 3/80  total -29.912  det -31.111  nps 0.0009  tv 1.199  (11s)
+  epoch 4/80  total -31.508  det -32.676  nps 0.0008  tv 1.167  (14s)
+  epoch 5/80  total -33.270  det -34.424  nps 0.0008  tv 1.153  (18s)
+  epoch 6/80  total -33.900  det -35.052  nps 0.0008  tv 1.151  (21s)
+  epoch 7/80  total -34.866  det -36.002  nps 0.0008  tv 1.135  (25s)
+  epoch 8/80  total -34.708  det -35.840  nps 0.0008  tv 1.131  (28s)
+  epoch 9/80  total -35.235  det -36.341  nps 0.0008  tv 1.105  (31s)
+  epoch 10/80  total -36.894  det -37.983  nps 0.0008  tv 1.088  (35s)
+  epoch 11/80  total -36.115  det -37.190  nps 0.0008  tv 1.073  (38s)
+  epoch 12/80  total -35.952  det -37.009  nps 0.0008  tv 1.056  (41s)
+  epoch 13/80  total -36.085  det -37.141  nps 0.0008  tv 1.056  (44s)
+  epoch 14/80  total -36.251  det -37.307  nps 0.0008  tv 1.056  (48s)
+  epoch 15/80  total -37.002  det -38.077  nps 0.0008  tv 1.075  (51s)
+  epoch 16/80  total -37.317  det -38.393  nps 0.0008  tv 1.075  (54s)
+  epoch 17/80  total -36.653  det -37.731  nps 0.0008  tv 1.078  (57s)
+  epoch 18/80  total -35.516  det -36.599  nps 0.0008  tv 1.082  (60s)
+  epoch 19/80  total -35.756  det -36.839  nps 0.0008  tv 1.082  (64s)
+  epoch 20/80  total -37.145  det -38.216  nps 0.0008  tv 1.070  (68s)
+  epoch 21/80  total -36.649  det -37.714  nps 0.0008  tv 1.064  (71s)
+  epoch 22/80  total -35.545  det -36.611  nps 0.0008  tv 1.065  (75s)
+  epoch 23/80  total -36.026  det -37.103  nps 0.0008  tv 1.076  (78s)
+  epoch 24/80  total -35.794  det -36.876  nps 0.0008  tv 1.082  (82s)
+  epoch 25/80  total -36.937  det -38.011  nps 0.0008  tv 1.074  (85s)
+  epoch 26/80  total -38.054  det -39.116  nps 0.0008  tv 1.061  (88s)
+  epoch 27/80  total -36.570  det -37.636  nps 0.0008  tv 1.065  (91s)
+  epoch 28/80  total -37.320  det -38.397  nps 0.0008  tv 1.076  (95s)
+  epoch 29/80  total -36.113  det -37.198  nps 0.0008  tv 1.084  (98s)
+  epoch 30/80  total -35.984  det -37.057  nps 0.0008  tv 1.072  (101s)
+  epoch 31/80  total -35.698  det -36.768  nps 0.0008  tv 1.069  (105s)
+  epoch 32/80  total -37.630  det -38.689  nps 0.0008  tv 1.059  (108s)
+  epoch 33/80  total -36.286  det -37.342  nps 0.0008  tv 1.055  (111s)
+  epoch 34/80  total -36.487  det -37.552  nps 0.0008  tv 1.064  (114s)
+  epoch 35/80  total -36.435  det -37.504  nps 0.0008  tv 1.068  (117s)
+  epoch 36/80  total -37.047  det -38.112  nps 0.0008  tv 1.064  (121s)
+  epoch 37/80  total -36.907  det -37.982  nps 0.0008  tv 1.074  (124s)
+  epoch 38/80  total -35.569  det -36.653  nps 0.0008  tv 1.084  (127s)
+  epoch 39/80  total -36.950  det -38.018  nps 0.0008  tv 1.067  (130s)
+  epoch 40/80  total -36.492  det -37.561  nps 0.0008  tv 1.068  (134s)
+  epoch 41/80  total -36.545  det -37.611  nps 0.0008  tv 1.065  (137s)
+  epoch 42/80  total -36.837  det -37.905  nps 0.0008  tv 1.067  (140s)
+  epoch 43/80  total -37.629  det -38.701  nps 0.0008  tv 1.072  (143s)
+  epoch 44/80  total -37.466  det -38.545  nps 0.0008  tv 1.078  (147s)
+  epoch 45/80  total -36.815  det -37.909  nps 0.0008  tv 1.093  (150s)
+  epoch 46/80  total -36.998  det -38.071  nps 0.0008  tv 1.072  (154s)
+  epoch 47/80  total -37.656  det -38.713  nps 0.0008  tv 1.057  (157s)
+  epoch 48/80  total -36.460  det -37.512  nps 0.0008  tv 1.052  (160s)
+  epoch 49/80  total -37.740  det -38.798  nps 0.0008  tv 1.057  (164s)
+  epoch 50/80  total -37.186  det -38.246  nps 0.0008  tv 1.059  (167s)
+  epoch 51/80  total -37.814  det -38.885  nps 0.0008  tv 1.070  (170s)
+  epoch 52/80  total -37.329  det -38.382  nps 0.0008  tv 1.052  (173s)
+  epoch 53/80  total -36.973  det -38.029  nps 0.0008  tv 1.055  (176s)
+  epoch 54/80  total -37.260  det -38.331  nps 0.0008  tv 1.070  (180s)
+  epoch 55/80  total -35.736  det -36.796  nps 0.0008  tv 1.058  (183s)
+  epoch 56/80  total -37.201  det -38.266  nps 0.0008  tv 1.064  (186s)
+  epoch 57/80  total -36.895  det -37.972  nps 0.0008  tv 1.077  (189s)
+  epoch 58/80  total -37.788  det -38.860  nps 0.0008  tv 1.072  (192s)
+  epoch 59/80  total -36.014  det -37.080  nps 0.0008  tv 1.064  (196s)
+  epoch 60/80  total -37.340  det -38.408  nps 0.0008  tv 1.068  (199s)
+  epoch 61/80  total -36.213  det -37.279  nps 0.0008  tv 1.065  (202s)
+  epoch 62/80  total -36.595  det -37.668  nps 0.0008  tv 1.072  (205s)
+  epoch 63/80  total -37.653  det -38.723  nps 0.0008  tv 1.069  (208s)
+  epoch 64/80  total -36.403  det -37.451  nps 0.0008  tv 1.048  (211s)
+  epoch 65/80  total -37.313  det -38.373  nps 0.0008  tv 1.059  (214s)
+  epoch 66/80  total -36.516  det -37.594  nps 0.0008  tv 1.076  (218s)
+  epoch 67/80  total -36.727  det -37.808  nps 0.0008  tv 1.080  (221s)
+  epoch 68/80  total -35.953  det -37.022  nps 0.0008  tv 1.068  (224s)
+  epoch 69/80  total -36.897  det -37.979  nps 0.0008  tv 1.081  (227s)
+  epoch 70/80  total -36.483  det -37.550  nps 0.0008  tv 1.067  (231s)
+  epoch 71/80  total -36.559  det -37.626  nps 0.0008  tv 1.067  (234s)
+  epoch 72/80  total -37.237  det -38.308  nps 0.0008  tv 1.071  (237s)
+  epoch 73/80  total -37.778  det -38.841  nps 0.0008  tv 1.062  (240s)
+  epoch 74/80  total -37.551  det -38.615  nps 0.0008  tv 1.063  (243s)
+  epoch 75/80  total -37.240  det -38.298  nps 0.0008  tv 1.056  (246s)
+  epoch 76/80  total -37.279  det -38.340  nps 0.0008  tv 1.060  (249s)
+  epoch 77/80  total -36.691  det -37.746  nps 0.0008  tv 1.054  (253s)
+  epoch 78/80  total -37.390  det -38.455  nps 0.0008  tv 1.064  (256s)
+  epoch 79/80  total -37.239  det -38.319  nps 0.0008  tv 1.079  (259s)
+  epoch 80/80  total -37.696  det -38.776  nps 0.0008  tv 1.079  (263s)
+[save] patch written to patch_examples_h1_adv_640_nps_test/
+
+Evaluating on 1519 images (clean vs patched)...
+Traceback (most recent call last):
+  File "/home/aarav/attack-test/patch_attack_hide.py", line 516, in <module>
+    run()
+  File "/home/aarav/attack-test/patch_attack_hide.py", line 492, in run
+    objects_kept=kept, objects_dropped=dropped,
+                 ^^^^
+NameError: name 'kept' is not defined
+
+=== TEST RUN COMPLETE rc=1 ===

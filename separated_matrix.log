@@ -1,0 +1,16 @@
+
+######################################################################
+#  RUN28_49SPACED: n=49, mode=spaced, independent -> patch_examples_run28_49spaced
+######################################################################
+DIGITAL PATCH car->van: training ONE universal patch on 100 images
+Params: PATCH_FRAC=0.45, EPOCHS=40, LR=0.03, TV=0.05, MARGIN=5.0
+
+/home/aarav/attack-test/patch_attack_separated.py:333: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:838.)
+  tot += float(loss)
+  epoch 1/40  avg loss 4402.856
+  epoch 2/40  avg loss 4089.464
+  epoch 3/40  avg loss 3902.960
+  epoch 4/40  avg loss 3825.865
+  epoch 5/40  avg loss 3753.785
+  epoch 6/40  avg loss 3721.487

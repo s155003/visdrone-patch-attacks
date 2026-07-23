@@ -1,0 +1,49 @@
+TARGETED car->bus attack on 30 car images (DEVICE=cpu)
+Params: EPS=0.0627, ITERS=120, MARGIN=5.0
+
+  1/30 0000001_02999_d_0000005 done (cars=14)
+  2/30 0000001_03499_d_0000006 done (cars=16)
+  3/30 0000001_03999_d_0000007 done (cars=3)
+  4/30 0000001_04527_d_0000008 done (cars=5)
+  5/30 0000001_05249_d_0000009 done (cars=76)
+  6/30 0000001_05499_d_0000010 done (cars=68)
+  7/30 0000001_05999_d_0000011 done (cars=37)
+  8/30 0000001_07999_d_0000012 done (cars=10)
+  9/30 0000001_08414_d_0000013 done (cars=20)
+  10/30 0000023_00000_d_0000008 done (cars=1)
+  11/30 0000026_00000_d_0000024 done (cars=6)
+  12/30 0000026_00500_d_0000025 done (cars=10)
+  13/30 0000026_01000_d_0000026 done (cars=15)
+  14/30 0000026_01500_d_0000027 done (cars=9)
+  15/30 0000026_02000_d_0000028 done (cars=9)
+  16/30 0000026_02500_d_0000029 done (cars=2)
+  17/30 0000026_03000_d_0000030 done (cars=11)
+  18/30 0000026_03500_d_0000031 done (cars=18)
+  19/30 0000026_04000_d_0000032 done (cars=12)
+  20/30 0000026_04500_d_0000033 done (cars=35)
+  21/30 0000026_04978_d_0000034 done (cars=26)
+  22/30 0000069_02163_d_0000006 done (cars=6)
+  23/30 0000069_02480_d_0000007 done (cars=18)
+  24/30 0000072_02834_d_0000003 done (cars=1)
+  25/30 0000103_00502_d_0000027 done (cars=1)
+  26/30 0000103_01734_d_0000028 done (cars=3)
+  27/30 0000103_02964_d_0000030 done (cars=1)
+  28/30 0000103_03349_d_0000031 done (cars=2)
+  29/30 0000103_04513_d_0000034 done (cars=1)
+  30/30 0000103_04948_d_0000035 done (cars=1)
+
+==== TARGETED car->bus RESULTS ====
+Images: 30   car GT boxes: 437
+[fidelity] worst-case max|adv-clean| = 0.06275 (EPS=0.06275)
+(a) already-bus under CLEAN (native): 0
+    eligible cars (correctly not-bus under CLEAN): 437
+
+Setting     agg  true-new(b)  true-rate
+CLEAN         0           --         --   <- native confusion baseline
+FGSM          0            0      0.000
+PGD           1            1      0.002
+C&W           2            2      0.005
+
+true-new(b) = cars that were NOT bus under CLEAN but became bus under attack.
+true-rate = true-new / eligible cars.  This is the HEADLINE (real attack effect).
+'agg' = raw count detected as bus (conflates native confusion - do NOT use as headline).

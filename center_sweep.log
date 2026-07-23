@@ -1,0 +1,11 @@
+=== START s2j_center_04 -> /home/aarav/attack-test/targeted_s2j_center_04.log
+=== DONE  s2j_center_04 rc=0
+=== START s2k_center_07 -> /home/aarav/attack-test/targeted_s2k_center_07.log
+=== DONE  s2k_center_07 rc=0
+=== START s2m_center_15 -> /home/aarav/attack-test/targeted_s2m_center_15.log
+=== DONE  s2m_center_15 rc=0
+=== START s2l_center_03 -> /home/aarav/attack-test/targeted_s2l_center_03.log
+=== DONE  s2l_center_03 rc=0
+=== START s2n_center_05_e160 -> /home/aarav/attack-test/targeted_s2n_center_05_e160.log
+=== DONE  s2n_center_05_e160 rc=0
+=== CENTER SWEEP COMPLETE ===

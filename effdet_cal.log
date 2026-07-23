@@ -1,0 +1,4 @@
+EfficientDet-D3 training | 640px | batch 18 | 30 epochs
+  ep1/30 it0/360 loss 1.519 lr 0.00000
+  ep1/30 it50/360 loss 1.556 lr 0.00010
+  ep1/30 it100/360 loss 1.474 lr 0.00020

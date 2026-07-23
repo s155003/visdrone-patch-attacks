@@ -1,0 +1,59 @@
+DIGITAL PATCH car->van: training ONE universal patch on 30 images
+Params: PATCH_FRAC=0.45, EPOCHS=40, LR=0.03, TV=0.05, MARGIN=5.0
+
+/home/aarav/attack-test/patch_attack_car2van_small.py:168: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:838.)
+  tot += float(loss)
+  epoch 1/40  avg loss 5984.658
+  epoch 2/40  avg loss 5668.659
+  epoch 3/40  avg loss 5514.923
+  epoch 4/40  avg loss 5421.925
+  epoch 5/40  avg loss 5364.845
+  epoch 6/40  avg loss 5330.953
+  epoch 7/40  avg loss 5306.952
+  epoch 8/40  avg loss 5285.954
+  epoch 9/40  avg loss 5267.668
+  epoch 10/40  avg loss 5241.554
+  epoch 11/40  avg loss 5231.876
+  epoch 12/40  avg loss 5210.468
+  epoch 13/40  avg loss 5209.607
+  epoch 14/40  avg loss 5196.766
+  epoch 15/40  avg loss 5180.220
+  epoch 16/40  avg loss 5168.347
+  epoch 17/40  avg loss 5162.325
+  epoch 18/40  avg loss 5166.299
+  epoch 19/40  avg loss 5171.933
+  epoch 20/40  avg loss 5161.777
+  epoch 21/40  avg loss 5147.076
+  epoch 22/40  avg loss 5139.310
+  epoch 23/40  avg loss 5137.180
+  epoch 24/40  avg loss 5138.148
+  epoch 25/40  avg loss 5135.519
+  epoch 26/40  avg loss 5140.614
+  epoch 27/40  avg loss 5132.265
+  epoch 28/40  avg loss 5131.421
+  epoch 29/40  avg loss 5123.452
+  epoch 30/40  avg loss 5114.734
+  epoch 31/40  avg loss 5123.064
+  epoch 32/40  avg loss 5116.998
+  epoch 33/40  avg loss 5110.461
+  epoch 34/40  avg loss 5113.985
+  epoch 35/40  avg loss 5116.512
+  epoch 36/40  avg loss 5112.252
+  epoch 37/40  avg loss 5114.389
+  epoch 38/40  avg loss 5103.172
+  epoch 39/40  avg loss 5102.759
+  epoch 40/40  avg loss 5100.429
+
+Evaluating trained patch (clean vs patched)...
+
+==== DIGITAL PATCH car->van RESULTS ====
+Images: 30   car GT boxes: 437
+(a) already-van under CLEAN (native): 16
+    eligible cars: 421
+aggregate detected as van: CLEAN=16  PATCHED=83
+
+TRUE-NEW car->van flips (patch only): 76
+TRUE-RATE (true-new / eligible): 0.181   <- HEADLINE
+
+Saved universal patch + per-image examples to patch_examples_car2van_small/

@@ -1,0 +1,22 @@
+{
+  "run": "exp_lower_10_t90",
+  "mode": "adversarial",
+  "area_frac": 0.1,
+  "img_size": 640,
+  "min_area_frac": 0.001,
+  "rot_deg": 20.0,
+  "epochs": 80,
+  "eval_images": 1360,
+  "cars_kept": 11446,
+  "cars_dropped": 16628,
+  "eligible": 9415,
+  "ambiguous": 457,
+  "flipped": 1756,
+  "new_van": 1384,
+  "lost": 1119,
+  "targeted_asr": 0.154498772047332,
+  "targeted_asr_strict": 0.154498772047332,
+  "targeted_asr_newvan": 0.14699946893255444,
+  "targeted_asr_orig": 0.1865108868826341,
+  "lost_rate": 0.11885289431757834
+}

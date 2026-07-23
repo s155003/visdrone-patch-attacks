@@ -1,0 +1,11 @@
+
+######################################################################
+#  RUN 20: PER-IMAGE (absolute ceiling)
+######################################################################
+PER-IMAGE car->van: a SEPARATE patch trained per car (ceiling test)
+Params: EPOCHS(per car)=60, LR=0.03, MARGIN=5.0
+
+  image 1/10 done (14 cars, running true_new=2)
+  image 2/10 done (16 cars, running true_new=5)
+  image 3/10 done (3 cars, running true_new=5)
+  image 4/10 done (5 cars, running true_new=5)

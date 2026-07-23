@@ -1,0 +1,11 @@
+=== START sh_roof_square -> /home/aarav/attack-test/roofshape_sh_roof_square.log
+=== DONE  sh_roof_square rc=0
+=== START sh_roof_circle -> /home/aarav/attack-test/roofshape_sh_roof_circle.log
+=== DONE  sh_roof_circle rc=0
+=== START sh_roof_ellipse -> /home/aarav/attack-test/roofshape_sh_roof_ellipse.log
+=== DONE  sh_roof_ellipse rc=0
+=== START sh_roof_triangle -> /home/aarav/attack-test/roofshape_sh_roof_triangle.log
+=== DONE  sh_roof_triangle rc=0
+=== START sh_roof_opacity -> /home/aarav/attack-test/roofshape_sh_roof_opacity.log
+=== DONE  sh_roof_opacity rc=0
+=== ROOF SHAPE STUDY COMPLETE ===

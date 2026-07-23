@@ -1,0 +1,515 @@
+
+======================================================================
+=== sh_b0_nopatch
+======================================================================
+=== sh_b0_nopatch | car->van | SHAPE=square | OPACITY=1.0 | AREA_FRAC=0.1 | NO_OVERFLOW=1 | ROT=20.0 | LR=0.03 | MODE=none ===
+[eval ] datasets/VisDrone/images/test: 1360 images | 11446 cars | 16628 dropped below 0.10% area
+[save] patch_examples_sh_b0_nopatch/universal_patch.png
+
+Evaluating on 1360 images...
+
+==== sh_b0_nopatch | square | opacity 1.0 | 10% ====
+eval images : 1360   cars kept 11446  dropped 16628
+eligible 9415  ambiguous(excl) 457  ->  denominator 8958
+flipped 0   lost 0   still-car 8958
+OVERFLOW: capped=0.0% mean_realized_frac=0.0000 n=0
+
+strict ASR : 0.000   <- HEADLINE
+lost rate  : 0.000
+
+======================================================================
+=== sh_s1_square
+======================================================================
+=== sh_s1_square | car->van | SHAPE=square | OPACITY=1.0 | AREA_FRAC=0.1 | NO_OVERFLOW=1 | ROT=20.0 | LR=0.03 | MODE=adversarial ===
+[eval ] datasets/VisDrone/images/test: 1360 images | 11446 cars | 16628 dropped below 0.10% area
+[train] datasets/VisDrone/images/val: 100 images | 1159 cars
+  epoch 1/80  total 11855.39  margin  4490.15  hinge  7364.05  tv 1.185  (4s)
+  epoch 2/80  total 11787.53  margin  4450.57  hinge  7335.82  tv 1.140  (7s)
+  epoch 3/80  total 11761.23  margin  4437.28  hinge  7322.87  tv 1.081  (10s)
+  epoch 4/80  total 11684.76  margin  4406.03  hinge  7277.70  tv 1.030  (13s)
+  epoch 5/80  total 11646.75  margin  4393.14  hinge  7252.63  tv 0.983  (16s)
+  epoch 6/80  total 11587.82  margin  4396.86  hinge  7190.02  tv 0.947  (19s)
+  epoch 7/80  total 11522.37  margin  4417.64  hinge  7103.80  tv 0.924  (22s)
+  epoch 8/80  total 11498.33  margin  4424.38  hinge  7073.05  tv 0.895  (25s)
+  epoch 9/80  total 11404.60  margin  4401.99  hinge  7001.76  tv 0.848  (28s)
+  epoch 10/80  total 11389.46  margin  4423.50  hinge  6965.12  tv 0.846  (31s)
+  epoch 11/80  total 11378.84  margin  4420.39  hinge  6957.61  tv 0.832  (34s)
+  epoch 12/80  total 11338.12  margin  4442.03  hinge  6895.27  tv 0.817  (37s)
+  epoch 13/80  total 11330.13  margin  4420.13  hinge  6909.18  tv 0.817  (40s)
+  epoch 14/80  total 11315.52  margin  4424.19  hinge  6890.52  tv 0.802  (43s)
+  epoch 15/80  total 11309.29  margin  4428.55  hinge  6879.94  tv 0.803  (46s)
+  epoch 16/80  total 11286.82  margin  4427.15  hinge  6858.87  tv 0.791  (49s)
+  epoch 17/80  total 11302.21  margin  4428.78  hinge  6872.63  tv 0.796  (51s)
+  epoch 18/80  total 11289.33  margin  4433.96  hinge  6854.58  tv 0.797  (54s)
+  epoch 19/80  total 11279.40  margin  4433.06  hinge  6845.55  tv 0.796  (57s)
+  epoch 20/80  total 11280.26  margin  4453.97  hinge  6825.49  tv 0.808  (60s)
+  epoch 21/80  total 11280.71  margin  4457.81  hinge  6822.10  tv 0.801  (63s)
+  epoch 22/80  total 11187.12  margin  4453.71  hinge  6732.63  tv 0.774  (66s)
+  epoch 23/80  total 11165.27  margin  4479.95  hinge  6684.55  tv 0.760  (69s)
+  epoch 24/80  total 11018.01  margin  4469.05  hinge  6548.22  tv 0.740  (72s)
+  epoch 25/80  total 11010.84  margin  4479.12  hinge  6531.00  tv 0.721  (75s)
+  epoch 26/80  total 10989.27  margin  4475.11  hinge  6513.44  tv 0.714  (78s)
+  epoch 27/80  total 10989.43  margin  4469.93  hinge  6518.77  tv 0.721  (81s)
+  epoch 28/80  total 10976.51  margin  4466.58  hinge  6509.23  tv 0.701  (84s)
+  epoch 29/80  total 10965.49  margin  4473.08  hinge  6491.70  tv 0.706  (87s)
+  epoch 30/80  total 11012.34  margin  4484.99  hinge  6526.62  tv 0.719  (90s)
+  epoch 31/80  total 10904.33  margin  4460.68  hinge  6442.96  tv 0.695  (92s)
+  epoch 32/80  total 10991.68  margin  4479.44  hinge  6511.54  tv 0.707  (95s)
+  epoch 33/80  total 10929.96  margin  4462.89  hinge  6466.38  tv 0.687  (98s)
+  epoch 34/80  total 10839.95  margin  4449.98  hinge  6389.32  tv 0.656  (101s)
+  epoch 35/80  total 10858.06  margin  4450.71  hinge  6406.68  tv 0.667  (104s)
+  epoch 36/80  total 10874.08  margin  4455.52  hinge  6417.88  tv 0.675  (107s)
+  epoch 37/80  total 10853.99  margin  4448.17  hinge  6405.15  tv 0.662  (110s)
+  epoch 38/80  total 10884.00  margin  4453.36  hinge  6429.97  tv 0.678  (113s)
+  epoch 39/80  total 10898.00  margin  4470.25  hinge  6427.05  tv 0.688  (116s)
+  epoch 40/80  total 10868.43  margin  4447.42  hinge  6420.34  tv 0.666  (119s)
+  epoch 41/80  total 10866.31  margin  4461.96  hinge  6403.68  tv 0.665  (122s)
+  epoch 42/80  total 10881.46  margin  4459.78  hinge  6421.00  tv 0.682  (125s)
+  epoch 43/80  total 10866.12  margin  4456.67  hinge  6408.78  tv 0.671  (128s)
+  epoch 44/80  total 10841.65  margin  4443.61  hinge  6397.37  tv 0.668  (131s)
+  epoch 45/80  total 10851.41  margin  4452.75  hinge  6398.00  tv 0.660  (134s)
+  epoch 46/80  total 10865.35  margin  4452.21  hinge  6412.47  tv 0.672  (137s)
+  epoch 47/80  total 10814.36  margin  4447.99  hinge  6365.72  tv 0.651  (140s)
+  epoch 48/80  total 10815.61  margin  4462.75  hinge  6352.21  tv 0.646  (143s)
+  epoch 49/80  total 10824.69  margin  4442.36  hinge  6381.68  tv 0.647  (146s)
+  epoch 50/80  total 10846.32  margin  4456.51  hinge  6389.16  tv 0.661  (149s)
+  epoch 51/80  total 10827.83  margin  4443.09  hinge  6384.08  tv 0.659  (152s)
+  epoch 52/80  total 10837.22  margin  4447.81  hinge  6388.74  tv 0.660  (155s)
+  epoch 53/80  total 10897.06  margin  4472.08  hinge  6424.30  tv 0.684  (158s)
+  epoch 54/80  total 10860.36  margin  4464.05  hinge  6395.64  tv 0.661  (161s)
+  epoch 55/80  total 10821.99  margin  4457.03  hinge  6364.30  tv 0.658  (164s)
+  epoch 56/80  total 10870.44  margin  4461.11  hinge  6408.65  tv 0.678  (166s)
+  epoch 57/80  total 10851.33  margin  4472.92  hinge  6377.75  tv 0.666  (169s)
+  epoch 58/80  total 10864.39  margin  4462.48  hinge  6401.26  tv 0.656  (172s)
+  epoch 59/80  total 10833.92  margin  4451.45  hinge  6381.82  tv 0.656  (175s)
+  epoch 60/80  total 10799.75  margin  4441.08  hinge  6358.01  tv 0.658  (178s)
+  epoch 61/80  total 10822.61  margin  4451.20  hinge  6370.75  tv 0.662  (181s)
+  epoch 62/80  total 10802.62  margin  4445.93  hinge  6356.04  tv 0.655  (185s)
+  epoch 63/80  total 10849.03  margin  4448.29  hinge  6400.07  tv 0.668  (188s)
+  epoch 64/80  total 10871.46  margin  4459.96  hinge  6410.81  tv 0.686  (191s)
+  epoch 65/80  total 10847.37  margin  4449.44  hinge  6397.27  tv 0.664  (194s)
+  epoch 66/80  total 10831.83  margin  4438.82  hinge  6392.35  tv 0.656  (197s)
+  epoch 67/80  total 10814.16  margin  4439.56  hinge  6373.94  tv 0.664  (200s)
+  epoch 68/80  total 10840.52  margin  4460.89  hinge  6378.99  tv 0.649  (203s)
+  epoch 69/80  total 10823.06  margin  4455.11  hinge  6367.28  tv 0.667  (206s)
+  epoch 70/80  total 10833.91  margin  4449.10  hinge  6384.14  tv 0.670  (209s)
+  epoch 71/80  total 10868.18  margin  4454.76  hinge  6412.73  tv 0.693  (212s)
+  epoch 72/80  total 10871.64  margin  4461.12  hinge  6409.83  tv 0.687  (215s)
+  epoch 73/80  total 10799.25  margin  4452.39  hinge  6346.19  tv 0.665  (218s)
+  epoch 74/80  total 10840.74  margin  4453.29  hinge  6386.78  tv 0.669  (221s)
+  epoch 75/80  total 10862.73  margin  4464.20  hinge  6397.83  tv 0.689  (224s)
+  epoch 76/80  total 10819.77  margin  4442.88  hinge  6376.22  tv 0.673  (227s)
+  epoch 77/80  total 10838.38  margin  4463.58  hinge  6374.14  tv 0.662  (229s)
+  epoch 78/80  total 10842.05  margin  4452.32  hinge  6389.05  tv 0.676  (232s)
+  epoch 79/80  total 10807.40  margin  4449.80  hinge  6356.93  tv 0.659  (235s)
+  epoch 80/80  total 10825.87  margin  4453.79  hinge  6371.42  tv 0.665  (238s)
+[save] patch_examples_sh_s1_square/universal_patch.png
+
+Evaluating on 1360 images...
+
+==== sh_s1_square | square | opacity 1.0 | 10% ====
+eval images : 1360   cars kept 11446  dropped 16628
+eligible 9415  ambiguous(excl) 457  ->  denominator 8958
+flipped 1450   lost 1998   still-car 5510
+OVERFLOW: capped=0.0% mean_realized_frac=0.1000 n=11446
+
+strict ASR : 0.162   <- HEADLINE
+lost rate  : 0.223
+
+======================================================================
+=== sh_s2_circle
+======================================================================
+=== sh_s2_circle | car->van | SHAPE=circle | OPACITY=1.0 | AREA_FRAC=0.1 | NO_OVERFLOW=1 | ROT=20.0 | LR=0.03 | MODE=adversarial ===
+[eval ] datasets/VisDrone/images/test: 1360 images | 11446 cars | 16628 dropped below 0.10% area
+[train] datasets/VisDrone/images/val: 100 images | 1159 cars
+  epoch 1/80  total 11928.97  margin  4513.80  hinge  7414.13  tv 1.036  (4s)
+  epoch 2/80  total 11860.78  margin  4477.45  hinge  7382.35  tv 0.972  (7s)
+  epoch 3/80  total 11840.09  margin  4467.03  hinge  7372.14  tv 0.923  (10s)
+  epoch 4/80  total 11794.74  margin  4445.24  hinge  7348.62  tv 0.882  (13s)
+  epoch 5/80  total 11791.57  margin  4441.95  hinge  7348.76  tv 0.858  (16s)
+  epoch 6/80  total 11781.17  margin  4438.32  hinge  7342.00  tv 0.843  (19s)
+  epoch 7/80  total 11760.34  margin  4433.22  hinge  7326.30  tv 0.823  (22s)
+  epoch 8/80  total 11741.38  margin  4426.52  hinge  7314.04  tv 0.815  (25s)
+  epoch 9/80  total 11712.03  margin  4416.82  hinge  7294.41  tv 0.798  (28s)
+  epoch 10/80  total 11711.10  margin  4420.49  hinge  7289.82  tv 0.787  (31s)
+  epoch 11/80  total 11707.39  margin  4420.55  hinge  7286.06  tv 0.785  (35s)
+  epoch 12/80  total 11677.74  margin  4412.64  hinge  7264.31  tv 0.781  (38s)
+  epoch 13/80  total 11660.09  margin  4403.50  hinge  7255.81  tv 0.772  (41s)
+  epoch 14/80  total 11659.65  margin  4404.68  hinge  7254.19  tv 0.771  (44s)
+  epoch 15/80  total 11598.15  margin  4386.67  hinge  7210.73  tv 0.763  (47s)
+  epoch 16/80  total 11592.63  margin  4390.67  hinge  7201.19  tv 0.764  (50s)
+  epoch 17/80  total 11564.44  margin  4376.23  hinge  7187.45  tv 0.756  (53s)
+  epoch 18/80  total 11537.68  margin  4380.58  hinge  7156.35  tv 0.749  (56s)
+  epoch 19/80  total 11463.23  margin  4374.50  hinge  7087.98  tv 0.743  (59s)
+  epoch 20/80  total 11391.59  margin  4406.27  hinge  6984.61  tv 0.714  (62s)
+  epoch 21/80  total 11351.60  margin  4404.18  hinge  6946.72  tv 0.692  (64s)
+  epoch 22/80  total 11320.63  margin  4395.67  hinge  6924.28  tv 0.684  (67s)
+  epoch 23/80  total 11285.80  margin  4411.14  hinge  6873.98  tv 0.669  (70s)
+  epoch 24/80  total 11281.46  margin  4421.86  hinge  6858.93  tv 0.660  (73s)
+  epoch 25/80  total 11235.57  margin  4411.65  hinge  6823.26  tv 0.654  (76s)
+  epoch 26/80  total 11265.76  margin  4438.64  hinge  6826.46  tv 0.660  (79s)
+  epoch 27/80  total 11228.50  margin  4441.07  hinge  6786.79  tv 0.648  (82s)
+  epoch 28/80  total 11236.29  margin  4435.43  hinge  6800.22  tv 0.639  (85s)
+  epoch 29/80  total 11231.17  margin  4443.05  hinge  6787.49  tv 0.633  (88s)
+  epoch 30/80  total 11192.88  margin  4433.76  hinge  6758.50  tv 0.627  (91s)
+  epoch 31/80  total 11206.91  margin  4452.70  hinge  6753.59  tv 0.623  (94s)
+  epoch 32/80  total 11199.33  margin  4446.20  hinge  6752.51  tv 0.616  (97s)
+  epoch 33/80  total 11187.35  margin  4442.73  hinge  6744.00  tv 0.621  (100s)
+  epoch 34/80  total 11167.09  margin  4439.90  hinge  6726.57  tv 0.620  (103s)
+  epoch 35/80  total 11197.09  margin  4440.65  hinge  6755.82  tv 0.619  (106s)
+  epoch 36/80  total 11167.36  margin  4452.26  hinge  6714.49  tv 0.623  (109s)
+  epoch 37/80  total 11221.89  margin  4462.11  hinge  6759.16  tv 0.624  (112s)
+  epoch 38/80  total 11131.20  margin  4425.34  hinge  6705.26  tv 0.608  (115s)
+  epoch 39/80  total 11146.96  margin  4446.32  hinge  6700.03  tv 0.607  (118s)
+  epoch 40/80  total 11145.26  margin  4450.10  hinge  6694.56  tv 0.605  (121s)
+  epoch 41/80  total 11161.69  margin  4454.87  hinge  6706.22  tv 0.607  (124s)
+  epoch 42/80  total 11131.16  margin  4461.17  hinge  6669.39  tv 0.603  (127s)
+  epoch 43/80  total 11117.00  margin  4450.67  hinge  6665.73  tv 0.596  (130s)
+  epoch 44/80  total 11118.62  margin  4441.55  hinge  6676.47  tv 0.604  (133s)
+  epoch 45/80  total 11111.72  margin  4444.64  hinge  6666.47  tv 0.607  (135s)
+  epoch 46/80  total 11114.83  margin  4446.17  hinge  6668.07  tv 0.598  (138s)
+  epoch 47/80  total 11114.47  margin  4437.17  hinge  6676.70  tv 0.604  (141s)
+  epoch 48/80  total 11102.65  margin  4445.05  hinge  6657.00  tv 0.596  (144s)
+  epoch 49/80  total 11111.50  margin  4441.74  hinge  6669.16  tv 0.604  (147s)
+  epoch 50/80  total 11125.38  margin  4442.59  hinge  6682.18  tv 0.603  (150s)
+  epoch 51/80  total 11102.16  margin  4435.98  hinge  6665.58  tv 0.597  (153s)
+  epoch 52/80  total 11113.57  margin  4453.49  hinge  6659.48  tv 0.599  (156s)
+  epoch 53/80  total 11116.33  margin  4456.37  hinge  6659.37  tv 0.592  (159s)
+  epoch 54/80  total 11089.77  margin  4452.53  hinge  6636.65  tv 0.589  (162s)
+  epoch 55/80  total 11103.83  margin  4451.88  hinge  6651.36  tv 0.590  (165s)
+  epoch 56/80  total 11077.67  margin  4437.35  hinge  6639.73  tv 0.587  (168s)
+  epoch 57/80  total 11096.40  margin  4446.49  hinge  6649.32  tv 0.586  (171s)
+  epoch 58/80  total 11100.67  margin  4441.35  hinge  6658.72  tv 0.595  (174s)
+  epoch 59/80  total 11083.84  margin  4438.26  hinge  6645.00  tv 0.583  (177s)
+  epoch 60/80  total 11107.28  margin  4441.94  hinge  6664.75  tv 0.593  (180s)
+  epoch 61/80  total 11072.08  margin  4450.59  hinge  6620.91  tv 0.583  (183s)
+  epoch 62/80  total 11079.62  margin  4446.20  hinge  6632.84  tv 0.585  (186s)
+  epoch 63/80  total 11061.03  margin  4436.21  hinge  6624.24  tv 0.584  (190s)
+  epoch 64/80  total 11094.16  margin  4442.09  hinge  6651.48  tv 0.586  (193s)
+  epoch 65/80  total 11077.45  margin  4443.24  hinge  6633.63  tv 0.583  (196s)
+  epoch 66/80  total 11068.07  margin  4452.28  hinge  6615.20  tv 0.589  (199s)
+  epoch 67/80  total 11086.59  margin  4448.19  hinge  6637.81  tv 0.586  (202s)
+  epoch 68/80  total 11086.46  margin  4460.35  hinge  6625.51  tv 0.596  (205s)
+  epoch 69/80  total 11049.56  margin  4458.33  hinge  6590.65  tv 0.580  (208s)
+  epoch 70/80  total 11072.93  margin  4444.07  hinge  6628.28  tv 0.575  (211s)
+  epoch 71/80  total 11060.34  margin  4448.36  hinge  6611.40  tv 0.580  (214s)
+  epoch 72/80  total 11056.23  margin  4446.03  hinge  6609.62  tv 0.576  (216s)
+  epoch 73/80  total 11061.75  margin  4447.29  hinge  6613.87  tv 0.584  (219s)
+  epoch 74/80  total 11098.08  margin  4447.55  hinge  6649.94  tv 0.596  (222s)
+  epoch 75/80  total 11070.64  margin  4452.28  hinge  6617.76  tv 0.600  (225s)
+  epoch 76/80  total 11068.37  margin  4438.96  hinge  6628.82  tv 0.586  (228s)
+  epoch 77/80  total 11069.77  margin  4439.69  hinge  6629.50  tv 0.579  (231s)
+  epoch 78/80  total 11092.40  margin  4457.65  hinge  6634.16  tv 0.589  (234s)
+  epoch 79/80  total 11085.14  margin  4458.52  hinge  6626.04  tv 0.585  (237s)
+  epoch 80/80  total 11077.58  margin  4447.59  hinge  6629.40  tv 0.590  (240s)
+[save] patch_examples_sh_s2_circle/universal_patch.png
+
+Evaluating on 1360 images...
+
+==== sh_s2_circle | circle | opacity 1.0 | 10% ====
+eval images : 1360   cars kept 11446  dropped 16628
+eligible 9415  ambiguous(excl) 457  ->  denominator 8958
+flipped 1230   lost 1968   still-car 5760
+OVERFLOW: capped=0.0% mean_realized_frac=0.1000 n=11446
+
+strict ASR : 0.137   <- HEADLINE
+lost rate  : 0.220
+
+======================================================================
+=== sh_s3_ellipse
+======================================================================
+=== sh_s3_ellipse | car->van | SHAPE=ellipse | OPACITY=1.0 | AREA_FRAC=0.1 | NO_OVERFLOW=1 | ROT=20.0 | LR=0.03 | MODE=adversarial ===
+[eval ] datasets/VisDrone/images/test: 1360 images | 11446 cars | 16628 dropped below 0.10% area
+[train] datasets/VisDrone/images/val: 100 images | 1159 cars
+  epoch 1/80  total 11900.45  margin  4485.83  hinge  7413.60  tv 1.024  (4s)
+  epoch 2/80  total 11831.56  margin  4445.55  hinge  7385.07  tv 0.942  (8s)
+  epoch 3/80  total 11799.62  margin  4429.20  hinge  7369.54  tv 0.878  (11s)
+  epoch 4/80  total 11769.72  margin  4415.13  hinge  7353.75  tv 0.843  (14s)
+  epoch 5/80  total 11747.58  margin  4401.73  hinge  7345.04  tv 0.807  (17s)
+  epoch 6/80  total 11718.94  margin  4390.81  hinge  7327.35  tv 0.780  (20s)
+  epoch 7/80  total 11703.75  margin  4378.06  hinge  7324.91  tv 0.774  (23s)
+  epoch 8/80  total 11718.11  margin  4384.65  hinge  7332.69  tv 0.769  (27s)
+  epoch 9/80  total 11715.18  margin  4385.55  hinge  7328.88  tv 0.750  (30s)
+  epoch 10/80  total 11710.80  margin  4385.57  hinge  7324.47  tv 0.758  (33s)
+  epoch 11/80  total 11709.55  margin  4381.99  hinge  7326.78  tv 0.767  (36s)
+  epoch 12/80  total 11713.66  margin  4384.64  hinge  7328.26  tv 0.763  (39s)
+  epoch 13/80  total 11704.00  margin  4380.52  hinge  7322.71  tv 0.770  (42s)
+  epoch 14/80  total 11705.53  margin  4380.65  hinge  7324.11  tv 0.772  (45s)
+  epoch 15/80  total 11710.40  margin  4385.87  hinge  7323.76  tv 0.767  (48s)
+  epoch 16/80  total 11690.26  margin  4375.10  hinge  7314.40  tv 0.757  (51s)
+  epoch 17/80  total 11708.74  margin  4384.25  hinge  7323.74  tv 0.753  (54s)
+  epoch 18/80  total 11693.04  margin  4374.43  hinge  7317.85  tv 0.757  (57s)
+  epoch 19/80  total 11687.48  margin  4370.74  hinge  7315.98  tv 0.761  (60s)
+  epoch 20/80  total 11693.29  margin  4379.04  hinge  7313.49  tv 0.762  (63s)
+  epoch 21/80  total 11705.22  margin  4381.45  hinge  7323.01  tv 0.757  (66s)
+  epoch 22/80  total 11693.98  margin  4377.06  hinge  7316.16  tv 0.757  (69s)
+  epoch 23/80  total 11703.78  margin  4383.20  hinge  7319.81  tv 0.768  (72s)
+  epoch 24/80  total 11711.06  margin  4385.54  hinge  7324.75  tv 0.770  (75s)
+  epoch 25/80  total 11711.15  margin  4385.03  hinge  7325.34  tv 0.773  (78s)
+  epoch 26/80  total 11704.50  margin  4384.42  hinge  7319.30  tv 0.786  (81s)
+  epoch 27/80  total 11699.11  margin  4380.12  hinge  7318.22  tv 0.764  (84s)
+  epoch 28/80  total 11703.03  margin  4379.09  hinge  7323.17  tv 0.765  (88s)
+  epoch 29/80  total 11708.22  margin  4381.85  hinge  7325.59  tv 0.775  (91s)
+  epoch 30/80  total 11709.27  margin  4384.70  hinge  7323.80  tv 0.764  (94s)
+  epoch 31/80  total 11698.77  margin  4376.93  hinge  7321.08  tv 0.761  (97s)
+  epoch 32/80  total 11707.71  margin  4386.07  hinge  7320.88  tv 0.761  (100s)
+  epoch 33/80  total 11717.17  margin  4384.76  hinge  7331.66  tv 0.760  (103s)
+  epoch 34/80  total 11706.97  margin  4382.51  hinge  7323.70  tv 0.760  (106s)
+  epoch 35/80  total 11710.42  margin  4383.48  hinge  7326.18  tv 0.762  (109s)
+  epoch 36/80  total 11705.56  margin  4384.83  hinge  7319.95  tv 0.777  (112s)
+  epoch 37/80  total 11718.83  margin  4390.92  hinge  7327.14  tv 0.778  (115s)
+  epoch 38/80  total 11699.66  margin  4375.40  hinge  7323.49  tv 0.775  (118s)
+  epoch 39/80  total 11717.84  margin  4392.54  hinge  7324.52  tv 0.772  (121s)
+  epoch 40/80  total 11710.15  margin  4386.65  hinge  7322.73  tv 0.769  (124s)
+  epoch 41/80  total 11720.34  margin  4386.18  hinge  7333.40  tv 0.758  (127s)
+  epoch 42/80  total 11703.06  margin  4376.53  hinge  7325.77  tv 0.762  (130s)
+  epoch 43/80  total 11714.29  margin  4383.48  hinge  7330.05  tv 0.758  (133s)
+  epoch 44/80  total 11697.22  margin  4376.71  hinge  7319.75  tv 0.767  (136s)
+  epoch 45/80  total 11727.65  margin  4392.67  hinge  7334.20  tv 0.772  (139s)
+  epoch 46/80  total 11714.57  margin  4387.65  hinge  7326.14  tv 0.774  (142s)
+  epoch 47/80  total 11713.07  margin  4386.68  hinge  7325.60  tv 0.783  (145s)
+  epoch 48/80  total 11698.43  margin  4380.49  hinge  7317.17  tv 0.766  (148s)
+  epoch 49/80  total 11705.73  margin  4380.39  hinge  7324.56  tv 0.771  (151s)
+  epoch 50/80  total 11694.83  margin  4376.88  hinge  7317.18  tv 0.761  (154s)
+  epoch 51/80  total 11694.40  margin  4377.51  hinge  7316.13  tv 0.768  (157s)
+  epoch 52/80  total 11706.50  margin  4385.06  hinge  7320.69  tv 0.746  (160s)
+  epoch 53/80  total 11699.48  margin  4377.83  hinge  7320.88  tv 0.766  (163s)
+  epoch 54/80  total 11699.91  margin  4382.06  hinge  7317.07  tv 0.777  (166s)
+  epoch 55/80  total 11701.58  margin  4382.35  hinge  7318.45  tv 0.771  (169s)
+  epoch 56/80  total 11697.76  margin  4379.08  hinge  7317.92  tv 0.766  (172s)
+  epoch 57/80  total 11706.39  margin  4383.42  hinge  7322.19  tv 0.778  (175s)
+  epoch 58/80  total 11719.50  margin  4388.63  hinge  7330.10  tv 0.765  (178s)
+  epoch 59/80  total 11707.63  margin  4383.75  hinge  7323.11  tv 0.771  (181s)
+  epoch 60/80  total 11708.24  margin  4387.16  hinge  7320.31  tv 0.772  (184s)
+  epoch 61/80  total 11704.59  margin  4381.02  hinge  7322.80  tv 0.769  (187s)
+  epoch 62/80  total 11696.35  margin  4378.75  hinge  7316.82  tv 0.773  (190s)
+  epoch 63/80  total 11698.19  margin  4379.02  hinge  7318.41  tv 0.767  (193s)
+  epoch 64/80  total 11700.29  margin  4377.37  hinge  7322.16  tv 0.758  (196s)
+  epoch 65/80  total 11702.06  margin  4379.09  hinge  7322.21  tv 0.756  (199s)
+  epoch 66/80  total 11711.12  margin  4385.54  hinge  7324.83  tv 0.756  (201s)
+  epoch 67/80  total 11698.23  margin  4378.04  hinge  7319.43  tv 0.757  (204s)
+  epoch 68/80  total 11706.14  margin  4386.31  hinge  7319.06  tv 0.765  (207s)
+  epoch 69/80  total 11701.18  margin  4383.44  hinge  7316.97  tv 0.768  (210s)
+  epoch 70/80  total 11714.72  margin  4386.85  hinge  7327.10  tv 0.767  (213s)
+  epoch 71/80  total 11718.48  margin  4386.97  hinge  7330.75  tv 0.772  (216s)
+  epoch 72/80  total 11713.09  margin  4388.28  hinge  7324.05  tv 0.766  (219s)
+  epoch 73/80  total 11705.06  margin  4384.90  hinge  7319.40  tv 0.763  (222s)
+  epoch 74/80  total 11707.42  margin  4381.21  hinge  7325.45  tv 0.762  (224s)
+  epoch 75/80  total 11721.17  margin  4394.70  hinge  7325.71  tv 0.762  (227s)
+  epoch 76/80  total 11714.97  margin  4385.70  hinge  7328.51  tv 0.765  (230s)
+  epoch 77/80  total 11713.70  margin  4387.34  hinge  7325.60  tv 0.757  (233s)
+  epoch 78/80  total 11719.29  margin  4390.06  hinge  7328.47  tv 0.757  (236s)
+  epoch 79/80  total 11707.81  margin  4380.69  hinge  7326.37  tv 0.754  (239s)
+  epoch 80/80  total 11720.06  margin  4392.64  hinge  7326.66  tv 0.756  (242s)
+[save] patch_examples_sh_s3_ellipse/universal_patch.png
+
+Evaluating on 1360 images...
+
+==== sh_s3_ellipse | ellipse | opacity 1.0 | 10% ====
+eval images : 1360   cars kept 11446  dropped 16628
+eligible 9415  ambiguous(excl) 457  ->  denominator 8958
+flipped 419   lost 1492   still-car 7047
+OVERFLOW: capped=0.0% mean_realized_frac=0.1000 n=11222
+
+strict ASR : 0.047   <- HEADLINE
+lost rate  : 0.167
+
+======================================================================
+=== sh_s4_triangle
+======================================================================
+=== sh_s4_triangle | car->van | SHAPE=triangle | OPACITY=1.0 | AREA_FRAC=0.1 | NO_OVERFLOW=1 | ROT=20.0 | LR=0.03 | MODE=adversarial ===
+[eval ] datasets/VisDrone/images/test: 1360 images | 11446 cars | 16628 dropped below 0.10% area
+[train] datasets/VisDrone/images/val: 100 images | 1159 cars
+  epoch 1/80  total 11845.17  margin  4484.06  hinge  7360.38  tv 0.727  (4s)
+  epoch 2/80  total 11777.18  margin  4448.51  hinge  7328.05  tv 0.627  (7s)
+  epoch 3/80  total 11740.50  margin  4424.89  hinge  7315.02  tv 0.592  (10s)
+  epoch 4/80  total 11701.21  margin  4402.00  hinge  7298.66  tv 0.554  (13s)
+  epoch 5/80  total 11691.96  margin  4408.24  hinge  7283.18  tv 0.533  (16s)
+  epoch 6/80  total 11689.93  margin  4405.45  hinge  7283.96  tv 0.514  (19s)
+  epoch 7/80  total 11660.15  margin  4399.69  hinge  7259.95  tv 0.507  (22s)
+  epoch 8/80  total 11655.34  margin  4394.41  hinge  7260.43  tv 0.505  (25s)
+  epoch 9/80  total 11661.75  margin  4398.86  hinge  7262.39  tv 0.500  (28s)
+  epoch 10/80  total 11653.33  margin  4396.46  hinge  7256.38  tv 0.497  (31s)
+  epoch 11/80  total 11656.21  margin  4397.76  hinge  7257.95  tv 0.497  (33s)
+  epoch 12/80  total 11644.51  margin  4394.93  hinge  7249.09  tv 0.490  (36s)
+  epoch 13/80  total 11668.23  margin  4410.27  hinge  7257.47  tv 0.493  (39s)
+  epoch 14/80  total 11665.52  margin  4405.10  hinge  7259.92  tv 0.495  (42s)
+  epoch 15/80  total 11661.42  margin  4406.69  hinge  7254.22  tv 0.504  (45s)
+  epoch 16/80  total 11668.36  margin  4414.63  hinge  7253.23  tv 0.503  (49s)
+  epoch 17/80  total 11671.79  margin  4408.71  hinge  7262.57  tv 0.506  (52s)
+  epoch 18/80  total 11646.88  margin  4400.65  hinge  7245.74  tv 0.494  (54s)
+  epoch 19/80  total 11653.07  margin  4400.47  hinge  7252.10  tv 0.500  (58s)
+  epoch 20/80  total 11648.40  margin  4396.32  hinge  7251.58  tv 0.503  (61s)
+  epoch 21/80  total 11648.00  margin  4391.06  hinge  7256.44  tv 0.506  (64s)
+  epoch 22/80  total 11661.98  margin  4414.10  hinge  7247.37  tv 0.504  (66s)
+  epoch 23/80  total 11679.34  margin  4413.21  hinge  7265.64  tv 0.495  (69s)
+  epoch 24/80  total 11650.09  margin  4401.27  hinge  7248.31  tv 0.502  (72s)
+  epoch 25/80  total 11657.36  margin  4406.71  hinge  7250.15  tv 0.501  (75s)
+  epoch 26/80  total 11661.64  margin  4404.27  hinge  7256.86  tv 0.503  (78s)
+  epoch 27/80  total 11660.13  margin  4400.83  hinge  7258.81  tv 0.493  (81s)
+  epoch 28/80  total 11649.40  margin  4401.58  hinge  7247.33  tv 0.491  (84s)
+  epoch 29/80  total 11672.67  margin  4408.89  hinge  7263.28  tv 0.498  (87s)
+  epoch 30/80  total 11643.89  margin  4405.00  hinge  7238.40  tv 0.495  (90s)
+  epoch 31/80  total 11644.78  margin  4400.97  hinge  7243.32  tv 0.494  (93s)
+  epoch 32/80  total 11656.19  margin  4405.47  hinge  7250.22  tv 0.499  (96s)
+  epoch 33/80  total 11665.26  margin  4405.55  hinge  7259.21  tv 0.499  (99s)
+  epoch 34/80  total 11647.43  margin  4395.59  hinge  7251.34  tv 0.506  (102s)
+  epoch 35/80  total 11652.81  margin  4396.29  hinge  7256.02  tv 0.510  (105s)
+  epoch 36/80  total 11650.89  margin  4392.78  hinge  7257.60  tv 0.507  (107s)
+  epoch 37/80  total 11655.24  margin  4401.76  hinge  7252.98  tv 0.499  (110s)
+  epoch 38/80  total 11649.65  margin  4406.88  hinge  7242.26  tv 0.500  (113s)
+  epoch 39/80  total 11657.70  margin  4401.24  hinge  7255.96  tv 0.508  (116s)
+  epoch 40/80  total 11656.62  margin  4403.21  hinge  7252.91  tv 0.500  (119s)
+  epoch 41/80  total 11641.84  margin  4389.35  hinge  7251.99  tv 0.492  (122s)
+  epoch 42/80  total 11642.12  margin  4392.32  hinge  7249.30  tv 0.499  (125s)
+  epoch 43/80  total 11662.85  margin  4405.88  hinge  7256.47  tv 0.498  (128s)
+  epoch 44/80  total 11680.70  margin  4415.52  hinge  7264.65  tv 0.527  (131s)
+  epoch 45/80  total 11652.54  margin  4411.26  hinge  7240.78  tv 0.504  (134s)
+  epoch 46/80  total 11656.13  margin  4404.33  hinge  7251.29  tv 0.506  (137s)
+  epoch 47/80  total 11654.50  margin  4408.30  hinge  7245.70  tv 0.504  (140s)
+  epoch 48/80  total 11649.98  margin  4402.91  hinge  7246.56  tv 0.504  (143s)
+  epoch 49/80  total 11646.87  margin  4400.23  hinge  7246.15  tv 0.503  (145s)
+  epoch 50/80  total 11652.62  margin  4409.40  hinge  7242.71  tv 0.502  (148s)
+  epoch 51/80  total 11635.37  margin  4396.29  hinge  7238.59  tv 0.498  (151s)
+  epoch 52/80  total 11650.91  margin  4406.76  hinge  7243.66  tv 0.499  (154s)
+  epoch 53/80  total 11661.69  margin  4402.09  hinge  7259.10  tv 0.499  (157s)
+  epoch 54/80  total 11649.76  margin  4404.25  hinge  7245.02  tv 0.487  (160s)
+  epoch 55/80  total 11660.26  margin  4408.46  hinge  7251.32  tv 0.486  (163s)
+  epoch 56/80  total 11653.24  margin  4403.53  hinge  7249.21  tv 0.496  (166s)
+  epoch 57/80  total 11667.60  margin  4411.43  hinge  7255.67  tv 0.497  (169s)
+  epoch 58/80  total 11651.82  margin  4410.44  hinge  7240.90  tv 0.482  (172s)
+  epoch 59/80  total 11645.74  margin  4402.49  hinge  7242.76  tv 0.492  (175s)
+  epoch 60/80  total 11646.58  margin  4404.21  hinge  7241.88  tv 0.495  (178s)
+  epoch 61/80  total 11643.15  margin  4402.11  hinge  7240.55  tv 0.494  (181s)
+  epoch 62/80  total 11653.89  margin  4404.57  hinge  7248.81  tv 0.504  (184s)
+  epoch 63/80  total 11641.55  margin  4392.09  hinge  7248.95  tv 0.502  (187s)
+  epoch 64/80  total 11649.70  margin  4408.89  hinge  7240.31  tv 0.496  (190s)
+  epoch 65/80  total 11636.49  margin  4397.93  hinge  7238.07  tv 0.491  (193s)
+  epoch 66/80  total 11642.50  margin  4399.81  hinge  7242.20  tv 0.490  (196s)
+  epoch 67/80  total 11643.03  margin  4406.16  hinge  7236.38  tv 0.491  (199s)
+  epoch 68/80  total 11634.32  margin  4401.02  hinge  7232.80  tv 0.503  (203s)
+  epoch 69/80  total 11646.31  margin  4404.60  hinge  7241.21  tv 0.493  (206s)
+  epoch 70/80  total 11650.57  margin  4408.84  hinge  7241.23  tv 0.496  (209s)
+  epoch 71/80  total 11650.40  margin  4413.19  hinge  7236.71  tv 0.502  (212s)
+  epoch 72/80  total 11689.37  margin  4424.92  hinge  7263.94  tv 0.511  (215s)
+  epoch 73/80  total 11660.85  margin  4405.79  hinge  7254.55  tv 0.502  (218s)
+  epoch 74/80  total 11655.92  margin  4403.65  hinge  7251.78  tv 0.493  (221s)
+  epoch 75/80  total 11641.49  margin  4395.23  hinge  7245.76  tv 0.493  (224s)
+  epoch 76/80  total 11633.95  margin  4400.25  hinge  7233.20  tv 0.493  (227s)
+  epoch 77/80  total 11656.50  margin  4406.76  hinge  7249.24  tv 0.499  (230s)
+  epoch 78/80  total 11648.80  margin  4404.65  hinge  7243.64  tv 0.501  (233s)
+  epoch 79/80  total 11655.76  margin  4407.12  hinge  7248.15  tv 0.491  (236s)
+  epoch 80/80  total 11641.84  margin  4396.72  hinge  7244.62  tv 0.497  (239s)
+[save] patch_examples_sh_s4_triangle/universal_patch.png
+
+Evaluating on 1360 images...
+
+==== sh_s4_triangle | triangle | opacity 1.0 | 10% ====
+eval images : 1360   cars kept 11446  dropped 16628
+eligible 9415  ambiguous(excl) 457  ->  denominator 8958
+flipped 497   lost 1625   still-car 6836
+OVERFLOW: capped=5.5% mean_realized_frac=0.0992 n=11446
+
+strict ASR : 0.055   <- HEADLINE
+lost rate  : 0.181
+
+======================================================================
+=== sh_s5_opacity
+======================================================================
+=== sh_s5_opacity | car->van | SHAPE=square | OPACITY=0.5 | AREA_FRAC=0.1 | NO_OVERFLOW=1 | ROT=20.0 | LR=0.03 | MODE=adversarial ===
+[eval ] datasets/VisDrone/images/test: 1360 images | 11446 cars | 16628 dropped below 0.10% area
+[train] datasets/VisDrone/images/val: 100 images | 1159 cars
+  epoch 1/80  total 11788.86  margin  4458.65  hinge  7329.00  tv 1.205  (4s)
+  epoch 2/80  total 11724.16  margin  4423.02  hinge  7299.97  tv 1.170  (7s)
+  epoch 3/80  total 11663.75  margin  4387.11  hinge  7275.55  tv 1.096  (10s)
+  epoch 4/80  total 11610.50  margin  4363.67  hinge  7245.80  tv 1.029  (13s)
+  epoch 5/80  total 11578.36  margin  4347.21  hinge  7230.17  tv 0.973  (16s)
+  epoch 6/80  total 11559.40  margin  4339.36  hinge  7219.09  tv 0.942  (19s)
+  epoch 7/80  total 11541.80  margin  4325.06  hinge  7215.82  tv 0.925  (22s)
+  epoch 8/80  total 11536.96  margin  4325.28  hinge  7210.76  tv 0.919  (25s)
+  epoch 9/80  total 11524.71  margin  4320.57  hinge  7203.22  tv 0.913  (28s)
+  epoch 10/80  total 11516.18  margin  4315.74  hinge  7199.54  tv 0.903  (31s)
+  epoch 11/80  total 11519.94  margin  4320.25  hinge  7198.79  tv 0.900  (34s)
+  epoch 12/80  total 11520.21  margin  4319.30  hinge  7200.01  tv 0.897  (38s)
+  epoch 13/80  total 11520.08  margin  4319.31  hinge  7199.88  tv 0.897  (41s)
+  epoch 14/80  total 11485.49  margin  4310.78  hinge  7173.84  tv 0.867  (44s)
+  epoch 15/80  total 11476.54  margin  4309.69  hinge  7165.99  tv 0.864  (47s)
+  epoch 16/80  total 11487.22  margin  4321.81  hinge  7164.56  tv 0.858  (50s)
+  epoch 17/80  total 11464.95  margin  4308.20  hinge  7155.87  tv 0.872  (53s)
+  epoch 18/80  total 11457.81  margin  4310.21  hinge  7146.73  tv 0.873  (56s)
+  epoch 19/80  total 11456.80  margin  4306.97  hinge  7148.97  tv 0.860  (59s)
+  epoch 20/80  total 11450.68  margin  4297.77  hinge  7152.06  tv 0.854  (62s)
+  epoch 21/80  total 11459.54  margin  4307.13  hinge  7151.57  tv 0.839  (65s)
+  epoch 22/80  total 11462.21  margin  4309.21  hinge  7152.16  tv 0.850  (68s)
+  epoch 23/80  total 11450.41  margin  4305.16  hinge  7144.39  tv 0.850  (71s)
+  epoch 24/80  total 11452.30  margin  4306.62  hinge  7144.83  tv 0.846  (74s)
+  epoch 25/80  total 11451.78  margin  4306.49  hinge  7144.43  tv 0.859  (77s)
+  epoch 26/80  total 11464.31  margin  4306.68  hinge  7156.78  tv 0.856  (79s)
+  epoch 27/80  total 11447.73  margin  4305.59  hinge  7141.29  tv 0.847  (82s)
+  epoch 28/80  total 11462.11  margin  4308.39  hinge  7152.88  tv 0.839  (85s)
+  epoch 29/80  total 11461.78  margin  4310.46  hinge  7150.48  tv 0.840  (88s)
+  epoch 30/80  total 11467.25  margin  4312.04  hinge  7154.35  tv 0.855  (91s)
+  epoch 31/80  total 11440.77  margin  4301.41  hinge  7138.52  tv 0.850  (94s)
+  epoch 32/80  total 11454.98  margin  4306.58  hinge  7147.56  tv 0.846  (97s)
+  epoch 33/80  total 11451.45  margin  4304.87  hinge  7145.74  tv 0.848  (100s)
+  epoch 34/80  total 11434.02  margin  4296.93  hinge  7136.25  tv 0.843  (103s)
+  epoch 35/80  total 11419.11  margin  4290.33  hinge  7127.94  tv 0.840  (106s)
+  epoch 36/80  total 11438.34  margin  4298.89  hinge  7138.61  tv 0.844  (109s)
+  epoch 37/80  total 11456.25  margin  4314.35  hinge  7141.05  tv 0.852  (112s)
+  epoch 38/80  total 11448.66  margin  4305.53  hinge  7142.29  tv 0.849  (114s)
+  epoch 39/80  total 11443.15  margin  4297.65  hinge  7144.65  tv 0.849  (117s)
+  epoch 40/80  total 11453.53  margin  4304.83  hinge  7147.85  tv 0.848  (120s)
+  epoch 41/80  total 11447.36  margin  4297.84  hinge  7148.67  tv 0.849  (123s)
+  epoch 42/80  total 11444.38  margin  4298.44  hinge  7145.09  tv 0.845  (126s)
+  epoch 43/80  total 11462.34  margin  4308.99  hinge  7152.50  tv 0.842  (129s)
+  epoch 44/80  total 11445.19  margin  4302.75  hinge  7141.60  tv 0.839  (132s)
+  epoch 45/80  total 11445.32  margin  4307.51  hinge  7136.98  tv 0.835  (135s)
+  epoch 46/80  total 11436.75  margin  4299.06  hinge  7136.85  tv 0.844  (138s)
+  epoch 47/80  total 11440.39  margin  4304.60  hinge  7134.96  tv 0.833  (141s)
+  epoch 48/80  total 11449.86  margin  4304.16  hinge  7144.87  tv 0.827  (144s)
+  epoch 49/80  total 11451.30  margin  4303.90  hinge  7146.55  tv 0.851  (147s)
+  epoch 50/80  total 11441.82  margin  4298.18  hinge  7142.80  tv 0.835  (150s)
+  epoch 51/80  total 11446.55  margin  4304.21  hinge  7141.52  tv 0.821  (153s)
+  epoch 52/80  total 11435.42  margin  4300.21  hinge  7134.38  tv 0.824  (156s)
+  epoch 53/80  total 11453.01  margin  4304.34  hinge  7147.84  tv 0.832  (159s)
+  epoch 54/80  total 11427.14  margin  4292.29  hinge  7134.02  tv 0.827  (162s)
+  epoch 55/80  total 11448.31  margin  4303.93  hinge  7143.55  tv 0.823  (165s)
+  epoch 56/80  total 11451.80  margin  4307.72  hinge  7143.24  tv 0.844  (168s)
+  epoch 57/80  total 11448.73  margin  4303.70  hinge  7144.19  tv 0.838  (171s)
+  epoch 58/80  total 11422.59  margin  4292.17  hinge  7129.58  tv 0.839  (174s)
+  epoch 59/80  total 11454.85  margin  4308.41  hinge  7145.60  tv 0.844  (177s)
+  epoch 60/80  total 11442.69  margin  4298.06  hinge  7143.80  tv 0.835  (180s)
+  epoch 61/80  total 11442.94  margin  4303.60  hinge  7138.51  tv 0.830  (183s)
+  epoch 62/80  total 11440.67  margin  4303.79  hinge  7136.05  tv 0.833  (186s)
+  epoch 63/80  total 11420.34  margin  4295.14  hinge  7124.37  tv 0.832  (189s)
+  epoch 64/80  total 11427.20  margin  4298.47  hinge  7127.89  tv 0.834  (192s)
+  epoch 65/80  total 11450.99  margin  4303.91  hinge  7146.26  tv 0.827  (195s)
+  epoch 66/80  total 11445.84  margin  4301.55  hinge  7143.47  tv 0.828  (198s)
+  epoch 67/80  total 11440.80  margin  4296.91  hinge  7143.07  tv 0.818  (201s)
+  epoch 68/80  total 11429.25  margin  4297.42  hinge  7131.01  tv 0.826  (204s)
+  epoch 69/80  total 11457.96  margin  4311.81  hinge  7145.30  tv 0.846  (207s)
+  epoch 70/80  total 11455.82  margin  4302.04  hinge  7152.94  tv 0.842  (210s)
+  epoch 71/80  total 11439.75  margin  4294.19  hinge  7144.72  tv 0.837  (213s)
+  epoch 72/80  total 11442.44  margin  4303.37  hinge  7138.25  tv 0.831  (216s)
+  epoch 73/80  total 11416.00  margin  4286.25  hinge  7128.93  tv 0.824  (220s)
+  epoch 74/80  total 11446.53  margin  4305.17  hinge  7140.51  tv 0.841  (223s)
+  epoch 75/80  total 11463.63  margin  4316.24  hinge  7146.54  tv 0.849  (226s)
+  epoch 76/80  total 11443.66  margin  4300.67  hinge  7142.16  tv 0.827  (229s)
+  epoch 77/80  total 11432.33  margin  4298.74  hinge  7132.77  tv 0.822  (232s)
+  epoch 78/80  total 11443.22  margin  4302.80  hinge  7139.59  tv 0.822  (235s)
+  epoch 79/80  total 11458.69  margin  4303.56  hinge  7154.30  tv 0.826  (238s)
+  epoch 80/80  total 11432.05  margin  4291.28  hinge  7139.95  tv 0.828  (241s)
+[save] patch_examples_sh_s5_opacity/universal_patch.png
+
+Evaluating on 1360 images...
+
+==== sh_s5_opacity | square | opacity 0.5 | 10% ====
+eval images : 1360   cars kept 11446  dropped 16628
+eligible 9415  ambiguous(excl) 457  ->  denominator 8958
+flipped 753   lost 1467   still-car 6738
+OVERFLOW: capped=0.0% mean_realized_frac=0.1000 n=11446
+
+strict ASR : 0.084   <- HEADLINE
+lost rate  : 0.164
+
+=== SHAPE STUDY COMPLETE ===

@@ -1,0 +1,125 @@
+
+######################################################################
+#  RUN 20: PER-IMAGE (absolute ceiling)
+######################################################################
+PER-IMAGE car->van: a SEPARATE patch trained per car (ceiling test)
+Params: EPOCHS(per car)=60, LR=0.03, MARGIN=5.0
+
+  image 1/10 done (14 cars, running true_new=2)
+  image 2/10 done (16 cars, running true_new=2)
+  image 3/10 done (3 cars, running true_new=2)
+  image 4/10 done (5 cars, running true_new=2)
+  image 5/10 done (76 cars, running true_new=6)
+  image 6/10 done (68 cars, running true_new=22)
+  image 7/10 done (37 cars, running true_new=40)
+  image 8/10 done (10 cars, running true_new=43)
+  image 9/10 done (20 cars, running true_new=46)
+  image 10/10 done (1 cars, running true_new=46)
+
+==== PER-IMAGE car->van RESULTS (ceiling) ====
+Images: 10   car GT boxes: 250
+(a) already-van under CLEAN: 8
+    eligible cars: 242
+aggregate detected as van: CLEAN=8  PATCHED=49
+
+TRUE-NEW car->van flips (per-image): 46
+TRUE-RATE (true-new / eligible): 0.190   <- CEILING (per-car patches)
+
+######################################################################
+#  RUN21_OCCLUSION: fixed frac=0.9, 100 img, 80 ep
+######################################################################
+DIGITAL PATCH car->van: training ONE universal patch on 100 images
+Params: PATCH_FRAC=0.45, EPOCHS=80, LR=0.03, TV=0.05, MARGIN=5.0
+
+/home/aarav/attack-test/patch_attack_scaleup.py:279: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:838.)
+  tot += float(loss)
+  epoch 1/80  avg loss 3862.518
+  epoch 2/80  avg loss 3563.271
+  epoch 3/80  avg loss 3344.289
+  epoch 4/80  avg loss 3023.076
+  epoch 5/80  avg loss 2801.656
+  epoch 6/80  avg loss 2719.469
+  epoch 7/80  avg loss 2621.213
+  epoch 8/80  avg loss 2615.655
+  epoch 9/80  avg loss 2530.843
+  epoch 10/80  avg loss 2477.858
+  epoch 11/80  avg loss 2430.405
+  epoch 12/80  avg loss 2454.205
+  epoch 13/80  avg loss 2436.876
+  epoch 14/80  avg loss 2413.070
+  epoch 15/80  avg loss 2400.666
+  epoch 16/80  avg loss 2352.279
+  epoch 17/80  avg loss 2354.697
+  epoch 18/80  avg loss 2333.340
+  epoch 19/80  avg loss 2334.993
+  epoch 20/80  avg loss 2359.739
+  epoch 21/80  avg loss 2402.100
+  epoch 22/80  avg loss 2359.594
+  epoch 23/80  avg loss 2339.637
+  epoch 24/80  avg loss 2329.795
+  epoch 25/80  avg loss 2303.182
+  epoch 26/80  avg loss 2311.732
+  epoch 27/80  avg loss 2331.160
+  epoch 28/80  avg loss 2363.251
+  epoch 29/80  avg loss 2298.435
+  epoch 30/80  avg loss 2244.607
+  epoch 31/80  avg loss 2254.058
+  epoch 32/80  avg loss 2253.289
+  epoch 33/80  avg loss 2286.484
+  epoch 34/80  avg loss 2306.401
+  epoch 35/80  avg loss 2325.262
+  epoch 36/80  avg loss 2268.646
+  epoch 37/80  avg loss 2260.166
+  epoch 38/80  avg loss 2246.188
+  epoch 39/80  avg loss 2266.121
+  epoch 40/80  avg loss 2249.864
+  epoch 41/80  avg loss 2321.174
+  epoch 42/80  avg loss 2307.432
+  epoch 43/80  avg loss 2262.333
+  epoch 44/80  avg loss 2234.135
+  epoch 45/80  avg loss 2301.233
+  epoch 46/80  avg loss 2282.353
+  epoch 47/80  avg loss 2216.415
+  epoch 48/80  avg loss 2244.240
+  epoch 49/80  avg loss 2252.726
+  epoch 50/80  avg loss 2255.940
+  epoch 51/80  avg loss 2241.318
+  epoch 52/80  avg loss 2293.083
+  epoch 53/80  avg loss 2301.249
+  epoch 54/80  avg loss 2263.338
+  epoch 55/80  avg loss 2253.060
+  epoch 56/80  avg loss 2213.827
+  epoch 57/80  avg loss 2266.740
+  epoch 58/80  avg loss 2338.712
+  epoch 59/80  avg loss 2354.428
+  epoch 60/80  avg loss 2318.443
+  epoch 61/80  avg loss 2201.271
+  epoch 62/80  avg loss 2195.755
+  epoch 63/80  avg loss 2174.649
+  epoch 64/80  avg loss 2227.005
+  epoch 65/80  avg loss 2330.764
+  epoch 66/80  avg loss 2411.415
+  epoch 67/80  avg loss 2273.436
+  epoch 68/80  avg loss 2213.366
+  epoch 69/80  avg loss 2189.612
+  epoch 70/80  avg loss 2216.946
+  epoch 71/80  avg loss 2227.165
+  epoch 72/80  avg loss 2258.098
+  epoch 73/80  avg loss 2279.133
+  epoch 74/80  avg loss 2188.114
+  epoch 75/80  avg loss 2135.527
+  epoch 76/80  avg loss 2310.858
+  epoch 77/80  avg loss 2461.322
+  epoch 78/80  avg loss 2333.145
+  epoch 79/80  avg loss 2198.463
+  epoch 80/80  avg loss 2118.958
+
+Evaluating trained patch (clean vs patched)...
+Traceback (most recent call last):
+  File "/home/aarav/attack-test/run_ceiling_matrix.py", line 26, in <module>
+    SU.run()
+  File "/home/aarav/attack-test/patch_attack_scaleup.py", line 288, in run
+    pimg = (final_patch.permute(1,2,0).numpy()*255).astype(np.uint8)[:,:,::-1]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first.

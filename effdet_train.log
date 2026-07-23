@@ -1,0 +1,272 @@
+EfficientDet-D3 training | 640px | batch 18 | 30 epochs
+  ep1/30 it0/360 loss 1.628 lr 0.00000
+  ep1/30 it50/360 loss 1.637 lr 0.00020
+  ep1/30 it100/360 loss 1.481 lr 0.00040
+  ep1/30 it150/360 loss 1.186 lr 0.00060
+  ep1/30 it200/360 loss 1.175 lr 0.00080
+  ep1/30 it250/360 loss 0.930 lr 0.00100
+  ep1/30 it300/360 loss 0.985 lr 0.00120
+  ep1/30 it350/360 loss 0.913 lr 0.00140
+Epoch 1 done, avg loss 1.209
+  ep2/30 it0/360 loss 0.921 lr 0.00144
+  ep2/30 it50/360 loss 0.708 lr 0.00164
+  ep2/30 it100/360 loss 0.740 lr 0.00184
+  ep2/30 it150/360 loss 0.801 lr 0.00200
+  ep2/30 it200/360 loss 0.803 lr 0.00200
+  ep2/30 it250/360 loss 0.769 lr 0.00200
+  ep2/30 it300/360 loss 0.565 lr 0.00200
+  ep2/30 it350/360 loss 0.591 lr 0.00200
+Epoch 2 done, avg loss 0.713
+  ep3/30 it0/360 loss 0.568 lr 0.00199
+  ep3/30 it50/360 loss 0.571 lr 0.00199
+  ep3/30 it100/360 loss 0.580 lr 0.00199
+  ep3/30 it150/360 loss 0.561 lr 0.00199
+  ep3/30 it200/360 loss 0.652 lr 0.00199
+  ep3/30 it250/360 loss 0.593 lr 0.00199
+  ep3/30 it300/360 loss 0.639 lr 0.00199
+  ep3/30 it350/360 loss 0.548 lr 0.00199
+Epoch 3 done, avg loss 0.612
+  ep4/30 it0/360 loss 0.508 lr 0.00198
+  ep4/30 it50/360 loss 0.697 lr 0.00198
+  ep4/30 it100/360 loss 0.469 lr 0.00198
+  ep4/30 it150/360 loss 0.592 lr 0.00198
+  ep4/30 it200/360 loss 0.554 lr 0.00198
+  ep4/30 it250/360 loss 0.648 lr 0.00198
+  ep4/30 it300/360 loss 0.537 lr 0.00198
+  ep4/30 it350/360 loss 0.575 lr 0.00198
+Epoch 4 done, avg loss 0.556
+  ep5/30 it0/360 loss 0.558 lr 0.00195
+  ep5/30 it50/360 loss 0.443 lr 0.00195
+  ep5/30 it100/360 loss 0.508 lr 0.00195
+  ep5/30 it150/360 loss 0.465 lr 0.00195
+  ep5/30 it200/360 loss 0.533 lr 0.00195
+  ep5/30 it250/360 loss 0.548 lr 0.00195
+  ep5/30 it300/360 loss 0.424 lr 0.00195
+  ep5/30 it350/360 loss 0.522 lr 0.00195
+Epoch 5 done, avg loss 0.519
+  ep6/30 it0/360 loss 0.459 lr 0.00191
+  ep6/30 it50/360 loss 0.538 lr 0.00191
+  ep6/30 it100/360 loss 0.628 lr 0.00191
+  ep6/30 it150/360 loss 0.445 lr 0.00191
+  ep6/30 it200/360 loss 0.497 lr 0.00191
+  ep6/30 it250/360 loss 0.467 lr 0.00191
+  ep6/30 it300/360 loss 0.486 lr 0.00191
+  ep6/30 it350/360 loss 0.463 lr 0.00191
+Epoch 6 done, avg loss 0.494
+  ep7/30 it0/360 loss 0.505 lr 0.00187
+  ep7/30 it50/360 loss 0.566 lr 0.00187
+  ep7/30 it100/360 loss 0.506 lr 0.00187
+  ep7/30 it150/360 loss 0.487 lr 0.00187
+  ep7/30 it200/360 loss 0.409 lr 0.00187
+  ep7/30 it250/360 loss 0.452 lr 0.00187
+  ep7/30 it300/360 loss 0.461 lr 0.00187
+  ep7/30 it350/360 loss 0.457 lr 0.00187
+Epoch 7 done, avg loss 0.476
+  ep8/30 it0/360 loss 0.420 lr 0.00181
+  ep8/30 it50/360 loss 0.439 lr 0.00181
+  ep8/30 it100/360 loss 0.543 lr 0.00181
+  ep8/30 it150/360 loss 0.450 lr 0.00181
+  ep8/30 it200/360 loss 0.489 lr 0.00181
+  ep8/30 it250/360 loss 0.474 lr 0.00181
+  ep8/30 it300/360 loss 0.399 lr 0.00181
+  ep8/30 it350/360 loss 0.397 lr 0.00181
+Epoch 8 done, avg loss 0.459
+  ep9/30 it0/360 loss 0.425 lr 0.00174
+  ep9/30 it50/360 loss 0.582 lr 0.00174
+  ep9/30 it100/360 loss 0.489 lr 0.00174
+  ep9/30 it150/360 loss 0.554 lr 0.00174
+  ep9/30 it200/360 loss 0.436 lr 0.00174
+  ep9/30 it250/360 loss 0.396 lr 0.00174
+  ep9/30 it300/360 loss 0.404 lr 0.00174
+  ep9/30 it350/360 loss 0.398 lr 0.00174
+Epoch 9 done, avg loss 0.447
+  ep10/30 it0/360 loss 0.478 lr 0.00167
+  ep10/30 it50/360 loss 0.418 lr 0.00167
+  ep10/30 it100/360 loss 0.415 lr 0.00167
+  ep10/30 it150/360 loss 0.419 lr 0.00167
+  ep10/30 it200/360 loss 0.427 lr 0.00167
+  ep10/30 it250/360 loss 0.472 lr 0.00167
+  ep10/30 it300/360 loss 0.479 lr 0.00167
+  ep10/30 it350/360 loss 0.347 lr 0.00167
+Epoch 10 done, avg loss 0.436
+  ep11/30 it0/360 loss 0.438 lr 0.00159
+  ep11/30 it50/360 loss 0.372 lr 0.00159
+  ep11/30 it100/360 loss 0.420 lr 0.00159
+  ep11/30 it150/360 loss 0.356 lr 0.00159
+  ep11/30 it200/360 loss 0.295 lr 0.00159
+  ep11/30 it250/360 loss 0.366 lr 0.00159
+  ep11/30 it300/360 loss 0.434 lr 0.00159
+  ep11/30 it350/360 loss 0.466 lr 0.00159
+Epoch 11 done, avg loss 0.427
+  ep12/30 it0/360 loss 0.487 lr 0.00150
+  ep12/30 it50/360 loss 0.405 lr 0.00150
+  ep12/30 it100/360 loss 0.346 lr 0.00150
+  ep12/30 it150/360 loss 0.479 lr 0.00150
+  ep12/30 it200/360 loss 0.395 lr 0.00150
+  ep12/30 it250/360 loss 0.473 lr 0.00150
+  ep12/30 it300/360 loss 0.399 lr 0.00150
+  ep12/30 it350/360 loss 0.428 lr 0.00150
+Epoch 12 done, avg loss 0.418
+  ep13/30 it0/360 loss 0.367 lr 0.00141
+  ep13/30 it50/360 loss 0.425 lr 0.00141
+  ep13/30 it100/360 loss 0.487 lr 0.00141
+  ep13/30 it150/360 loss 0.368 lr 0.00141
+  ep13/30 it200/360 loss 0.381 lr 0.00141
+  ep13/30 it250/360 loss 0.376 lr 0.00141
+  ep13/30 it300/360 loss 0.406 lr 0.00141
+  ep13/30 it350/360 loss 0.381 lr 0.00141
+Epoch 13 done, avg loss 0.410
+  ep14/30 it0/360 loss 0.433 lr 0.00131
+  ep14/30 it50/360 loss 0.382 lr 0.00131
+  ep14/30 it100/360 loss 0.391 lr 0.00131
+  ep14/30 it150/360 loss 0.413 lr 0.00131
+  ep14/30 it200/360 loss 0.406 lr 0.00131
+  ep14/30 it250/360 loss 0.360 lr 0.00131
+  ep14/30 it300/360 loss 0.426 lr 0.00131
+  ep14/30 it350/360 loss 0.337 lr 0.00131
+Epoch 14 done, avg loss 0.403
+  ep15/30 it0/360 loss 0.510 lr 0.00121
+  ep15/30 it50/360 loss 0.545 lr 0.00121
+  ep15/30 it100/360 loss 0.408 lr 0.00121
+  ep15/30 it150/360 loss 0.431 lr 0.00121
+  ep15/30 it200/360 loss 0.417 lr 0.00121
+  ep15/30 it250/360 loss 0.327 lr 0.00121
+  ep15/30 it300/360 loss 0.329 lr 0.00121
+  ep15/30 it350/360 loss 0.458 lr 0.00121
+Epoch 15 done, avg loss 0.398
+  ep16/30 it0/360 loss 0.344 lr 0.00110
+  ep16/30 it50/360 loss 0.443 lr 0.00110
+  ep16/30 it100/360 loss 0.415 lr 0.00110
+  ep16/30 it150/360 loss 0.349 lr 0.00110
+  ep16/30 it200/360 loss 0.426 lr 0.00110
+  ep16/30 it250/360 loss 0.501 lr 0.00110
+  ep16/30 it300/360 loss 0.340 lr 0.00110
+  ep16/30 it350/360 loss 0.395 lr 0.00110
+Epoch 16 done, avg loss 0.392
+  ep17/30 it0/360 loss 0.371 lr 0.00100
+  ep17/30 it50/360 loss 0.428 lr 0.00100
+  ep17/30 it100/360 loss 0.490 lr 0.00100
+  ep17/30 it150/360 loss 0.339 lr 0.00100
+  ep17/30 it200/360 loss 0.427 lr 0.00100
+  ep17/30 it250/360 loss 0.500 lr 0.00100
+  ep17/30 it300/360 loss 0.385 lr 0.00100
+  ep17/30 it350/360 loss 0.461 lr 0.00100
+Epoch 17 done, avg loss 0.387
+  ep18/30 it0/360 loss 0.391 lr 0.00090
+  ep18/30 it50/360 loss 0.341 lr 0.00090
+  ep18/30 it100/360 loss 0.334 lr 0.00090
+  ep18/30 it150/360 loss 0.362 lr 0.00090
+  ep18/30 it200/360 loss 0.394 lr 0.00090
+  ep18/30 it250/360 loss 0.318 lr 0.00090
+  ep18/30 it300/360 loss 0.384 lr 0.00090
+  ep18/30 it350/360 loss 0.361 lr 0.00090
+Epoch 18 done, avg loss 0.381
+  ep19/30 it0/360 loss 0.380 lr 0.00079
+  ep19/30 it50/360 loss 0.348 lr 0.00079
+  ep19/30 it100/360 loss 0.343 lr 0.00079
+  ep19/30 it150/360 loss 0.396 lr 0.00079
+  ep19/30 it200/360 loss 0.352 lr 0.00079
+  ep19/30 it250/360 loss 0.401 lr 0.00079
+  ep19/30 it300/360 loss 0.302 lr 0.00079
+  ep19/30 it350/360 loss 0.401 lr 0.00079
+Epoch 19 done, avg loss 0.377
+  ep20/30 it0/360 loss 0.336 lr 0.00069
+  ep20/30 it50/360 loss 0.406 lr 0.00069
+  ep20/30 it100/360 loss 0.421 lr 0.00069
+  ep20/30 it150/360 loss 0.389 lr 0.00069
+  ep20/30 it200/360 loss 0.367 lr 0.00069
+  ep20/30 it250/360 loss 0.333 lr 0.00069
+  ep20/30 it300/360 loss 0.354 lr 0.00069
+  ep20/30 it350/360 loss 0.351 lr 0.00069
+Epoch 20 done, avg loss 0.375
+  ep21/30 it0/360 loss 0.377 lr 0.00059
+  ep21/30 it50/360 loss 0.330 lr 0.00059
+  ep21/30 it100/360 loss 0.377 lr 0.00059
+  ep21/30 it150/360 loss 0.352 lr 0.00059
+  ep21/30 it200/360 loss 0.323 lr 0.00059
+  ep21/30 it250/360 loss 0.387 lr 0.00059
+  ep21/30 it300/360 loss 0.384 lr 0.00059
+  ep21/30 it350/360 loss 0.348 lr 0.00059
+Epoch 21 done, avg loss 0.371
+  ep22/30 it0/360 loss 0.382 lr 0.00050
+  ep22/30 it50/360 loss 0.397 lr 0.00050
+  ep22/30 it100/360 loss 0.335 lr 0.00050
+  ep22/30 it150/360 loss 0.391 lr 0.00050
+  ep22/30 it200/360 loss 0.358 lr 0.00050
+  ep22/30 it250/360 loss 0.351 lr 0.00050
+  ep22/30 it300/360 loss 0.373 lr 0.00050
+  ep22/30 it350/360 loss 0.450 lr 0.00050
+Epoch 22 done, avg loss 0.369
+  ep23/30 it0/360 loss 0.434 lr 0.00041
+  ep23/30 it50/360 loss 0.382 lr 0.00041
+  ep23/30 it100/360 loss 0.394 lr 0.00041
+  ep23/30 it150/360 loss 0.374 lr 0.00041
+  ep23/30 it200/360 loss 0.395 lr 0.00041
+  ep23/30 it250/360 loss 0.386 lr 0.00041
+  ep23/30 it300/360 loss 0.415 lr 0.00041
+  ep23/30 it350/360 loss 0.328 lr 0.00041
+Epoch 23 done, avg loss 0.365
+  ep24/30 it0/360 loss 0.382 lr 0.00033
+  ep24/30 it50/360 loss 0.412 lr 0.00033
+  ep24/30 it100/360 loss 0.357 lr 0.00033
+  ep24/30 it150/360 loss 0.356 lr 0.00033
+  ep24/30 it200/360 loss 0.321 lr 0.00033
+  ep24/30 it250/360 loss 0.362 lr 0.00033
+  ep24/30 it300/360 loss 0.339 lr 0.00033
+  ep24/30 it350/360 loss 0.343 lr 0.00033
+Epoch 24 done, avg loss 0.365
+  ep25/30 it0/360 loss 0.349 lr 0.00026
+  ep25/30 it50/360 loss 0.370 lr 0.00026
+  ep25/30 it100/360 loss 0.313 lr 0.00026
+  ep25/30 it150/360 loss 0.451 lr 0.00026
+  ep25/30 it200/360 loss 0.385 lr 0.00026
+  ep25/30 it250/360 loss 0.336 lr 0.00026
+  ep25/30 it300/360 loss 0.330 lr 0.00026
+  ep25/30 it350/360 loss 0.418 lr 0.00026
+Epoch 25 done, avg loss 0.363
+  ep26/30 it0/360 loss 0.378 lr 0.00019
+  ep26/30 it50/360 loss 0.345 lr 0.00019
+  ep26/30 it100/360 loss 0.424 lr 0.00019
+  ep26/30 it150/360 loss 0.298 lr 0.00019
+  ep26/30 it200/360 loss 0.342 lr 0.00019
+  ep26/30 it250/360 loss 0.318 lr 0.00019
+  ep26/30 it300/360 loss 0.385 lr 0.00019
+  ep26/30 it350/360 loss 0.364 lr 0.00019
+Epoch 26 done, avg loss 0.363
+  ep27/30 it0/360 loss 0.334 lr 0.00013
+  ep27/30 it50/360 loss 0.344 lr 0.00013
+  ep27/30 it100/360 loss 0.347 lr 0.00013
+  ep27/30 it150/360 loss 0.317 lr 0.00013
+  ep27/30 it200/360 loss 0.397 lr 0.00013
+  ep27/30 it250/360 loss 0.359 lr 0.00013
+  ep27/30 it300/360 loss 0.363 lr 0.00013
+  ep27/30 it350/360 loss 0.387 lr 0.00013
+Epoch 27 done, avg loss 0.361
+  ep28/30 it0/360 loss 0.335 lr 0.00009
+  ep28/30 it50/360 loss 0.391 lr 0.00009
+  ep28/30 it100/360 loss 0.439 lr 0.00009
+  ep28/30 it150/360 loss 0.359 lr 0.00009
+  ep28/30 it200/360 loss 0.325 lr 0.00009
+  ep28/30 it250/360 loss 0.325 lr 0.00009
+  ep28/30 it300/360 loss 0.304 lr 0.00009
+  ep28/30 it350/360 loss 0.309 lr 0.00009
+Epoch 28 done, avg loss 0.359
+  ep29/30 it0/360 loss 0.356 lr 0.00005
+  ep29/30 it50/360 loss 0.358 lr 0.00005
+  ep29/30 it100/360 loss 0.366 lr 0.00005
+  ep29/30 it150/360 loss 0.317 lr 0.00005
+  ep29/30 it200/360 loss 0.344 lr 0.00005
+  ep29/30 it250/360 loss 0.359 lr 0.00005
+  ep29/30 it300/360 loss 0.295 lr 0.00005
+  ep29/30 it350/360 loss 0.354 lr 0.00005
+Epoch 29 done, avg loss 0.360
+  ep30/30 it0/360 loss 0.416 lr 0.00002
+  ep30/30 it50/360 loss 0.326 lr 0.00002
+  ep30/30 it100/360 loss 0.329 lr 0.00002
+  ep30/30 it150/360 loss 0.382 lr 0.00002
+  ep30/30 it200/360 loss 0.365 lr 0.00002
+  ep30/30 it250/360 loss 0.308 lr 0.00002
+  ep30/30 it300/360 loss 0.285 lr 0.00002
+  ep30/30 it350/360 loss 0.463 lr 0.00002
+Epoch 30 done, avg loss 0.360
+Saved efficientdet_d3.pt

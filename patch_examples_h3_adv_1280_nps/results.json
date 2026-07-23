@@ -1,0 +1,39 @@
+{
+  "run": "h3_adv_1280_nps",
+  "mode": "adversarial",
+  "img_size": 1280,
+  "nps_weight": 0.01,
+  "tv_weight": 2.5,
+  "epochs": 80,
+  "eval_area_frac": 0.2,
+  "train_images": 100,
+  "eval_images": 514,
+  "objects_kept": 8933,
+  "objects_dropped": 8107,
+  "eligible_detected_clean": 7328,
+  "hidden": 6033,
+  "hiding_asr_class_mean": 0.8502397689853377,
+  "hiding_asr_pooled": 0.8232805676855895,
+  "per_class": {
+    "car": {
+      "hidden": 5141,
+      "eligible": 6329,
+      "asr": 0.8122926212671828
+    },
+    "van": {
+      "hidden": 651,
+      "eligible": 689,
+      "asr": 0.9448476052249637
+    },
+    "truck": {
+      "hidden": 152,
+      "eligible": 215,
+      "asr": 0.7069767441860465
+    },
+    "bus": {
+      "hidden": 89,
+      "eligible": 95,
+      "asr": 0.9368421052631579
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "run": "h1_adv_640_nps_test",
+  "mode": "adversarial",
+  "img_size": 640,
+  "nps_weight": 0.01,
+  "tv_weight": 2.5,
+  "epochs": 80,
+  "eval_area_frac": 0.2,
+  "train_images": 100,
+  "eval_images": 1519,
+  "objects_kept": 17990,
+  "objects_dropped": 21454,
+  "eligible_detected_clean": 12615,
+  "hidden": 7977,
+  "hiding_asr_class_mean": 0.7166109055730514,
+  "hiding_asr_pooled": 0.6323424494649227,
+  "per_class": {
+    "car": {
+      "hidden": 5455,
+      "eligible": 9415,
+      "asr": 0.5793945831120553
+    },
+    "van": {
+      "hidden": 1031,
+      "eligible": 1277,
+      "asr": 0.8073610023492561
+    },
+    "truck": {
+      "hidden": 433,
+      "eligible": 735,
+      "asr": 0.5891156462585034
+    },
+    "bus": {
+      "hidden": 1058,
+      "eligible": 1188,
+      "asr": 0.8905723905723906
+    }
+  },
+  "note": "results.json reconstructed from saved boxes.json after a NameError crashed the original write; numbers are exact (recomputed from stored detections)."
+}

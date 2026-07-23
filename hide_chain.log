@@ -1,0 +1,369 @@
+
+======================================================================
+=== h0a_gray_640
+======================================================================
+=== h0a_gray_640 | MODE=gray | IMG_SIZE=640 | NPS=0.0 | TV=2.5 | EPOCHS=80 ===
+[data] 514 images | kept 8933 objects | dropped 8107 below 0.1% of image area (47.6% of objects) <-- Pathak III.C filter; report this
+[data] train on 100 images | eval on 514 images
+[data] eval objects per class: car=7251  van=1066  truck=472  bus=144   <-- class-mean ASR is only as stable as the smallest of these
+[save] patch written to patch_examples_h0a_gray_640/
+
+Evaluating on 514 images (clean vs patched)...
+
+==== HIDING PATCH RESULTS — h0a_gray_640 ====
+train images: 100   eval images: 514
+objects kept: 8933   dropped by 0.1% filter: 8107
+eligible (correctly detected CLEAN): 7440   hidden: 1399
+   car      989/ 6416 = 0.154
+   van      289/  707 = 0.409
+   truck     74/  212 = 0.349
+   bus       47/  105 = 0.448
+
+hiding ASR (class-mean, Pathak III.D): 0.340   <- HEADLINE
+hiding ASR (pooled, car-dominated)   : 0.188
+
+Saved to patch_examples_h0a_gray_640/
+
+======================================================================
+=== h0b_random_640
+======================================================================
+=== h0b_random_640 | MODE=random | IMG_SIZE=640 | NPS=0.0 | TV=2.5 | EPOCHS=80 ===
+[data] 514 images | kept 8933 objects | dropped 8107 below 0.1% of image area (47.6% of objects) <-- Pathak III.C filter; report this
+[data] train on 100 images | eval on 514 images
+[data] eval objects per class: car=7251  van=1066  truck=472  bus=144   <-- class-mean ASR is only as stable as the smallest of these
+[save] patch written to patch_examples_h0b_random_640/
+
+Evaluating on 514 images (clean vs patched)...
+
+==== HIDING PATCH RESULTS — h0b_random_640 ====
+train images: 100   eval images: 514
+objects kept: 8933   dropped by 0.1% filter: 8107
+eligible (correctly detected CLEAN): 7440   hidden: 2454
+   car     1946/ 6416 = 0.303
+   van      396/  707 = 0.560
+   truck     74/  212 = 0.349
+   bus       38/  105 = 0.362
+
+hiding ASR (class-mean, Pathak III.D): 0.394   <- HEADLINE
+hiding ASR (pooled, car-dominated)   : 0.330
+
+Saved to patch_examples_h0b_random_640/
+
+======================================================================
+=== h1_adv_640_nps
+======================================================================
+=== h1_adv_640_nps | MODE=adversarial | IMG_SIZE=640 | NPS=0.01 | TV=2.5 | EPOCHS=80 ===
+[data] 514 images | kept 8933 objects | dropped 8107 below 0.1% of image area (47.6% of objects) <-- Pathak III.C filter; report this
+[data] train on 100 images | eval on 514 images
+[data] eval objects per class: car=7251  van=1066  truck=472  bus=144   <-- class-mean ASR is only as stable as the smallest of these
+[nps] 30 printable colours from 30values.txt
+  epoch 1/80  avg loss -23.405  (5s)
+  epoch 2/80  avg loss -28.856  (8s)
+  epoch 3/80  avg loss -30.134  (11s)
+  epoch 4/80  avg loss -32.104  (15s)
+  epoch 5/80  avg loss -33.954  (18s)
+  epoch 6/80  avg loss -35.247  (21s)
+  epoch 7/80  avg loss -35.643  (24s)
+  epoch 8/80  avg loss -35.190  (28s)
+  epoch 9/80  avg loss -36.187  (31s)
+  epoch 10/80  avg loss -37.191  (34s)
+  epoch 11/80  avg loss -36.274  (37s)
+  epoch 12/80  avg loss -36.324  (40s)
+  epoch 13/80  avg loss -36.309  (44s)
+  epoch 14/80  avg loss -36.887  (47s)
+  epoch 15/80  avg loss -37.122  (50s)
+  epoch 16/80  avg loss -37.120  (54s)
+  epoch 17/80  avg loss -37.121  (57s)
+  epoch 18/80  avg loss -35.581  (61s)
+  epoch 19/80  avg loss -36.085  (64s)
+  epoch 20/80  avg loss -37.020  (68s)
+  epoch 21/80  avg loss -36.327  (71s)
+  epoch 22/80  avg loss -35.482  (75s)
+  epoch 23/80  avg loss -36.429  (78s)
+  epoch 24/80  avg loss -36.077  (81s)
+  epoch 25/80  avg loss -36.584  (85s)
+  epoch 26/80  avg loss -37.957  (88s)
+  epoch 27/80  avg loss -36.459  (92s)
+  epoch 28/80  avg loss -37.134  (95s)
+  epoch 29/80  avg loss -35.991  (98s)
+  epoch 30/80  avg loss -36.387  (102s)
+  epoch 31/80  avg loss -35.360  (105s)
+  epoch 32/80  avg loss -37.415  (108s)
+  epoch 33/80  avg loss -36.961  (112s)
+  epoch 34/80  avg loss -36.735  (115s)
+  epoch 35/80  avg loss -36.677  (119s)
+  epoch 36/80  avg loss -36.971  (122s)
+  epoch 37/80  avg loss -36.702  (126s)
+  epoch 38/80  avg loss -36.379  (129s)
+  epoch 39/80  avg loss -36.194  (132s)
+  epoch 40/80  avg loss -36.902  (136s)
+  epoch 41/80  avg loss -36.627  (139s)
+  epoch 42/80  avg loss -36.412  (142s)
+  epoch 43/80  avg loss -37.369  (145s)
+  epoch 44/80  avg loss -36.961  (148s)
+  epoch 45/80  avg loss -36.131  (151s)
+  epoch 46/80  avg loss -36.609  (154s)
+  epoch 47/80  avg loss -37.712  (157s)
+  epoch 48/80  avg loss -36.836  (160s)
+  epoch 49/80  avg loss -37.458  (163s)
+  epoch 50/80  avg loss -36.853  (167s)
+  epoch 51/80  avg loss -37.419  (170s)
+  epoch 52/80  avg loss -37.258  (173s)
+  epoch 53/80  avg loss -37.155  (176s)
+  epoch 54/80  avg loss -37.598  (179s)
+  epoch 55/80  avg loss -35.992  (182s)
+  epoch 56/80  avg loss -37.537  (185s)
+  epoch 57/80  avg loss -37.036  (188s)
+  epoch 58/80  avg loss -37.695  (191s)
+  epoch 59/80  avg loss -35.618  (195s)
+  epoch 60/80  avg loss -37.497  (198s)
+  epoch 61/80  avg loss -36.159  (201s)
+  epoch 62/80  avg loss -36.894  (204s)
+  epoch 63/80  avg loss -37.495  (207s)
+  epoch 64/80  avg loss -36.382  (211s)
+  epoch 65/80  avg loss -37.013  (214s)
+  epoch 66/80  avg loss -36.525  (217s)
+  epoch 67/80  avg loss -37.018  (220s)
+  epoch 68/80  avg loss -35.792  (223s)
+  epoch 69/80  avg loss -36.376  (227s)
+  epoch 70/80  avg loss -35.890  (230s)
+  epoch 71/80  avg loss -37.328  (233s)
+  epoch 72/80  avg loss -37.667  (236s)
+  epoch 73/80  avg loss -36.877  (239s)
+  epoch 74/80  avg loss -37.569  (242s)
+  epoch 75/80  avg loss -36.804  (245s)
+  epoch 76/80  avg loss -37.768  (248s)
+  epoch 77/80  avg loss -36.707  (252s)
+  epoch 78/80  avg loss -37.491  (255s)
+  epoch 79/80  avg loss -37.723  (258s)
+  epoch 80/80  avg loss -37.970  (261s)
+[save] patch written to patch_examples_h1_adv_640_nps/
+
+Evaluating on 514 images (clean vs patched)...
+
+==== HIDING PATCH RESULTS — h1_adv_640_nps ====
+train images: 100   eval images: 514
+objects kept: 8933   dropped by 0.1% filter: 8107
+eligible (correctly detected CLEAN): 7440   hidden: 4341
+   car     3613/ 6416 = 0.563
+   van      549/  707 = 0.777
+   truck    105/  212 = 0.495
+   bus       74/  105 = 0.705
+
+hiding ASR (class-mean, Pathak III.D): 0.635   <- HEADLINE
+hiding ASR (pooled, car-dominated)   : 0.583
+
+Saved to patch_examples_h1_adv_640_nps/
+
+======================================================================
+=== h2_adv_640_nonps
+======================================================================
+=== h2_adv_640_nonps | MODE=adversarial | IMG_SIZE=640 | NPS=0.0 | TV=2.5 | EPOCHS=80 ===
+[data] 514 images | kept 8933 objects | dropped 8107 below 0.1% of image area (47.6% of objects) <-- Pathak III.C filter; report this
+[data] train on 100 images | eval on 514 images
+[data] eval objects per class: car=7251  van=1066  truck=472  bus=144   <-- class-mean ASR is only as stable as the smallest of these
+  epoch 1/80  avg loss -23.250  (4s)
+  epoch 2/80  avg loss -28.611  (7s)
+  epoch 3/80  avg loss -30.207  (11s)
+  epoch 4/80  avg loss -32.049  (14s)
+  epoch 5/80  avg loss -33.439  (17s)
+  epoch 6/80  avg loss -34.105  (20s)
+  epoch 7/80  avg loss -34.933  (23s)
+  epoch 8/80  avg loss -34.578  (26s)
+  epoch 9/80  avg loss -34.986  (29s)
+  epoch 10/80  avg loss -36.586  (32s)
+  epoch 11/80  avg loss -36.070  (35s)
+  epoch 12/80  avg loss -35.974  (38s)
+  epoch 13/80  avg loss -35.013  (41s)
+  epoch 14/80  avg loss -35.845  (44s)
+  epoch 15/80  avg loss -36.636  (47s)
+  epoch 16/80  avg loss -37.110  (51s)
+  epoch 17/80  avg loss -36.581  (54s)
+  epoch 18/80  avg loss -35.103  (57s)
+  epoch 19/80  avg loss -35.534  (60s)
+  epoch 20/80  avg loss -37.031  (63s)
+  epoch 21/80  avg loss -36.514  (66s)
+  epoch 22/80  avg loss -35.652  (69s)
+  epoch 23/80  avg loss -36.165  (72s)
+  epoch 24/80  avg loss -35.782  (75s)
+  epoch 25/80  avg loss -36.426  (78s)
+  epoch 26/80  avg loss -38.003  (81s)
+  epoch 27/80  avg loss -36.565  (84s)
+  epoch 28/80  avg loss -37.325  (87s)
+  epoch 29/80  avg loss -36.171  (91s)
+  epoch 30/80  avg loss -36.313  (94s)
+  epoch 31/80  avg loss -35.794  (97s)
+  epoch 32/80  avg loss -36.985  (100s)
+  epoch 33/80  avg loss -36.870  (103s)
+  epoch 34/80  avg loss -36.552  (106s)
+  epoch 35/80  avg loss -36.252  (109s)
+  epoch 36/80  avg loss -36.728  (112s)
+  epoch 37/80  avg loss -36.428  (115s)
+  epoch 38/80  avg loss -36.168  (118s)
+  epoch 39/80  avg loss -36.930  (121s)
+  epoch 40/80  avg loss -37.095  (124s)
+  epoch 41/80  avg loss -36.600  (128s)
+  epoch 42/80  avg loss -36.739  (131s)
+  epoch 43/80  avg loss -37.475  (134s)
+  epoch 44/80  avg loss -37.033  (137s)
+  epoch 45/80  avg loss -36.336  (140s)
+  epoch 46/80  avg loss -36.458  (143s)
+  epoch 47/80  avg loss -37.390  (146s)
+  epoch 48/80  avg loss -36.806  (149s)
+  epoch 49/80  avg loss -36.877  (152s)
+  epoch 50/80  avg loss -36.950  (155s)
+  epoch 51/80  avg loss -37.735  (158s)
+  epoch 52/80  avg loss -36.786  (162s)
+  epoch 53/80  avg loss -36.881  (165s)
+  epoch 54/80  avg loss -36.989  (168s)
+  epoch 55/80  avg loss -35.799  (171s)
+  epoch 56/80  avg loss -36.967  (174s)
+  epoch 57/80  avg loss -36.574  (177s)
+  epoch 58/80  avg loss -37.742  (180s)
+  epoch 59/80  avg loss -36.250  (183s)
+  epoch 60/80  avg loss -37.859  (186s)
+  epoch 61/80  avg loss -35.975  (189s)
+  epoch 62/80  avg loss -36.773  (193s)
+  epoch 63/80  avg loss -37.230  (196s)
+  epoch 64/80  avg loss -35.727  (199s)
+  epoch 65/80  avg loss -37.004  (202s)
+  epoch 66/80  avg loss -37.190  (205s)
+  epoch 67/80  avg loss -37.049  (208s)
+  epoch 68/80  avg loss -36.332  (211s)
+  epoch 69/80  avg loss -36.918  (214s)
+  epoch 70/80  avg loss -36.293  (217s)
+  epoch 71/80  avg loss -37.165  (220s)
+  epoch 72/80  avg loss -37.146  (224s)
+  epoch 73/80  avg loss -38.156  (227s)
+  epoch 74/80  avg loss -37.346  (230s)
+  epoch 75/80  avg loss -36.739  (233s)
+  epoch 76/80  avg loss -37.500  (236s)
+  epoch 77/80  avg loss -36.686  (239s)
+  epoch 78/80  avg loss -37.809  (242s)
+  epoch 79/80  avg loss -37.971  (246s)
+  epoch 80/80  avg loss -38.189  (249s)
+[save] patch written to patch_examples_h2_adv_640_nonps/
+
+Evaluating on 514 images (clean vs patched)...
+
+==== HIDING PATCH RESULTS — h2_adv_640_nonps ====
+train images: 100   eval images: 514
+objects kept: 8933   dropped by 0.1% filter: 8107
+eligible (correctly detected CLEAN): 7440   hidden: 4307
+   car     3573/ 6416 = 0.557
+   van      555/  707 = 0.785
+   truck    104/  212 = 0.491
+   bus       75/  105 = 0.714
+
+hiding ASR (class-mean, Pathak III.D): 0.637   <- HEADLINE
+hiding ASR (pooled, car-dominated)   : 0.579
+
+Saved to patch_examples_h2_adv_640_nonps/
+
+======================================================================
+=== h3_adv_1280_nps
+======================================================================
+=== h3_adv_1280_nps | MODE=adversarial | IMG_SIZE=1280 | NPS=0.01 | TV=2.5 | EPOCHS=80 ===
+[data] 514 images | kept 8933 objects | dropped 8107 below 0.1% of image area (47.6% of objects) <-- Pathak III.C filter; report this
+[data] train on 100 images | eval on 514 images
+[data] eval objects per class: car=7251  van=1066  truck=472  bus=144   <-- class-mean ASR is only as stable as the smallest of these
+[nps] 30 printable colours from 30values.txt
+  epoch 1/80  avg loss -27.558  (7s)
+  epoch 2/80  avg loss -36.445  (12s)
+  epoch 3/80  avg loss -41.122  (18s)
+  epoch 4/80  avg loss -43.689  (23s)
+  epoch 5/80  avg loss -46.519  (28s)
+  epoch 6/80  avg loss -47.056  (34s)
+  epoch 7/80  avg loss -47.994  (39s)
+  epoch 8/80  avg loss -47.669  (45s)
+  epoch 9/80  avg loss -47.936  (50s)
+  epoch 10/80  avg loss -48.430  (56s)
+  epoch 11/80  avg loss -47.618  (61s)
+  epoch 12/80  avg loss -48.881  (67s)
+  epoch 13/80  avg loss -48.389  (72s)
+  epoch 14/80  avg loss -48.178  (78s)
+  epoch 15/80  avg loss -48.726  (83s)
+  epoch 16/80  avg loss -49.051  (89s)
+  epoch 17/80  avg loss -49.564  (94s)
+  epoch 18/80  avg loss -49.884  (100s)
+  epoch 19/80  avg loss -48.670  (105s)
+  epoch 20/80  avg loss -50.428  (111s)
+  epoch 21/80  avg loss -49.978  (116s)
+  epoch 22/80  avg loss -48.761  (121s)
+  epoch 23/80  avg loss -49.520  (127s)
+  epoch 24/80  avg loss -48.604  (132s)
+  epoch 25/80  avg loss -49.777  (138s)
+  epoch 26/80  avg loss -50.399  (143s)
+  epoch 27/80  avg loss -49.296  (149s)
+  epoch 28/80  avg loss -50.552  (154s)
+  epoch 29/80  avg loss -48.585  (160s)
+  epoch 30/80  avg loss -49.775  (165s)
+  epoch 31/80  avg loss -49.306  (171s)
+  epoch 32/80  avg loss -50.411  (176s)
+  epoch 33/80  avg loss -49.006  (182s)
+  epoch 34/80  avg loss -50.186  (187s)
+  epoch 35/80  avg loss -49.110  (193s)
+  epoch 36/80  avg loss -49.983  (198s)
+  epoch 37/80  avg loss -48.983  (204s)
+  epoch 38/80  avg loss -49.915  (209s)
+  epoch 39/80  avg loss -49.527  (215s)
+  epoch 40/80  avg loss -49.577  (220s)
+  epoch 41/80  avg loss -49.595  (226s)
+  epoch 42/80  avg loss -49.767  (231s)
+  epoch 43/80  avg loss -49.842  (237s)
+  epoch 44/80  avg loss -50.144  (242s)
+  epoch 45/80  avg loss -49.466  (248s)
+  epoch 46/80  avg loss -50.166  (253s)
+  epoch 47/80  avg loss -49.803  (259s)
+  epoch 48/80  avg loss -50.122  (264s)
+  epoch 49/80  avg loss -49.862  (270s)
+  epoch 50/80  avg loss -50.402  (275s)
+  epoch 51/80  avg loss -49.261  (281s)
+  epoch 52/80  avg loss -49.571  (286s)
+  epoch 53/80  avg loss -49.374  (292s)
+  epoch 54/80  avg loss -50.239  (297s)
+  epoch 55/80  avg loss -48.295  (303s)
+  epoch 56/80  avg loss -49.563  (308s)
+  epoch 57/80  avg loss -50.446  (314s)
+  epoch 58/80  avg loss -50.283  (319s)
+  epoch 59/80  avg loss -49.358  (325s)
+  epoch 60/80  avg loss -50.686  (330s)
+  epoch 61/80  avg loss -49.835  (336s)
+  epoch 62/80  avg loss -49.876  (341s)
+  epoch 63/80  avg loss -49.420  (347s)
+  epoch 64/80  avg loss -48.885  (352s)
+  epoch 65/80  avg loss -50.657  (358s)
+  epoch 66/80  avg loss -49.531  (363s)
+  epoch 67/80  avg loss -51.386  (369s)
+  epoch 68/80  avg loss -49.694  (374s)
+  epoch 69/80  avg loss -50.489  (380s)
+  epoch 70/80  avg loss -50.087  (385s)
+  epoch 71/80  avg loss -50.430  (391s)
+  epoch 72/80  avg loss -50.818  (396s)
+  epoch 73/80  avg loss -49.590  (402s)
+  epoch 74/80  avg loss -49.392  (407s)
+  epoch 75/80  avg loss -50.427  (413s)
+  epoch 76/80  avg loss -49.798  (418s)
+  epoch 77/80  avg loss -49.024  (424s)
+  epoch 78/80  avg loss -50.522  (429s)
+  epoch 79/80  avg loss -50.536  (435s)
+  epoch 80/80  avg loss -49.815  (441s)
+[save] patch written to patch_examples_h3_adv_1280_nps/
+
+Evaluating on 514 images (clean vs patched)...
+
+==== HIDING PATCH RESULTS — h3_adv_1280_nps ====
+train images: 100   eval images: 514
+objects kept: 8933   dropped by 0.1% filter: 8107
+eligible (correctly detected CLEAN): 7328   hidden: 6033
+   car     5141/ 6329 = 0.812
+   van      651/  689 = 0.945
+   truck    152/  215 = 0.707
+   bus       89/   95 = 0.937
+
+hiding ASR (class-mean, Pathak III.D): 0.850   <- HEADLINE
+hiding ASR (pooled, car-dominated)   : 0.823
+
+Saved to patch_examples_h3_adv_1280_nps/
+
+=== CHAIN COMPLETE ===

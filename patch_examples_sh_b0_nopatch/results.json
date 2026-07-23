@@ -1,0 +1,28 @@
+{
+  "run": "sh_b0_nopatch",
+  "shape": "square",
+  "opacity": 1.0,
+  "area_frac": 0.1,
+  "no_overflow": 1,
+  "rot_deg": 20.0,
+  "lr": 0.03,
+  "mode": "none",
+  "epochs": 80,
+  "eval_images": 1360,
+  "cars_kept": 11446,
+  "cars_dropped": 16628,
+  "eligible": 9415,
+  "ambiguous": 457,
+  "denominator": 8958,
+  "flipped": 0,
+  "lost": 0,
+  "still_car": 8958,
+  "strict_asr": 0.0,
+  "lost_rate": 0.0,
+  "still_rate": 1.0,
+  "overflow": {
+    "capped_pct": 0.0,
+    "mean_realized_frac": 0.0,
+    "n": 0
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "run": "sh_roof_circle",
+  "shape": "circle",
+  "opacity": 1.0,
+  "area_frac": 0.2,
+  "no_overflow": 1,
+  "rot_deg": 20.0,
+  "lr": 0.03,
+  "mode": "adversarial",
+  "place_mode": "roof",
+  "roof_len": 0.3,
+  "roof_wid": 0.7,
+  "epochs": 160,
+  "eval_images": 1360,
+  "cars_kept": 11446,
+  "cars_dropped": 16628,
+  "eligible": 9415,
+  "ambiguous": 457,
+  "denominator": 8958,
+  "flipped": 1270,
+  "lost": 2345,
+  "still_car": 5343,
+  "strict_asr": 0.14177271712435813,
+  "lost_rate": 0.2617771824067872,
+  "still_rate": 0.5964501004688546,
+  "overflow": {
+    "capped_pct": 100.0,
+    "mean_realized_frac": 0.10939844090058272,
+    "n": 11446
+  }
+}

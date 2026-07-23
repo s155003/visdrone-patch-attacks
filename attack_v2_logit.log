@@ -1,0 +1,52 @@
+STRONGER targeted truck->car attack on 20 truck images (DEVICE=cpu)
+Params: EPS=0.0627, ALPHA=0.0078, ITERS=120, CW_ITERS=150, MARGIN=5.0
+Head layout @640px: strides [8, 16, 32], anchors/head [6400, 1600, 400], total 8400
+NOTE: model cls outputs are sigmoid PROBS -> MARGIN=5.0 is inert (see report).
+
+FLIP DEFINITION: a ground-truth TRUCK counts as 'flipped' iff the detector
+  outputs a CAR (conf>=0.25) whose box has IoU>=0.5 with that
+  truck's box -- i.e. a car AT the truck's location, NOT merely any car in the image.
+  Image-level flip = at least one of that image's trucks is flipped.
+
+Issue-2 head-coverage check (first 5 images):
+    [head] 0000001_02999_d_0000005: mask=41 anchors {8: 31, 16: 7, 32: 3} | truck strongest @ stride8 (truckscore 0.865) | loss covers ['stride16', 'stride32', 'stride8']  -> OK (covers responsible head)
+  1/20 0000001_02999_d_0000005 done (trucks=1)
+    [head] 0000026_04978_d_0000034: mask=28 anchors {8: 23, 16: 4, 32: 1} | truck strongest @ stride8 (truckscore 0.047) | loss covers ['stride16', 'stride32', 'stride8']  -> OK (covers responsible head)
+  2/20 0000026_04978_d_0000034 done (trucks=1)
+    [head] 0000055_00714_d_0000110: mask=127 anchors {8: 95, 16: 28, 32: 4} | truck strongest @ stride8 (truckscore 0.008) | loss covers ['stride16', 'stride32', 'stride8']  -> OK (covers responsible head)
+  3/20 0000055_00714_d_0000110 done (trucks=1)
+    [head] 0000076_02142_d_0000009: mask=751 anchors {8: 548, 16: 163, 32: 40} | truck strongest @ stride16 (truckscore 0.871) | loss covers ['stride16', 'stride32', 'stride8']  -> OK (covers responsible head)
+  4/20 0000076_02142_d_0000009 done (trucks=6)
+    [head] 0000103_02964_d_0000030: mask=729 anchors {8: 540, 16: 146, 32: 43} | truck strongest @ stride16 (truckscore 0.435) | loss covers ['stride16', 'stride32', 'stride8']  -> OK (covers responsible head)
+  5/20 0000103_02964_d_0000030 done (trucks=1)
+  6/20 0000103_03349_d_0000031 done (trucks=1)
+  7/20 0000103_03738_d_0000032 done (trucks=1)
+  8/20 0000115_00796_d_0000081 done (trucks=1)
+  9/20 0000116_00819_d_0000084 done (trucks=1)
+  10/20 0000116_01338_d_0000086 done (trucks=2)
+  11/20 0000117_02708_d_0000090 done (trucks=1)
+  12/20 0000117_03096_d_0000091 done (trucks=2)
+  13/20 0000129_02411_d_0000138 done (trucks=7)
+  14/20 0000153_00001_d_0000001 done (trucks=2)
+  15/20 0000153_00401_d_0000001 done (trucks=1)
+  16/20 0000153_01601_d_0000001 done (trucks=1)
+  17/20 0000154_00001_d_0000001 done (trucks=2)
+  18/20 0000154_00401_d_0000001 done (trucks=2)
+  19/20 0000154_00801_d_0000001 done (trucks=1)
+  20/20 0000154_01601_d_0000001 done (trucks=1)
+
+==== STRONGER targeted truck->car RESULTS ====
+Images: 20   Truck GT boxes: 36
+[fidelity] worst-case max|adv-clean| over run = 0.06275 (EPS=0.06275); reloaded-from-.pt PGD sample = 0.06275  -> OK, perturbation preserved
+
+Setting   img-flip  img-rate    inst-flip  inst-rate
+CLEAN            4     0.200            4      0.111
+FGSM             2     0.100            2      0.056
+PGD              5     0.250            5      0.139
+C&W              5     0.250            5      0.139
+
+ img-rate  = fraction of the 20 images with >=1 truck flipped to car
+ inst-rate = fraction of the 36 truck boxes flipped to car
+ CLEAN = baseline (model's natural truck->car confusion). Attack effect = rate above CLEAN.
+
+ Adversarial examples (lossless) saved to: adv_examples_v2/*.pt

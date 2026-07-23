@@ -1,0 +1,31 @@
+### s2b_adv_20_hinge ###
+[fig] patch_examples_s2b_adv_20_hinge: 1360 imgs | FULL 1360 -> _full.jpg (q92)
+[repr] FULL eval : eligible  8958 | blue(->van)  1892 (21.1%)  green(car)  2730  red(lost)  4336
+[repr] FULL-1360: eligible  8958 | blue(->van)  1892 (21.1%)  green(car)  2730  red(lost)  4336
+[repr] random blue 21.1% vs full 21.1%  (gap +0.0 pp)
+[fig] done -> patch_examples_s2b_adv_20_hinge/annotated/
+### s2d_offset_20 ###
+[fig] patch_examples_s2d_offset_20: 1360 imgs | FULL 1360 -> _full.jpg (q92)
+[repr] FULL eval : eligible  8958 | blue(->van)  1912 (21.3%)  green(car)  5071  red(lost)  1975
+[repr] FULL-1360: eligible  8958 | blue(->van)  1912 (21.3%)  green(car)  5071  red(lost)  1975
+[repr] random blue 21.3% vs full 21.3%  (gap +0.0 pp)
+[fig] done -> patch_examples_s2d_offset_20/annotated/
+### s2h_center_10 ###
+[fig] patch_examples_s2h_center_10: 1360 imgs | FULL 1360 -> _full.jpg (q92)
+[repr] FULL eval : eligible  8958 | blue(->van)  1602 (17.9%)  green(car)  5455  red(lost)  1901
+[repr] FULL-1360: eligible  8958 | blue(->van)  1602 (17.9%)  green(car)  5455  red(lost)  1901
+[repr] random blue 17.9% vs full 17.9%  (gap +0.0 pp)
+[fig] done -> patch_examples_s2h_center_10/annotated/
+### f_rot00 ###
+[fig] patch_examples_f_rot00: 1360 imgs | FULL 1360 -> _full.jpg (q92)
+[repr] FULL eval : eligible  8958 | blue(->van)  2034 (22.7%)  green(car)  2586  red(lost)  4338
+[repr] FULL-1360: eligible  8958 | blue(->van)  2034 (22.7%)  green(car)  2586  red(lost)  4338
+[repr] random blue 22.7% vs full 22.7%  (gap +0.0 pp)
+[fig] done -> patch_examples_f_rot00/annotated/
+### f_rot45 ###
+[fig] patch_examples_f_rot45: 1360 imgs | FULL 1360 -> _full.jpg (q92)
+[repr] FULL eval : eligible  8958 | blue(->van)  1836 (20.5%)  green(car)  3850  red(lost)  3272
+[repr] FULL-1360: eligible  8958 | blue(->van)  1836 (20.5%)  green(car)  3850  red(lost)  3272
+[repr] random blue 20.5% vs full 20.5%  (gap +0.0 pp)
+[fig] done -> patch_examples_f_rot45/annotated/
+ALL_FULL_DONE

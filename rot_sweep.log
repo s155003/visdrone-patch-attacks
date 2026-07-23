@@ -1,0 +1,7 @@
+=== START b0_clean -> /home/aarav/attack-test/targeted_b0_clean.log
+=== DONE  b0_clean rc=0
+=== START f_rot00 -> /home/aarav/attack-test/targeted_f_rot00.log
+=== DONE  f_rot00 rc=0
+=== START f_rot45 -> /home/aarav/attack-test/targeted_f_rot45.log
+=== DONE  f_rot45 rc=0
+=== ROT SWEEP COMPLETE ===

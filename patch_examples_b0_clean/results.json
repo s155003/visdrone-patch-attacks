@@ -1,0 +1,16 @@
+{
+  "run": "b0_clean",
+  "mode": "none",
+  "area_frac": 0.2,
+  "img_size": 640,
+  "min_area_frac": 0.001,
+  "epochs": 80,
+  "eval_images": 1360,
+  "cars_kept": 11446,
+  "cars_dropped": 16628,
+  "eligible": 9415,
+  "flipped": 457,
+  "lost": 0,
+  "targeted_asr": 0.048539564524694635,
+  "lost_rate": 0.0
+}

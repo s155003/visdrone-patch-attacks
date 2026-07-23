@@ -1,0 +1,39 @@
+{
+  "run": "h0b_random_640",
+  "mode": "random",
+  "img_size": 640,
+  "nps_weight": 0.0,
+  "tv_weight": 2.5,
+  "epochs": 80,
+  "eval_area_frac": 0.2,
+  "train_images": 100,
+  "eval_images": 514,
+  "objects_kept": 8933,
+  "objects_dropped": 8107,
+  "eligible_detected_clean": 7440,
+  "hidden": 2454,
+  "hiding_asr_class_mean": 0.3935946898131008,
+  "hiding_asr_pooled": 0.32983870967741935,
+  "per_class": {
+    "car": {
+      "hidden": 1946,
+      "eligible": 6416,
+      "asr": 0.30330423940149626
+    },
+    "van": {
+      "hidden": 396,
+      "eligible": 707,
+      "asr": 0.5601131541725601
+    },
+    "truck": {
+      "hidden": 74,
+      "eligible": 212,
+      "asr": 0.3490566037735849
+    },
+    "bus": {
+      "hidden": 38,
+      "eligible": 105,
+      "asr": 0.3619047619047619
+    }
+  }
+}

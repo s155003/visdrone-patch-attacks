@@ -1,0 +1,10 @@
+# VisDrone test-dev, 5-class vehicles, for AP/AR evaluation (paper methodology)
+path: /home/aarav/attack-test/datasets/VisDrone_testdev
+train: images    # not used for val, but ultralytics wants the key
+val: images
+names:
+  0: car
+  1: van
+  2: truck
+  3: bus
+  4: motor

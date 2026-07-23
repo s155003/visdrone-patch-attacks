@@ -1,0 +1,16 @@
+{
+  "run": "s2m_center_15",
+  "mode": "adversarial",
+  "area_frac": 0.15,
+  "img_size": 640,
+  "min_area_frac": 0.001,
+  "epochs": 80,
+  "eval_images": 1360,
+  "cars_kept": 11446,
+  "cars_dropped": 16628,
+  "eligible": 9415,
+  "flipped": 1756,
+  "lost": 3377,
+  "targeted_asr": 0.1865108868826341,
+  "lost_rate": 0.35868295273499734
+}

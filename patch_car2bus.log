@@ -1,0 +1,59 @@
+DIGITAL PATCH car->bus: training ONE universal patch on 30 images
+Params: PATCH_FRAC=0.3, EPOCHS=40, LR=0.03, TV=0.05, MARGIN=5.0
+
+/home/aarav/attack-test/patch_attack_car2bus.py:165: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:838.)
+  tot += float(loss)
+  epoch 1/40  avg loss 7041.239
+  epoch 2/40  avg loss 6837.612
+  epoch 3/40  avg loss 6718.055
+  epoch 4/40  avg loss 6633.124
+  epoch 5/40  avg loss 6591.205
+  epoch 6/40  avg loss 6547.055
+  epoch 7/40  avg loss 6522.953
+  epoch 8/40  avg loss 6507.186
+  epoch 9/40  avg loss 6494.493
+  epoch 10/40  avg loss 6482.355
+  epoch 11/40  avg loss 6490.115
+  epoch 12/40  avg loss 6486.495
+  epoch 13/40  avg loss 6481.852
+  epoch 14/40  avg loss 6472.104
+  epoch 15/40  avg loss 6469.535
+  epoch 16/40  avg loss 6446.316
+  epoch 17/40  avg loss 6418.015
+  epoch 18/40  avg loss 6403.594
+  epoch 19/40  avg loss 6395.314
+  epoch 20/40  avg loss 6379.506
+  epoch 21/40  avg loss 6386.724
+  epoch 22/40  avg loss 6381.865
+  epoch 23/40  avg loss 6370.291
+  epoch 24/40  avg loss 6351.536
+  epoch 25/40  avg loss 6367.080
+  epoch 26/40  avg loss 6372.735
+  epoch 27/40  avg loss 6362.448
+  epoch 28/40  avg loss 6340.061
+  epoch 29/40  avg loss 6385.965
+  epoch 30/40  avg loss 6392.736
+  epoch 31/40  avg loss 6373.036
+  epoch 32/40  avg loss 6329.933
+  epoch 33/40  avg loss 6357.726
+  epoch 34/40  avg loss 6391.366
+  epoch 35/40  avg loss 6357.631
+  epoch 36/40  avg loss 6345.611
+  epoch 37/40  avg loss 6359.203
+  epoch 38/40  avg loss 6459.706
+  epoch 39/40  avg loss 6411.256
+  epoch 40/40  avg loss 6349.331
+
+Evaluating trained patch (clean vs patched)...
+
+==== DIGITAL PATCH car->bus RESULTS ====
+Images: 30   car GT boxes: 437
+(a) already-bus under CLEAN (native): 0
+    eligible cars: 437
+aggregate detected as bus: CLEAN=0  PATCHED=0
+
+TRUE-NEW car->bus flips (patch only): 0
+TRUE-RATE (true-new / eligible): 0.000   <- HEADLINE
+
+Saved universal patch + per-image examples to patch_examples_car2bus/

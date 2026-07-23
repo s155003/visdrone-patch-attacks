@@ -1,0 +1,28 @@
+{
+  "run": "sh_s4_triangle",
+  "shape": "triangle",
+  "opacity": 1.0,
+  "area_frac": 0.1,
+  "no_overflow": 1,
+  "rot_deg": 20.0,
+  "lr": 0.03,
+  "mode": "adversarial",
+  "epochs": 80,
+  "eval_images": 1360,
+  "cars_kept": 11446,
+  "cars_dropped": 16628,
+  "eligible": 9415,
+  "ambiguous": 457,
+  "denominator": 8958,
+  "flipped": 497,
+  "lost": 1625,
+  "still_car": 6836,
+  "strict_asr": 0.055481134181736995,
+  "lost_rate": 0.18140209868274168,
+  "still_rate": 0.7631167671355213,
+  "overflow": {
+    "capped_pct": 5.521579591123537,
+    "mean_realized_frac": 0.09920923149324395,
+    "n": 11446
+  }
+}

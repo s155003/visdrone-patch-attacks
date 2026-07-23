@@ -1,0 +1,16 @@
+{
+  "run": "f_rot00",
+  "mode": "adversarial",
+  "area_frac": 0.2,
+  "img_size": 640,
+  "min_area_frac": 0.001,
+  "epochs": 80,
+  "eval_images": 1360,
+  "cars_kept": 11446,
+  "cars_dropped": 16628,
+  "eligible": 9415,
+  "flipped": 2206,
+  "lost": 4552,
+  "targeted_asr": 0.2343069569835369,
+  "lost_rate": 0.4834838024429102
+}

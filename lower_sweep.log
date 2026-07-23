@@ -1,0 +1,23 @@
+=== START exp_lower_20_t50 -> /home/aarav/attack-test/targeted_exp_lower_20_t50.log
+=== DONE  exp_lower_20_t50 rc=0
+=== START exp_lower_20_t70 -> /home/aarav/attack-test/targeted_exp_lower_20_t70.log
+=== DONE  exp_lower_20_t70 rc=0
+=== START exp_lower_20_t80 -> /home/aarav/attack-test/targeted_exp_lower_20_t80.log
+=== DONE  exp_lower_20_t80 rc=0
+=== START exp_lower_10 -> /home/aarav/attack-test/targeted_exp_lower_10.log
+=== DONE  exp_lower_10 rc=0
+=== START exp_lower_10_t50 -> /home/aarav/attack-test/targeted_exp_lower_10_t50.log
+=== DONE  exp_lower_10_t50 rc=0
+=== START exp_lower_10_t70 -> /home/aarav/attack-test/targeted_exp_lower_10_t70.log
+=== DONE  exp_lower_10_t70 rc=0
+=== START exp_lower_10_t90 -> /home/aarav/attack-test/targeted_exp_lower_10_t90.log
+=== DONE  exp_lower_10_t90 rc=0
+=== START exp_lower_07 -> /home/aarav/attack-test/targeted_exp_lower_07.log
+=== DONE  exp_lower_07 rc=0
+=== START exp_lower_05 -> /home/aarav/attack-test/targeted_exp_lower_05.log
+=== DONE  exp_lower_05 rc=0
+=== START exp_lower_05_lr12 -> /home/aarav/attack-test/targeted_exp_lower_05_lr12.log
+=== DONE  exp_lower_05_lr12 rc=0
+=== START exp_lower_03_lr30 -> /home/aarav/attack-test/targeted_exp_lower_03_lr30.log
+=== DONE  exp_lower_03_lr30 rc=0
+=== LOWER SWEEP COMPLETE ===

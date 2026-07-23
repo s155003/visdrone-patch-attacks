@@ -1,0 +1,24 @@
+Training RetinaNet-ResNet50, FPN_MODE=standard, 640px, 30 epochs
+/home/aarav/attack_env/lib/python3.12/site-packages/torchvision/models/_utils.py:135: UserWarning: Using 'backbone_name' as positional parameter(s) is deprecated since 0.13 and may be removed in the future. Please use keyword parameter(s) instead.
+  warnings.warn(
+  ep1/30 it0/809 loss 2.665 lr 0.00000
+  ep1/30 it50/809 loss 2.368 lr 0.00010
+  ep1/30 it100/809 loss 2.153 lr 0.00020
+  ep1/30 it150/809 loss 2.285 lr 0.00030
+  ep1/30 it200/809 loss 2.108 lr 0.00040
+  ep1/30 it250/809 loss 1.734 lr 0.00050
+  ep1/30 it300/809 loss 1.653 lr 0.00060
+  ep1/30 it350/809 loss 1.509 lr 0.00070
+  ep1/30 it400/809 loss 1.369 lr 0.00080
+  ep1/30 it450/809 loss 1.488 lr 0.00090
+  ep1/30 it500/809 loss 1.293 lr 0.00100
+  ep1/30 it550/809 loss 1.347 lr 0.00100
+  ep1/30 it600/809 loss 1.424 lr 0.00100
+  ep1/30 it650/809 loss 1.145 lr 0.00100
+  ep1/30 it700/809 loss 1.547 lr 0.00100
+  ep1/30 it750/809 loss 1.192 lr 0.00100
+  ep1/30 it800/809 loss 1.094 lr 0.00100
+Epoch 1 done, avg loss 1.636
+  ep2/30 it0/809 loss 1.270 lr 0.00100
+  ep2/30 it50/809 loss 1.358 lr 0.00100
+  ep2/30 it100/809 loss 1.060 lr 0.00100
