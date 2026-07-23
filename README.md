@@ -283,9 +283,14 @@ Every metric correction made during this project was recomputed this way. The `*
 
 <img width="2004" height="1653" alt="image" src="https://github.com/user-attachments/assets/760a64b7-5152-483f-a6c8-c28bd859428c" />
 
+### Per-Car Outcome by Patch Condition
+
 <img width="1431" height="596" alt="image" src="https://github.com/user-attachments/assets/bbf9e238-dee6-4852-9648-0e09d587a601" />
 
-<img width="1431" height="596" alt="image" src="https://github.com/user-attachments/assets/1b242aba-0b6c-45b3-8ff8-0072f11f160a" />
+### Detection Accuracy Under Attack (AP@0.5)
+
+<img width="1431" height="510" alt="image" src="https://github.com/user-attachments/assets/2ccff9e5-7c1d-4b18-a119-d760a5677e81" />
+
 
 
 
