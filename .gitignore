@@ -4,8 +4,14 @@
 # Drops: datasets, rendered figures, archives, model/patch weights
 # ============================================================
 
-# datasets (54G, re-downloadable)
-datasets/
+# datasets: exclude the 54G of imagery, but KEEP the label .txt files.
+# Labels are the custom 5-class remap (0=car 1=van 2=truck 3=bus 4=motor) and are
+# required by make_figures_*.py / load_car_boxes() to reconstruct any figure.
+# Cannot use a bare "datasets/" here: git cannot re-include inside an excluded dir.
+/datasets/*
+!/datasets/VisDrone/
+/datasets/VisDrone/*
+!/datasets/VisDrone/labels/
 
 # rendered figure sets (regenerable from boxes.json + patch)
 annotated/
