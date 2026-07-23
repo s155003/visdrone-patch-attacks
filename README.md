@@ -93,6 +93,8 @@ A square of side `s` rotated by θ has an axis-aligned footprint of side `s·(|c
 
 The cost is size: a requested 20% patch is capped to a realized **~11%** of the box on 99.9% of vehicles. See `ROOFFIT:` lines in the run logs.
 
+<img width="952" height="593" alt="image" src="https://github.com/user-attachments/assets/d063fcec-2418-45cf-a301-fa688c7814b6" />
+
 ---
 
 ## Requirements
@@ -101,11 +103,9 @@ The cost is size: a requested 20% patch is capped to a realized **~11%** of the 
 |---|---|
 | OS | Linux (developed on Ubuntu 24, kernel 6.x) |
 | Python | 3.9 or higher |
-| GPU | **Not required** for reproducing figures or metrics. Required only to train new patches. |
 | Packages | `torch`, `opencv-python`, `numpy`, `ultralytics` (training/eval only) |
 | Disk | ~1 GB for the repository, plus ~2 GB for VisDrone imagery |
 
-Reproducing every figure and every metric in this repository is **CPU-only**. The figure scripts never load the detector; they replay saved detections.
 
 ---
 
