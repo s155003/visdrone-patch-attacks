@@ -51,3 +51,7 @@ table_runs/
 __pycache__/
 *.pyc
 .DS_Store
+
+# Claude session transcript (kept outside the repo / on Drive)
+conversation_transcript.jsonl
+conversation_memory.md
