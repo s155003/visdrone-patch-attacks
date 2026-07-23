@@ -2,7 +2,6 @@
 
 This repository implements universal adversarial patch attacks against a YOLO11-L object detector fine-tuned on VisDrone2019 aerial imagery. It evaluates two distinct adversarial objectives under one model, dataset, and evaluation harness: **targeted misclassification** (forcing a car to be detected as a van) and **concealment** (suppressing the detection entirely). Prior work evaluates concealment; targeted misclassification remains comparatively unexamined despite posing greater operational risk, since an erroneous detection is acted upon whereas an absent one is more readily noticed.
 
-The repository also contains a **roof-constrained placement** extension, in which the patch is geometrically capped to the vehicle's roof so it can never overlap the windshield, rear glass, doors, or mirrors — a stricter physical-realizability constraint than prior "off-glass" formulations.
 
 REU project, University of Alabama. Author: Aarav Pulsani. Mentors: Dr. Alsharif, Muhammad Jahanzeb Khan. Supported by NSF Grant No. 2244371.
 
